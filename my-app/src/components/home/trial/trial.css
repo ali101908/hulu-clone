@@ -1,0 +1,61 @@
+.trial-container{
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.trial-head{
+	font-family: "Graphik Web", Graphik, sans-serif;
+font-size: 14px;
+font-weight: 500;
+line-height: 14px;
+color: rgb(28, 231, 131);
+font-weight: bold;
+}
+
+.trial-head2{
+	
+	font-family: "Graphik Web", Graphik, sans-serif;
+font-size: 48px;
+font-weight: 600;
+line-height: 60px;
+}
+
+.trial-content{
+	font-family: "Graphik Web", Graphik, sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 23.76px;
+}
+
+.trial-btn{
+	font-family: "Graphik Web", sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 14px;
+color: rgb(0, 0, 0);
+height: 55px;
+width: 220px;
+border-radius: 5px;
+border: 0;
+}
+
+.trial-btn:hover{
+	cursor: pointer;
+}
+
+.trial-footer-content{
+	font-family: "Graphik Web", Graphik, sans-serif;
+font-size: 10px;
+font-weight: 400;
+line-height: 10px;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.trial-footer-link{
+	font-family: "Graphik Web", Graphik, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 16px;
+}

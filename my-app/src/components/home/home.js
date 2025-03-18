@@ -1,12 +1,15 @@
 import React from 'react'
 import Header from './header/header'
+import Show from './shows/show'
 import Footer from './footer/footer'
-// import HeroSection from './hero-section/hero'
+import Newssection from './news-section/news-section'
+
 const HomePage = () => {
   return (
 	<div>
 	  <Header />
-	  {/* <HeroSection /> */}
+	  <Show />
+	  <Newssection />
 	  <Footer />
 	</div>
   )

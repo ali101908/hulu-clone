@@ -1,0 +1,81 @@
+.news-container {
+	/* width: 100%; */
+	height: 80vh;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start; /* Align content to the left */
+	color: white;
+	padding: 50px; /* Adjust padding for proper spacing */
+	transition: background-image 0.5s ease-in-out;
+	filter: brightness(80%);
+	
+  }
+  
+  .news-tabs {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 20px;
+  }
+  
+  .news-tab {
+	background: transparent;
+	border: none;
+	color: white;
+	cursor: pointer;
+	padding-bottom: 5px;
+	transition: color 0.3s ease-in-out;
+	font-family: "Graphik Web", sans-serif;
+font-size: 14px;
+font-weight: 900;
+line-height: 13.5px;
+  }
+  
+  .news-tab.active {
+	border-bottom: 2px solid white;
+  }
+  
+  .news-content {
+	text-align: left; 
+	max-width: 450px;
+	
+  }
+  
+  .news-content h1 {
+	font-family: "Graphik Web", sans-serif;
+font-size: 48px;
+font-weight: 600;
+line-height: 60px;
+  }
+
+  .news-content p {
+	font-family: "Graphik Web", sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 23.76px;
+  }
+
+  .icons {
+	display: flex;
+	gap: 25px;
+	margin-top: 15px;
+  }
+  
+  .icons img {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%; /* Makes the icons circular */
+	background: white; /* White background */
+	padding: 8px; /* Adds spacing inside the circle */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a slight shadow for better visibility */
+  }
+
+  .news-footer{
+	font-family: "Graphik Web", Graphik, sans-serif;
+font-size: 10px;
+font-weight: 400;
+line-height: 14.6px;
+color: rgba(255, 255, 255, 0.6);
+  }
