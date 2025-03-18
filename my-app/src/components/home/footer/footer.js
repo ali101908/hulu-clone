@@ -15,7 +15,7 @@ const Footer = () => {
         links: [
           "Streaming Library", "Live TV", "Live News", "Live Sports", 
           "TV Shows", "Movies", "Originals", "Networks", "Kids", "FX", 
-          "Max", "Cinemax", "Paramount+ with SHOWTIME", "STARZ"
+          "Max", "Cinemax", "Paramount+ with SHOWTIME", "STARZ","Disney+,Hulu,ESPN+ Bundle Basic","Disney+,Hulu,ESPN+ Bundle Premium", "Disney+,Hulu Bundle", "Disney+,Hulu,Max Bundle", "Student Discount"
         ]
       },
       {

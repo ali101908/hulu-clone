@@ -5,7 +5,7 @@
     color: #444;
 }
 
-/* Footer Links - Adjust layout */
+/* Footer Links - Centered Layout */
 .footer-links {
     display: flex;
     justify-content: center;
@@ -14,15 +14,15 @@
     margin: 0 auto;
 }
 
-/* Make the BROWSE section split into two columns */
+/* Split BROWSE into 3 columns */
 .footer-link-items:nth-child(1) {
-    flex: 2;
+    flex: 3;
     display: grid;
-    grid-template-columns: repeat(2, minmax(150px, auto));
+    grid-template-columns: repeat(3, minmax(150px, auto));
     column-gap: 40px;
 }
 
-/* Ensure HELP and ABOUT US are aligned below each other */
+/* HELP and ABOUT US stay below each other */
 .footer-link-items {
     flex: 1;
     min-width: 180px;
