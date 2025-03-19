@@ -1,8 +1,8 @@
 .footer-container {
-    background-color: #F5F6F7;
+    background-color: #E8EAED;
     padding: 30px 50px;
     font-family: Arial, sans-serif;
-    color: #444;
+    /* color: #E8EAED; */
 }
 
 /* Footer Links - Centered Layout */
@@ -88,8 +88,11 @@
 
 /* Copyright text stays on left */
 .footer-copyright {
-    font-size: 14px;
-    color: #444;
+    font-family: "Graphik Web", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17.28px;
+    color: rgb(88, 97, 116);
 }
 
 /* Footer Legal Links stay centered */

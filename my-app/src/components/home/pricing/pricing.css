@@ -1,0 +1,344 @@
+.pricing-container {
+    text-align: center;
+    background-color: #0B0C0F;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    
+    /* Sticky settings */
+    /* position: sticky; */
+    top: 0;
+    /* z-index: 1000; */
+    
+    /* Ensure width is correct */
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
+.pricing-title {
+    background-color: rgb(28, 231, 131);
+    max-width: 100%;
+    margin: 0 auto 10px auto;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-family: "Graphik Web", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(22, 24, 29);
+}
+
+.pricing-portion {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.bundle-name {
+    font-family: "Graphik Web", Graphik, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.pricing-btn {
+    height: 50px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    transition: filter 0.3s ease-in-out;
+    font-family: "Graphik Web", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(4, 4, 5);
+}
+
+.pricing-btn:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.btn-footer {
+    font-family: "Graphik Web", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+/* Table Styling */
+.table-container {
+    width: 80%;
+    margin: auto;
+}
+
+.table-content {
+    text-align: left;
+    display: flex;
+   justify-content: space-evenly;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.table-line {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.list-price {
+    display: flex;
+    
+    font-family: "Graphik Web", sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 19.6px;
+color: rgb(255, 255, 255);
+}
+
+.table-list{
+    font-family: "Graphik Web", sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 19.6px;
+color: rgb(255, 255, 255);
+display: flex;
+
+}
+
+.discount {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 5px;
+}
+
+.table-footer{
+    font-family: "Graphik Web", Graphik, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14.6px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.table-footer a{
+    color: rgb(255, 255, 255);
+}
+
+
+
+  
+  
+/* Table Styling */
+.table-container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Table Content */
+.table-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Table Row */
+.table-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 0;
+    position: relative;
+}
+
+/* Horizontal Line Above & Below Each Row */
+.table-row::before,
+.table-row::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+.table-row::before {
+    top: 0; /* Line above */
+}
+
+.table-row::after {
+    bottom: 0; /* Line below */
+}
+
+/* Table Heading */
+.table-heading {
+    font-family: "Graphik Web", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    width: 40%;
+    text-align: left;
+    position: relative;
+    background-color: #0B0C0F;
+    padding-right: 10px;
+    z-index: 1; /* Ensures text is above hr */
+}
+
+/* Table Value */
+.table-value {
+    width: 30%;
+    text-align: center;
+    position: relative;
+    background-color: #0B0C0F;
+    padding: 0 5px;
+    z-index: 1; /* Ensures checkmarks are above hr */
+    color: white;
+    font-family: "Graphik Web", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.table-value:last-child {
+    text-align: right;
+}
+
+
+/* List Pricing */
+.list-price {
+    font-family: "Graphik Web", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+.discount {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 5px;
+}
+
+/* Add-ons */
+
+
+.table-btn {
+    background: none;
+    border: none;
+    font-family: Graphik;
+font-size: 16px;
+font-weight: 400;
+line-height: normal;
+color: rgb(255, 255, 255);
+    cursor: pointer;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    gap: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .table-btn::after {
+    content: "▼"; /* Downward arrow */
+    font-size: 14px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  table-btn.active::after {
+    content: "⏶";
+    transform: rotate(180deg);
+}
+  .available{
+    text-align: left;
+    font-family: "Graphik Web", sans-serif;
+font-size: 32px;
+font-weight: 600;
+line-height: 38.4px;
+color: rgb(255, 255, 255);
+display: flex;
+justify-content: right;
+width: 34.5%;
+  }
+
+  .add-content{
+    text-align: left;
+    font-family: "Graphik Web", Graphik, sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 19.6px;
+color: rgb(255, 255, 255);
+display: flex;
+justify-content: right;
+width: 33%;
+  }
+
+  /* Add-ons Table */
+.add-on-table {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 20px auto;
+    position: relative;
+}
+
+/* Add-on Row */
+.add-on-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    position: relative;
+}
+
+/* Horizontal Line Above & Below Each Row */
+.add-on-row::before,
+.add-on-row::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+.add-on-row::before {
+    top: 0; /* Line above */
+}
+
+.add-on-row::after {
+    bottom: 0; /* Line below */
+}
+
+/* Add-on Name */
+.add-on-name {
+    font-family: "Graphik Web", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    width: 40%;
+    text-align: left;
+    position: relative;
+    background-color: #0B0C0F;
+    padding-right: 10px;
+    z-index: 1;
+}
+
+/* Add-on Checkmarks */
+.add-on-value {
+    width: 30%;
+    text-align: center;
+    position: relative;
+    background-color: #0B0C0F;
+    padding: 0 5px;
+    z-index: 1;
+}
+
+.add-on-value:last-child {
+    text-align: right;
+}

@@ -1,0 +1,103 @@
+.plan-container {
+    text-align: center;
+    background-color: #0B0C0F;
+}
+
+.plan-heading {
+    padding-top: 10px;
+}
+
+.plan-title {
+    font-family: "Graphik Web", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+}
+
+.plan-content {
+    font-family: "Graphik Web", Graphik, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.76px;
+    color: rgb(255, 255, 255);
+}
+
+/* Dropdown Container */
+.dropdown-btn {
+    position: relative;
+    display: inline-block;
+	margin-bottom: 10px;
+}
+
+/* Dropdown button styling */
+.dropdown-toggle {
+    background-color: white;
+    border: none;
+    height: 40px;
+    width: 250px;
+    border-radius: 25px;
+    font-family: "Graphik Web", Graphik, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: rgb(4, 4, 5);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Dropdown menu container */
+.dropdown-menu {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    padding: 5px 0;
+    z-index: 100;
+    text-align: left;
+    display: none; /* Default: hidden */
+}
+
+/* Show dropdown when 'open' class is added */
+.dropdown-btn.open .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown items */
+.dropdown-item {
+    display: block;
+    padding: 12px 20px;
+    font-family: "Graphik Web", Graphik, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgb(4, 4, 5);
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth dropdown animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation when dropdown appears */
+.dropdown-btn.open .dropdown-menu {
+    animation: fadeIn 0.2s ease-in-out;
+}

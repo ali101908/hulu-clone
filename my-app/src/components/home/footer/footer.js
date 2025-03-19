@@ -70,7 +70,7 @@ const Footer = () => {
 
       {/* Footer Bottom Section */}
       <div className="footer-bottom">
-        <small>{footerData.copyright}</small>
+        <small className='footer-copyright'>{footerData.copyright}</small>
         <div className="footer-legal">
           <a href="/" className="about-icon-link">
             <img src={AboutIcon} alt="About Icon" className="about-icon-img" />
