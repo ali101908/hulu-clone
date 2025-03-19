@@ -1,8 +1,9 @@
 .trial-container{
-	height: 500px;
+max-height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-bottom: 10px;
 }
 
 .trial-head{

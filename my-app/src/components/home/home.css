@@ -1,23 +1,24 @@
-.container{
+.container {
 	background-image: url('../../images/banner.jpeg');
 	height: 100%;
 	background-size: cover;
-}
-
-.navbar{
+  }
+  
+  .navbar {
 	display: flex;
 	justify-content: space-between;
 	height: 50px;
-}
-
-.logo{
-	/* margin-top: 10px; */
+	position: relative;
+	align-items: center;
+  }
+  
+  .logo {
 	margin-left: 40px;
 	color: #1CE783;
-	
-}
-
-.log-btn{
+  }
+  
+  /* Desktop version login and sign-up buttons */
+  .log-btn, .sign-up-btn {
 	margin-top: 20px;
 	margin-right: 20px;
 	height: 40px;
@@ -28,13 +29,91 @@
 	color: rgb(167, 163, 163);
 	font-size: 14px;
 	font-weight: bold;
-}
-
-.log-btn:hover{
+	display: inline-block; /* Ensure it is inline on larger screens */
+  }
+  
+  .log-btn:hover, .sign-up-btn:hover {
 	background-color: #323843;
 	color: white;
 	cursor: pointer;
-}
+  }
+  
+  /* Hamburger menu for mobile */
+  .menu-icon {
+	display: none; /* Initially hidden on larger screens */
+	font-size: 30px;
+	cursor: pointer;
+	color: #1CE783;
+	/* width: 200px; */
+	/* height: auto; */
+  }
+  
+  /* Initially hide the mobile menu */
+.mobile-menu {
+	display: none; /* Ensure it is hidden initially */
+	position: absolute;
+	top: 50px;
+	right: 20px;
+	background-color: #323843;
+	padding: 10px;
+	border-radius: 5px;
+	width: 120px; /* Set a fixed width for better visibility */
+  }
+  
+  /* When the menu is open, show it */
+  .mobile-menu.active {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  /* Ensure buttons inside mobile menu are visible */
+  .mobile-menu button {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	color: white;
+	background: none;
+	border: 1px solid white;
+	margin-bottom: 5px;
+  }
+  
+  .mobile-menu button:hover {
+	background-color: #1CE783;
+	color: black;
+  }
+  
+  /* Responsive Design for Mobile Screens */
+  @media (max-width: 768px) {
+	.navbar {
+	  justify-content: space-between;
+	  align-items: center;
+	}
+  
+	/* Hide desktop buttons */
+	.log-btn, .sign-up-btn {
+	  display: none;
+	}
+  
+	/* Show hamburger menu */
+	.menu-icon {
+	  display: block;
+	  margin-right: 20px;
+	}
+  
+	/* Initially hide the mobile menu */
+	.mobile-menu {
+	  /* display: none; */
+	  width: 100px;
+	  height: 80px;
+	}
+  
+	/* When the menu is open, show the mobile menu */
+	.mobile-menu.active {
+	  display: flex;
+	  flex-direction: column;
+	}
+  }
+  
 
 
 .hero-logo{
@@ -54,7 +133,6 @@
 .hero-container h1{
 	color: white;
 	text-align: center;
-	/* font-weight: bolder; */
 	font-size: 45px;
 }
 
@@ -73,7 +151,6 @@
 
 .hero-btn{
 	background-color: #1CE783;
-	/* margin-top: 20px; */
 	text-align: center;
 	height: 45px;
 	width: 700px;
@@ -91,7 +168,6 @@
 color: rgb(148, 144, 144);
 font-size: 11px;
 text-align: center;
-/* padding-bottom: 10px; */
 }
 
 .hero-content a{
@@ -102,13 +178,10 @@ text-align: center;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		/* background-color: black; */
 		border: 1px solid black;
 		background-color: black;
 		opacity: 0.8;
 		height: 200px;
-		/* margin-top: 20px; */
-		/* padding: 15px; */
 	}
 
 	.hero-footer img{
@@ -140,7 +213,6 @@ text-align: center;
 
 .hero-btn2{
 	background-color: #1CE783;
-	/* margin-top: 20px; */
 	text-align: center;
 	height: 52px;
 	width: 140px;

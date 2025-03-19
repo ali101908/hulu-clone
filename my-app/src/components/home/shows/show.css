@@ -1,5 +1,5 @@
 .show-container{
-	height: 1250px;
+	max-height: auto;
 }
 
 .show-container h1,h6,p{
@@ -48,4 +48,12 @@
 	font-size: 10px;
 	width: 1510px;
 	
+}
+
+@media (max-width: 768px) {
+	.show-lists{
+		/* display: flex; */
+		flex-wrap: wrap;
+		/* gap: 20px; */
+	}
 }
