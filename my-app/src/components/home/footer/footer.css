@@ -148,15 +148,16 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
     .dropdown-content {
         display: none;
         grid-template-columns: repeat(1, minmax(100px, auto)); /* Three columns */
         gap: 10px;
         /* text-align: center; */
         padding-left: 0; /* Remove left padding */
-        width: 100%; /* Ensure it doesn't overflow */
+        width: 100%; 
         max-width: 300px; /* Adjust max width to fit screen */
         margin: 0 auto; /* Center the dropdown */
+        margin-left: -20px;
     }
 }
