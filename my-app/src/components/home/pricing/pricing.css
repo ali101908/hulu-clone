@@ -407,3 +407,18 @@ width: 33%;
     }
     
 }
+
+@media screen and (max-width:440px) {
+    .pricing-btn {
+        width: 120px;
+       
+    }
+
+    .pricing-portion {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 95%;
+    }
+
+}
