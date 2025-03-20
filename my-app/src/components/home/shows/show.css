@@ -1,6 +1,7 @@
 .show-container{
 	/* max-height: auto; */
 	max-width: auto;
+	overflow-x: hidden;
 }
 
 .show-container h1,h6,p{

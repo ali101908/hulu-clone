@@ -1,5 +1,5 @@
 .news-container {
-	/* width: 100%; */
+	max-width: auto;
 	height: 80vh;
 	background-size: cover;
 	background-position: center;
@@ -11,7 +11,7 @@
 	padding: 50px; /* Adjust padding for proper spacing */
 	transition: background-image 0.5s ease-in-out;
 	filter: brightness(80%);
-	
+	overflow-x: hidden;
   }
   
   .news-tabs {

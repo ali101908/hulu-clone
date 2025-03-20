@@ -2,6 +2,7 @@
     background-color: #E8EAED;
     padding: 30px 50px;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 .footer-links {

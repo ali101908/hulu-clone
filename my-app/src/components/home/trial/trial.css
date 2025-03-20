@@ -4,6 +4,7 @@ max-height: auto;
 	flex-direction: column;
 	align-items: center;
 	padding-bottom: 10px;
+	overflow-x: hidden;
 }
 
 .trial-head{

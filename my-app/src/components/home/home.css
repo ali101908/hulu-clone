@@ -1,7 +1,8 @@
 .container {
 	background-image: url('../../images/banner.jpeg');
-	height: 100%;
+	max-width: 100%;
 	background-size: cover;
+	overflow-x: hidden;
   }
   
   .navbar {
@@ -38,9 +39,95 @@
 	cursor: pointer;
   }
   
-  /* Hamburger menu for mobile */
+ 
+  /* .menu-icon {
+	display: none; 
+	font-size: 15px;
+	cursor: pointer;
+	color: white;
+	background-color: #323843;
+	border: none;
+	border-radius: 10px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+  }
+  
+.mobile-menu {
+	display: none; 
+	position: absolute;
+	top: 50px;
+	right: 20px;
+	background-color: #323843;
+	padding: 10px;
+	border-radius: 5px;
+	width: 120px; 
+  }
+  
+  
+  .mobile-menu.active {
+	display: flex;
+	flex-direction: column;
+  }
+  
+
+  .mobile-menu button {
+	display: block;
+	font-family: "Graphik Web", sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 14px;
+color: rgb(177, 184, 196);
+	width: 100%;
+	padding: 10px;
+	background: none;
+	border: none;
+	margin-bottom: 5px;
+	border-radius: 5px;
+  }
+  
+  .mobile-menu button:hover {
+	background-color: #1CE783;
+	color: white;
+	cursor: pointer;
+	transition: 1s;
+  }
+  
+  
+  @media (max-width: 768px) {
+	.navbar {
+	  justify-content: space-between;
+	  align-items: center;
+	}
+  
+
+	.log-btn, .sign-up-btn {
+	  display: none;
+	}
+  
+
+	.menu-icon {
+	  display: block;
+	  margin-right: 20px;
+	}
+  
+	
+	.mobile-menu {
+	  display: none;
+	  width: 250px;
+	  height: 80px;
+	}
+  
+	
+	.mobile-menu.active {
+	  display: flex;
+	  flex-direction: column;
+	}
+  } */
+  
+ 
 .menu-icon {
-    display: none; /* Initially hidden on larger screens */
+    display: none;
     font-size: 18px;
     cursor: pointer;
     color: white;
@@ -50,30 +137,29 @@
     height: 40px;
     width: 40px;
     text-align: center;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center; /* Center icon */
+    align-items: center; */
 }
 
-/* Initially hide the mobile menu */
+
 .mobile-menu {
-    display: none; /* Ensure it is hidden initially */
+    display: none; 
     position: absolute;
     top: 50px;
     right: 20px;
     background-color: #323843;
     padding: 10px;
     border-radius: 5px;
-    width: 120px; /* Set a fixed width for better visibility */
+    width: 120px; 
 }
 
-/* When the menu is open, show it */
 .mobile-menu.active {
     display: flex;
     flex-direction: column;
 }
 
-/* Ensure buttons inside mobile menu are visible */
+
 .mobile-menu button {
     display: block;
     font-family: "Graphik Web", sans-serif;
@@ -89,14 +175,14 @@
     border-radius: 5px;
 }
 
-/* Default active state for 'GET THIS DEAL' button when menu opens */
+
 .mobile-menu.active .sign-up-btn-mobile {
     background-color: #1CE783;
     color: black;
     font-weight: bold;
 }
 
-/* Button hover effect */
+
 .mobile-menu button:hover {
     background-color: #1d2127;
     color: white;

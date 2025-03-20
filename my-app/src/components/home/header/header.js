@@ -20,9 +20,12 @@ const Header = () => {
         <button className='log-btn'>LOG IN</button>
 
         {/* Hamburger menu for mobile screens */}
-        <div className='menu-icon' onClick={toggleMenu}>
-          &#9776;
-        </div>
+        {window.innerWidth <= 768 && (
+  <div className='menu-icon' onClick={toggleMenu}>
+    &#9776;
+  </div>
+)}
+
 
         {/* Mobile version buttons (Login and Sign Up) */}
         <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>

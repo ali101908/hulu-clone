@@ -3,12 +3,10 @@
     background-color: #0B0C0F;
     display: flex;
     flex-direction: column;
+    max-width: auto;
+    overflow-x: hidden;
   
 }
-
-
-
-
 
 .pricing-title {
     background-color: rgb(28, 231, 131);
