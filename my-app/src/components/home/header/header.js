@@ -18,7 +18,6 @@ const Header = () => {
 
         {/* Desktop login button */}
         <button className='log-btn'>LOG IN</button>
-        <button className='sign-up-btn'>SIGN UP</button>
 
         {/* Hamburger menu for mobile screens */}
         <div className='menu-icon' onClick={toggleMenu}>
@@ -28,7 +27,7 @@ const Header = () => {
         {/* Mobile version buttons (Login and Sign Up) */}
         <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>
           <button className='log-btn-mobile'>LOG IN</button>
-          <button className='sign-up-btn-mobile'>SIGN UP</button>
+          <button className='sign-up-btn-mobile'>GET THIS DEAL</button>
         </div>
       </div>
 

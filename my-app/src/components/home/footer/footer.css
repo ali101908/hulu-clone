@@ -2,10 +2,8 @@
     background-color: #E8EAED;
     padding: 30px 50px;
     font-family: Arial, sans-serif;
-    /* color: #E8EAED; */
 }
 
-/* Footer Links - Centered Layout */
 .footer-links {
     display: flex;
     justify-content: center;
@@ -14,7 +12,6 @@
     margin: 0 auto;
 }
 
-/* Split BROWSE into 3 columns */
 .footer-link-items:nth-child(1) {
     flex: 3;
     display: grid;
@@ -22,7 +19,6 @@
     column-gap: 40px;
 }
 
-/* HELP and ABOUT US stay below each other */
 .footer-link-items {
     flex: 1;
     min-width: 180px;
@@ -37,6 +33,7 @@
     line-height: 12px;
     color: rgb(39, 44, 52);
     margin-bottom: 8px;
+    cursor: pointer;
 }
 
 .footer-link-items a {
@@ -49,7 +46,6 @@
     margin-bottom: 5px;
 }
 
-/* Divider centered */
 .footer-divider {
     border: none;
     border-top: 1px solid #ccc;
@@ -57,45 +53,39 @@
     width: 75%;
 }
 
-/* Social Media & Copyright Section */
 .footer-bottom-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1300px;
+    max-width: auto;
     margin: 0 auto;
 }
 
-/* Social Icons Stay on Left */
 .social-media {
     display: flex;
+    height: 100%;
 }
 
 .social-icons {
     display: flex;
     gap: 20px;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
 }
 
-.social-icons a {
-    border-radius: 50%;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-.social-icons a:hover {
-    transform: scale(1.1);
-}
-
-/* Copyright text stays on left */
 .footer-copyright {
     font-family: "Graphik Web", sans-serif;
     font-size: 12px;
     font-weight: 400;
-    line-height: 17.28px;
+    line-height: 27.28px;
     color: rgb(88, 97, 116);
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Footer Legal Links stay centered */
 .footer-legal {
     font-family: "Graphik Web", sans-serif;
     font-size: 12px;
@@ -105,10 +95,56 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
 }
 
 .footer-legal a {
     color: #777;
     text-decoration: none;
+    display: flex;
 }
+
+@media screen and (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-link-items {
+        margin-bottom: 16px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+    }
+
+    .dropdown-content {
+        display: none;
+        grid-template-columns: repeat(2, minmax(100px, auto)); /* Three columns */
+        gap: 10px;
+        padding-left: 0; /* Remove left padding */
+        width: 100%; /* Ensure it doesn't overflow */
+        max-width: 300px; /* Adjust max width to fit screen */
+        margin: 0 auto; /* Center the dropdown */
+    }
+
+    .dropdown-content.show {
+        display: grid; /* Grid layout applied */
+    }
+
+    .dropdown-icon {
+        float: right;
+        transition: transform 0.3s;
+    }
+
+    .dropdown-icon.open {
+        transform: rotate(180deg);
+    }
+
+    .footer-divider {
+        border: none;
+    }
+
+    .footer-copyright {
+        width: auto;
+    }
+}
+
+

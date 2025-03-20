@@ -43,6 +43,7 @@ const Pricing = () => {
 
   return (
     <div className='pricing-container'>
+    <div className='pricing-sticky'> 
       <p className='pricing-title'>{pricingData.title}</p>
       <div className='pricing-portion'>
         {pricingData.bundles.map((bundle, index) => (
@@ -52,7 +53,9 @@ const Pricing = () => {
             <button className='pricing-btn'>{bundle.price}</button>
             <p className='btn-footer'>{bundle.footer}</p>
           </div>
+          
         ))}
+      </div>
       </div>
       
 	  <div className='table-container'>

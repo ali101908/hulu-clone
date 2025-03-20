@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './footer.css';
 import FacebookIcon from '../../../images/facebook.svg';
 import InstaIcon from '../../../images/instagram.svg';
@@ -7,7 +7,25 @@ import YoutubeIcon from '../../../images/youtube.svg';
 import AboutIcon from '../../../images/about-icon.png';
 
 const Footer = () => {
-  // Footer data inside the component
+  const [openSections, setOpenSections] = useState({});
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const toggleSection = (index) => {
+    setOpenSections((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
+
   const footerData = {
     sections: [
       {
@@ -15,7 +33,7 @@ const Footer = () => {
         links: [
           "Streaming Library", "Live TV", "Live News", "Live Sports", 
           "TV Shows", "Movies", "Originals", "Networks", "Kids", "FX", 
-          "Max", "Cinemax", "Paramount+ with SHOWTIME", "STARZ","Disney+,Hulu,ESPN+ Bundle Basic","Disney+,Hulu,ESPN+ Bundle Premium", "Disney+,Hulu Bundle", "Disney+,Hulu,Max Bundle", "Student Discount"
+          "Max", "Cinemax", "Paramount+ with SHOWTIME", "STARZ","Disney+, Hulu, ESPN+ Bundle Basic","Disney+, Hulu, ESPN+ Bundle Premium", "Disney+, Hulu Bundle", "Disney+, Hulu, Max Bundle", "Student Discount"
         ]
       },
       {
@@ -43,21 +61,41 @@ const Footer = () => {
 
   return (
     <div className="footer-container">
-      {/* Footer Links */}
-      <div className="footer-links">
-        {footerData.sections.map((section, index) => (
-          <div key={index} className="footer-link-items">
-            <h2>{section.title}</h2>
-            {section.links.map((link, linkIndex) => (
-              <a key={linkIndex} href="/">{link}</a>
-            ))}
-          </div>
-        ))}
+      
+      {/* Static version for desktop */}
+      {!isMobile && (
+        <div className="footer-links">
+          {footerData.sections.map((section, index) => (
+            <div key={index} className="footer-link-items">
+              <h2>{section.title}</h2>
+              {section.links.map((link, linkIndex) => (
+                <a key={linkIndex} href="/">{link}</a>
+              ))}
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Dropdown version for mobile */}
+      {isMobile && (
+  <div className="footer-links">
+    {footerData.sections.map((section, index) => (
+      <div key={index} className="footer-link-items">
+        <h2 className="dropdown-title" onClick={() => toggleSection(index)}>
+          {section.title} <span className={`dropdown-icon ${openSections[index] ? 'open' : ''}`}>▼</span>
+        </h2>
+        <div className={`dropdown-content ${openSections[index] ? 'show' : ''}`}>
+          {section.links.map((link, linkIndex) => (
+            <a key={linkIndex} href="/">{link}</a>
+          ))}
+        </div>
       </div>
+    ))}
+  </div>
+)}
 
       <hr className="footer-divider" />
 
-      {/* Social Media Icons */}
       <div className="social-media">
         <div className="social-icons">
           {footerData.socialIcons.map((social, index) => (
@@ -68,7 +106,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Footer Bottom Section */}
       <div className="footer-bottom">
         <small className='footer-copyright'>{footerData.copyright}</small>
         <div className="footer-legal">

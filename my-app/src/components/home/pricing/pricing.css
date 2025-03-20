@@ -3,22 +3,16 @@
     background-color: #0B0C0F;
     display: flex;
     flex-direction: column;
-    overflow-y: hidden;
-    
-    /* Sticky settings */
-    /* position: sticky; */
-    top: 0;
-    /* z-index: 1000; */
-    
-    /* Ensure width is correct */
-    width: 100%;
-    height: auto;
-    padding: 20px 0;
+  
 }
+
+
+
+
 
 .pricing-title {
     background-color: rgb(28, 231, 131);
-    max-width: 100%;
+    width: 150px;
     margin: 0 auto 10px auto;
     padding: 4px 10px;
     border-radius: 20px;
@@ -33,7 +27,7 @@
     justify-content: right;
     gap: 20px;
     width: 70%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .bundle-name {
@@ -130,10 +124,6 @@ display: flex;
 .table-footer a{
     color: rgb(255, 255, 255);
 }
-
-
-
-  
   
 /* Table Styling */
 .table-container {
@@ -246,12 +236,12 @@ color: rgb(255, 255, 255);
   }
   
   .table-btn::after {
-    content: "▼"; /* Downward arrow */
+    content: "▼"; 
     font-size: 14px;
     transition: transform 0.3s ease-in-out;
   }
   
-  table-btn.active::after {
+  .table-btn.active::after {
     content: "⏶";
     transform: rotate(180deg);
 }
@@ -341,4 +331,81 @@ width: 33%;
 
 .add-on-value:last-child {
     text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+
+    .pricing-portion {
+        display: flex;
+        justify-content: right;
+        gap: 20px;
+        width: 95%;
+        /* flex-wrap: wrap; */
+    }
+
+    .pricing-btn {
+        width: 200px;
+    }
+    .table-container {
+        width: 90%;
+    }
+    .table-content {
+        width: 100%;
+    }
+    .table-heading {
+        width: 40%;
+    }
+    .table-value {
+        width: 30%;
+    }
+    .table-value:last-child {
+        text-align: right;
+    }
+    .list-price {
+        font-size: 12px;
+    }
+    .table-btn {
+        font-size: 14px;
+    }
+    .add-on-table {
+        width: 70%;
+    }
+    .add-on-name {
+        width: 40%;
+    }
+    .add-on-value {
+        width: 30%;
+    }
+    .add-on-value:last-child {
+        text-align: right;
+    }
+    .available{
+        /* text-align: center; */
+        font-family: "Graphik Web", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29.76px;
+        color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    width: auto;
+      }
+    
+      .add-content{
+        font-family: "Graphik Web", Graphik, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+   width: auto;
+      }
+
+      .table-footer{
+        text-align: center;
+        margin-bottom: 20px;
+    
+    }
+    
 }
