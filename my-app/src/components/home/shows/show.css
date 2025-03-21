@@ -129,16 +129,24 @@
 	transform: translateY(-200%);
 }
 
+.show-content2{
+	text-align: end;
+	font-size: 9px;
+	width: 450px;
+	
+}
+}
+
+@media screen and (max-width:400px) {
+
+	.show-overlay{
+		transform: translateY(-300%);
+	}
+
 	.show-content2{
 		text-align: end;
 		font-size: 9px;
-		width: 450px;
+		width: 350px;
 		
 	}
 }
-
-/* @media screen and (max-width:400px) {
-	.past{
-transform: translateY(-200%);
-	}
-} */
