@@ -2,7 +2,7 @@
     text-align: center;
     background-color: #0B0C0F;
     max-width: auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .plan-heading {

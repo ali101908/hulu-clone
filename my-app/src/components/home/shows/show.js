@@ -27,7 +27,7 @@ const Show = () => {
             <div className='show-item'>
               <img src={list1} alt='Hulu Shows' width={280} height={440} />
               <div className='show-overlay'>
-                <h3>Past & Current Seasons</h3>
+                <h3>Past Current Seasons</h3>
                 <h2>TV Shows</h2>
               </div>
             </div>
