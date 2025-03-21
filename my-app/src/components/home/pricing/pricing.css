@@ -4,8 +4,18 @@
     display: flex;
     flex-direction: column;
     max-width: auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   
+}
+
+.pricing-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it's above other elements */
+    background-color: #0B0C0F; /* Match the container background */
+    padding: 10px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Optional: Adds a shadow for better visibility */
+    width: 100%;
 }
 
 .pricing-title {
@@ -334,15 +344,14 @@ width: 33%;
 @media screen and (max-width: 768px) {
 
     .pricing-portion {
-        display: flex;
-        justify-content: right;
-        gap: 20px;
-        width: 95%;
-        /* flex-wrap: wrap; */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
     }
 
     .pricing-btn {
-        width: 200px;
+        width: 90%; /* Adjust button width for smaller screens */
     }
     .table-container {
         width: 90%;

@@ -46,6 +46,7 @@ const newsData = [
 const Newssection = () => {
   // Default to 'Live Sports'
   const [activeTab, setActiveTab] = useState(newsData[0]);
+   const [showTerms, setShowTerms] = useState(false);
 
   return (
     <div className='news-container' style={{ backgroundImage: `url(${activeTab.backgroundImage})` }}>
@@ -78,8 +79,21 @@ const Newssection = () => {
       </div>
         {/* Disclaimer */}
         <p className='news-footer'>
-          Live TV plan required. Regional restrictions, blackouts, and additional terms apply.<a href='#' style={{ color: 'gray' }}> See details</a>
+          Live TV plan required. Regional restrictions, blackouts, and additional terms apply.<a href='#' onClick={(e) => { e.preventDefault(); setShowTerms(true); }} style={{ color: 'gray' }}> See details</a>
         </p>
+
+        {showTerms && (
+        <div className='modal'>
+          <div className='modal-content'>
+            <span className='close' onClick={() => setShowTerms(false)}>&times;</span>
+            <p style={{color:"white"}}>
+              Cancel anytime, through your account settings or by contacting us, effective at the end of your billing period. No refunds or credits for partial months. Use of the services is subject to the <a href='#'> Disney+, ESPN+, and Hulu Subscriber Agreement</a>. Valid payment method required to redeem offer. Cannot be combined with any other offers, coupons, discounts or promotions. Not redeemable for cash or any other goods or services. Eligibility rules and offer timing may vary if you sign up through a third party billing partner. <br />
+              Access content from each service separately. Location data may be required to watch certain content. For more information, including detailed information on billing and cancelation, please visit the Hulu Help Center.
+            </p>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 };

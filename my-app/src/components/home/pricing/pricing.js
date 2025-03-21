@@ -5,7 +5,8 @@ import './pricing.css';
 
 const Pricing = () => {
   const [showAddOns, setShowAddOns] = useState(false);
-  
+   const [showTerms, setShowTerms] = useState(false);
+
   const pricingData = {
     title: 'LIMITED TIME OFFER',
     bundles: [
@@ -75,13 +76,24 @@ const Pricing = () => {
     ))}
   </div>
   
-<p className='table-footer'>*Savings compared to regular monthly price of each service. <a href=''> Terms apply.</a><br />
+<p className='table-footer'>*Savings compared to regular monthly price of each service. <a href='#' onClick={(e) => { e.preventDefault(); setShowTerms(true); }}> Terms apply.</a><br />
 **Switches from Live TV to Hulu take effect as of the next billing cycle <br />
 †For current-season shows in the streaming library only <br />
-^Savings compared to the then-current regular monthly price of Disney+, Hulu Bundle Basic. Offer applies to ad-supported Disney+, Hulu Bundle plan. Valid only for new and eligible returning Disney+, Hulu, and/or ESPN+ subscribers, who are 18 years of age or older. After 4-month promo period, Disney+, Hulu Bundle Basic auto-renews at then-current monthly retail price ($10.99/mo (plus tax, where applicable)) until canceled. Select Hulu content available via Disney+ with valid Hulu and Disney+ subscriptions; additional content only available via Hulu app. Hulu content can be streamed via Disney+ on up to 2 devices simultaneously. Additional app feature and device restrictions apply. Offer valid until 11:59 PM PT on 3/30/25. <a href=''>Additional terms apply</a><br />
+^Savings compared to the then-current regular monthly price of Disney+, Hulu Bundle Basic. Offer applies to ad-supported Disney+, Hulu Bundle plan. Valid only for new and eligible returning Disney+, Hulu, and/or ESPN+ subscribers, who are 18 years of age or older. After 4-month promo period, Disney+, Hulu Bundle Basic auto-renews at then-current monthly retail price ($10.99/mo (plus tax, where applicable)) until canceled. Select Hulu content available via Disney+ with valid Hulu and Disney+ subscriptions; additional content only available via Hulu app. Hulu content can be streamed via Disney+ on up to 2 devices simultaneously. Additional app feature and device restrictions apply. Offer valid until 11:59 PM PT on 3/30/25. <a href='#' onClick={(e) => { e.preventDefault(); setShowTerms(true); }}>Additional terms apply</a><br />
 ©2025 Disney and its related entities.
 
 </p>
+  {showTerms && (
+        <div className='modal'>
+          <div className='modal-content'>
+            <span className='close' onClick={() => setShowTerms(false)}>&times;</span>
+            <p style={{color:"white"}}>
+              Cancel anytime, through your account settings or by contacting us, effective at the end of your billing period. No refunds or credits for partial months. Use of the services is subject to the <a href='#'> Disney+, ESPN+, and Hulu Subscriber Agreement</a>. Valid payment method required to redeem offer. Cannot be combined with any other offers, coupons, discounts or promotions. Not redeemable for cash or any other goods or services. Eligibility rules and offer timing may vary if you sign up through a third party billing partner. <br />
+              Access content from each service separately. Location data may be required to watch certain content. For more information, including detailed information on billing and cancelation, please visit the Hulu Help Center.
+            </p>
+          </div>
+        </div>
+      )}
 </div>
 
 <div className='add-on-portion'>
