@@ -73,10 +73,10 @@
 	left: 10px;
 	right: 10px;
 	/* height: 400px; */
-	transform: translateY(-560%);
+	
 	color: white;
 	font-weight: bold;
-	/* background: rgba(0, 0, 0, 0.7); Dark background for better readability */
+	background: rgba(0, 0, 0, 0.7); 
 	padding: 10px;
 	border-radius: 5px;
 	text-align: left;
@@ -97,7 +97,7 @@
 .show-content2{
 	text-align: end;
 	font-size: 10px;
-	width: 1510px;
+	width: 1250px;
 	
 }
 
@@ -124,5 +124,21 @@
 		width: 100%;
 		height: auto;
 	}
+
+.show-overlay{
+	transform: translateY(-200%);
 }
 
+	.show-content2{
+		text-align: end;
+		font-size: 9px;
+		width: 450px;
+		
+	}
+}
+
+/* @media screen and (max-width:400px) {
+	.past{
+transform: translateY(-200%);
+	}
+} */
