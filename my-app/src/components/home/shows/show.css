@@ -41,65 +41,69 @@
 	gap: 20px;
 }
 
+/* Image hover effect */
+.show-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	transition: filter 0.2s ease-in-out;
+}
+
+/* Ensure hover effect applies properly */
+.show-item:hover {
+	outline: 5px solid gray;
+}
+
+.show-item:hover img {
+	cursor: pointer;
+	filter: brightness(60%);
+}
 
 
+
+/* Overlay text */
+.show-overlay {
+	position: absolute;
+	bottom: 0; /* Aligns at the bottom of the image */
+	left: 0;
+	width: 100%;
+	color: white;
+	font-weight: bold;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); /* Smooth fade effect */
+	padding: 20px;
+	border-radius: 0 0 10px 10px; /* Matches image border */
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end; /* Ensures proper text alignment */
+}
+
+/* Upper text */
+.show-overlay h3 {
+	font-size: 12px;
+	margin: 0;
+	text-transform: uppercase;
+	opacity: 0.9;
+}
+
+/* Main title text */
+.show-overlay h2 {
+	font-size: 18px;
+	margin: 5px 0 0;
+	font-weight: bold;
+}
+
+/* Ensure image container behaves correctly */
 .show-item {
 	position: relative;
 	width: 280px;
 	height: 440px;
 	border-radius: 10px;
-	overflow: hidden; /* Ensures the overlay doesn't exceed boundaries */
-  }
-  
-  .show-item img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 10px;
-	transition: filter 0.2s ease-in-out, outline 0.2s ease-in-out;
-	outline: 5px solid transparent; /* Invisible outline by default */
-  }
-  
-  .show-item:hover img {
-	cursor: pointer;
-	filter: brightness(60%);
-	outline: 5px solid gray;
-  }
-
-/* Overlay text */
-.show-overlay {
-	position: absolute;
-	bottom: 10px; /* Positioning at the bottom of the image */
-	left: 10px;
-	right: 10px;
-	/* height: 400px; */
-	
-	color: white;
-	font-weight: bold;
-	background: rgba(0, 0, 0, 0.7); 
-	padding: 10px;
-	border-radius: 5px;
-	text-align: left;
-  }
-  
-  .show-overlay h3 {
-	font-size: 12px;
-	margin: 0;
-	text-transform: uppercase;
-	opacity: 0.8;
-  }
-  
-  .show-overlay h2 {
-	font-size: 18px;
-	margin: 5px 0 0;
-  }
-
-.show-content2{
-	text-align: end;
-	font-size: 10px;
-	width: 1250px;
-	
+	overflow: hidden;
+	transition: outline 0.2s ease-in-out;
 }
+
 
 @media (max-width: 768px) {
 	.show-lists {
@@ -125,9 +129,9 @@
 		height: auto;
 	}
 
-.show-overlay{
-	transform: translateY(-200%);
-}
+/* .show-overlay{
+	transform: translateY(-100%);
+} */
 
 .show-content2{
 	text-align: end;
@@ -139,9 +143,9 @@
 
 @media screen and (max-width:400px) {
 
-	.show-overlay{
+	/* .show-overlay{
 		transform: translateY(-300%);
-	}
+	} */
 
 	.show-content2{
 		text-align: end;
