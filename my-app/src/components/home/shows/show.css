@@ -65,7 +65,7 @@
 /* Overlay text */
 .show-overlay {
 	position: absolute;
-	bottom: 0; /* Aligns at the bottom of the image */
+	bottom: 0; 
 	left: 0;
 	width: 100%;
 	color: white;
