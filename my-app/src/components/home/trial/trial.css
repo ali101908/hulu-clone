@@ -83,7 +83,7 @@ text-align: center;
 	background-color: white;
 	padding: 30px;
 	width: 50%;
-	max-width: 600px;
+	max-width: 500px;
 	border-radius: 10px;
 	text-align: left;
 	color: black;
@@ -173,7 +173,7 @@ text-align: center;
   
   @media (max-width: 480px) {
 	.modal-content1 {
-	  width: 95%; /* Use more screen space */
+	  width: 55%; /* Use more screen space */
 	  padding: 15px;
 	}
   
