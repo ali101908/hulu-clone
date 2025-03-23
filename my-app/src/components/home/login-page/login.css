@@ -120,6 +120,11 @@ body {
   
   /* Mobile View: Move Privacy Policy & Copyright to the next line */
   @media screen and (max-width: 600px) {
+
+	.login-box {
+		width: 250px; 
+	  }
+
 	.footer-tags {
 	  flex-direction: row;
 	}
@@ -131,4 +136,22 @@ body {
 	  margin-top: 10px;
 	}
   }
+
+  /* @media screen and (max-width: 400px) {
+
+	.login-box {
+		width: 250px; 
+	  }
+
+	.footer-tags {
+	  flex-direction: row;
+	}
+  
+	.footer-tags a:nth-last-child(2), 
+	.footer-tags a:last-child {
+	  flex-basis: 10%; 
+	  text-align: center;
+	  margin-top: 10px;
+	}
+  } */
   
