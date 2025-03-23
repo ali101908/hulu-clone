@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import LoginFooter from './login-footer';
 import loginlogo from "./login-logo.svg";
-// import hululogo from "../../../../hulu-logo.png";  // Add Hulu logo
+
 import Logo1 from "./logo1.svg";
 import Logo2 from "./logo2.svg";
 import Logo3 from "./logo3.svg";
@@ -13,10 +13,14 @@ import Logo7 from "./logo7.svg";
 import './login.css';
 
 const LoginPage = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="login-container">
-      {/* Hulu Logo at the top */}
-      {/* <img className="hulu-logo" src={hululogo} alt="hulu-logo" /> */}
+      {/* Go Back Button */}
+      <button className="go-back-btn" onClick={() => navigate('/')}>
+        ← Go Back to Home
+      </button>
 
       <div className="login-box">
         <img className="img-log" src={loginlogo} alt="login-logo" width={100} />

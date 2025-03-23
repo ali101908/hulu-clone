@@ -2,6 +2,7 @@ body {
 	background: linear-gradient(to bottom, #0A1A2A, #000); /* Darker gradient like image 2 */
 	color: white;
 	font-family: Arial, sans-serif;
+	overflow-x: hidden;
   }
   
   /* Hulu Logo Styling */
@@ -17,17 +18,39 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	width: auto;
   }
   
   .login-box {
 	background-color: white;
 	padding: 35px;
 	border-radius: 20px;
-	width: 450px; /* Reduced width */
+	width: 450px; 
 	height: auto; /* Adjust height dynamically */
 	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   }
   
+  .go-back-btn {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background-color: transparent;
+	color: #1CE783;
+	font-size: 16px;
+	font-weight: bold;
+	border: 2px solid #1CE783;
+	padding: 8px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .go-back-btn:hover {
+	background-color: #1CE783;
+	color: white;
+  }
+  
+
   h3 {
 	font-size: 24px;
 	font-weight: bold;
@@ -137,7 +160,7 @@ body {
 	}
   }
 
-  /* @media screen and (max-width: 400px) {
+    @media screen and (max-width: 400px) {
 
 	.login-box {
 		width: 250px; 
@@ -153,5 +176,5 @@ body {
 	  text-align: center;
 	  margin-top: 10px;
 	}
-  } */
-  
+  } 
+   

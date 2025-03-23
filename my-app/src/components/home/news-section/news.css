@@ -55,6 +55,7 @@ line-height: 60px;
 font-size: 18px;
 font-weight: 400;
 line-height: 23.76px;
+color: white;
   }
 
   .icons {
@@ -78,4 +79,11 @@ font-size: 10px;
 font-weight: 400;
 line-height: 14.6px;
 color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (max-width: 768px) {
+	.news-content p {
+	font-size: 15px;	
+	  }
+	
   }

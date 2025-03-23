@@ -23,6 +23,7 @@
     font-weight: 400;
     line-height: 23.76px;
     color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 /* Dropdown Container */
@@ -61,7 +62,7 @@
     padding: 5px 0;
     z-index: 100;
     text-align: left;
-    display: none; /* Default: hidden */
+    display: none; 
 }
 
 /* Show dropdown when 'open' class is added */
@@ -102,4 +103,12 @@
 /* Apply animation when dropdown appears */
 .dropdown-btn.open .dropdown-menu {
     animation: fadeIn 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown-menu {
+        left: 50%;
+        width: 150px;
+        
+    }
 }

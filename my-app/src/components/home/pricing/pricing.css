@@ -11,7 +11,7 @@
 .pricing-sticky {
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure it's above other elements */
+    z-index: 50; 
     background-color: #0B0C0F; /* Match the container background */
     padding: 10px 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Optional: Adds a shadow for better visibility */
