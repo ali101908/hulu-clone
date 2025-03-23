@@ -104,6 +104,12 @@
 	overflow: hidden;
 	transition: outline 0.2s ease-in-out;
 }
+.show-content2{
+	text-align: end;
+width: 1300px;
+font-size: 13px;
+	
+}
 
 
 @media (max-width: 768px) {
