@@ -115,9 +115,9 @@ body {
   }
   
   .footer-tags {
-	position: absolute; /* Sticks to bottom */
+	position: absolute; 
 	bottom: 0;
-	left: 0;
+	/* left: 0; */
 	width: 100%;
 	background-color: white;
 	text-align: center;
@@ -146,6 +146,7 @@ body {
 
 	.login-box {
 		width: 250px; 
+		/* height: 50vh; */
 	  }
 
 	.footer-tags {
