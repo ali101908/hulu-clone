@@ -1,0 +1,35 @@
+.category-container{	
+	background-color: #1CE783;
+}
+
+.categories{
+	padding: 20px 0px 20px 0px;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+.categories h2{
+	font-family: "Graphik Web", Graphik, sans-serif;
+font-size: 24px;
+font-weight: 700;
+line-height: 29.76px;
+color: rgb(22, 24, 29);
+}
+
+.categories p{
+	text-align: center;
+	font-family: "Graphik Web", Graphik, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 21.76px;
+color: rgb(88, 97, 116);
+}
+
+@media screen and (max-width: 768px) {
+	.categories{
+		flex-wrap: wrap;
+	}
+}

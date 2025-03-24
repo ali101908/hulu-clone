@@ -43,6 +43,7 @@ const Pricing = () => {
   };
 
   return (
+   
     <div className='pricing-container'>
     <div className='pricing-sticky'> 
       <p className='pricing-title'>{pricingData.title}</p>
@@ -128,6 +129,7 @@ const Pricing = () => {
 </div>
 
     </div>
+   
   );
 }
 

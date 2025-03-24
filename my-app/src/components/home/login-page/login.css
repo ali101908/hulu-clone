@@ -3,13 +3,15 @@ body {
 	color: white;
 	font-family: Arial, sans-serif;
 	overflow-x: hidden;
+	
   }
   
   /* Hulu Logo Styling */
-  .hulu-logo {
+  .top-logo {
 	display: block;
-	margin: 20px auto 10px auto;
-	width: 100px;
+	margin-bottom: 50px;
+	width: 200px;
+	color: #1CE783;
   }
   
   .login-container {
@@ -144,6 +146,18 @@ body {
   /* Mobile View: Move Privacy Policy & Copyright to the next line */
   @media screen and (max-width: 600px) {
 
+
+	.top-logo {
+		display: block;
+		margin-bottom: 10px;
+		width: 150px;
+	
+	  }
+	  
+	  .login-container {
+		height: 90vh;
+	  }
+
 	.login-box {
 		width: 250px; 
 		/* height: 50vh; */
@@ -162,6 +176,14 @@ body {
   }
 
     @media screen and (max-width: 400px) {
+
+		.top-logo {
+			display: block;
+			margin-bottom: 15px;
+			width: 100px;
+		  }
+
+		 
 
 	.login-box {
 		width: 250px; 

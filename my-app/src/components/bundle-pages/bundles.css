@@ -1,0 +1,64 @@
+.bundle-container{
+	background-image: url("../../images/bundle-images/bundle-bg.png");
+	max-width: auto;
+	background-size: cover;
+	opacity: 0.9;
+}
+
+.navbar{
+	position: sticky;
+	top: 0;
+}
+
+.navbar a{
+	text-decoration: none;
+}
+
+.heading{
+	color: white;
+	font-size: 12px;
+}
+
+.basic-title{
+	font-family: "Graphik Web", Graphik, sans-serif;
+font-size: 48px;
+font-weight: 600;
+line-height: 60px;
+color: rgb(255, 255, 255);
+text-align: center;
+}
+
+.basic-hero-footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-btn2{
+	width: 150px;
+	margin: 20px 0px;
+}
+
+.scroll-down {
+	text-align: center;
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+
+.scroll-down p{
+	text-align: center;
+	font-family: Graphik, Helvetica, Arial, sans-serif;
+font-size: 13px;
+font-weight: 400;
+line-height: 20.8px;
+color: rgb(255, 255, 255);
+}
+
+.scroll-down img{
+		width: 30px;
+		border: 3px solid #e9f2f8;
+}
+
+.scroll-down img:hover{
+	cursor: pointer;
+}

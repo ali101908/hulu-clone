@@ -69,7 +69,7 @@ const Footer = () => {
             <div key={index} className="footer-link-items">
               <h2>{section.title}</h2>
               {section.links.map((link, linkIndex) => (
-                <a key={linkIndex} href="/">{link}</a>
+                <a key={linkIndex} href="./bundles">{link}</a>
               ))}
             </div>
           ))}

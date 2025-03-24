@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import "./trial.css";
 
 const Trial = () => {
@@ -21,9 +22,9 @@ const Trial = () => {
         content. <br /> Includes access to endless entertainment with Disney+
         and live sports with ESPN+.
       </p>
-      <button className="trial-btn" style={{ backgroundColor: "#1CE783" }}>
+      <a href="./login" className="trial-btn" style={{ backgroundColor: "#1CE783" }}>
         START YOUR FREE TRIAL
-      </button>
+      </a>
       <p className="trial-footer-content" style={{ color: "gray" }}>
         Hulu (With Ads) + Live TV plan $82.99/mo. after 3-day free trial (if
         any) unless canceled. Cancel anytime. Regional restrictions, blackouts

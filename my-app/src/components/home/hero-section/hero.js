@@ -3,6 +3,7 @@ import '../home.css';
 import heroImage from '../../../images/hero-img.png';
 import heroImage2 from '../../../images/hero-img2.png';
 
+
 const HeroSection = () => {
   const [showTerms, setShowTerms] = useState(false);
 
@@ -17,7 +18,7 @@ const HeroSection = () => {
         <p className='hero-content1'>Save 72% per month for 4 months on Disney+, Hulu <br /> Bundle Basic. Ends 3/30/25.</p>
       </div>
       <div className='hero-btn-container'>
-        <button className='hero-btn'>GET THIS DEAL</button>
+        <a href = './login' className='hero-btn'>GET THIS DEAL</a>
       </div>
       <p className='hero-content'>
         Savings compared to the then-current regular monthly price of Disney+, Hulu Bundle Basic. Offer applies to ad-<br />

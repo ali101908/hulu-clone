@@ -1,8 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import LoginFooter from './login-footer';
-import loginlogo from "./login-logo.svg";
 
+
+import TopLogo from "./top-logo.svg"
+import loginlogo from "./login-logo.svg";
 import Logo1 from "./logo1.svg";
 import Logo2 from "./logo2.svg";
 import Logo3 from "./logo3.svg";
@@ -16,13 +18,15 @@ const LoginPage = () => {
   const navigate = useNavigate();
 
   return (
+    <div className="login-page">
     <div className="login-container">
       {/* Go Back Button */}
       <button className="go-back-btn" onClick={() => navigate('/')}>
         ← Go Back to Home
       </button>
-
+      <img className='top-logo' src={TopLogo} alt='top-logo' />
       <div className="login-box">
+      
         <img className="img-log" src={loginlogo} alt="login-logo" width={100} />
         <h3>Enter your email to continue</h3>
         <p>
@@ -55,7 +59,8 @@ const LoginPage = () => {
         </div>
       </div>
 
-      {/* <LoginFooter /> */}
+      <LoginFooter />
+    </div>
     </div>
   );
 };

@@ -165,13 +165,19 @@
 
 .hero-btn{
 	background-color: #1CE783;
-	text-align: center;
 	height: 45px;
 	width: 700px;
 	border: 0;
 	border-radius: 6px;
-	font-weight: bold;
-	font-size: 15px;
+	font-family: "Graphik Web", sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 14px;
+color: rgb(0, 0, 0);
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .hero-btn:hover{
@@ -214,7 +220,7 @@ text-align: center;
 	.saving{
 		color: white;
 		font-size: 11px;
-		text-align: left;
+		text-align: center;
 	}
 
 	.hero-footer-content h3{
