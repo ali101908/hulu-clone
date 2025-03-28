@@ -9,7 +9,7 @@
 
 .navbar {
     position: sticky;
-    position: -webkit-sticky;
+    /* position: -webkit-sticky; */
     top: 0;
     z-index: 21000;
     height: 80px;
@@ -70,4 +70,16 @@ color: rgb(255, 255, 255);
 
 .scroll-down img:hover{
 	cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+	.hero-logo img{
+		width: 150px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.hero-logo img{
+		width: 150px;
+	}
 }
