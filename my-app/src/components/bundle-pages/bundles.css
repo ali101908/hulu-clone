@@ -1,14 +1,23 @@
-.bundle-container{
-	background-image: url("../../images/bundle-images/bundle-bg.png");
-	max-width: auto;
-	background-size: cover;
-	opacity: 0.9;
+.bundle-container {
+    background-image: url("../../images/bundle-images/bundle-bg.png");
+    background-size: cover;
+    opacity: 0.9;
+    overflow: visible;
+    position: relative;
+    min-height: 80vh; /* Ensure full height */
 }
 
-.navbar{
-	position: sticky;
-	top: 0;
+.navbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 21000;
+    height: 80px;
+   
+    opacity: 1; /* Make sure it's not transparent */
 }
+
+
 
 .navbar a{
 	text-decoration: none;

@@ -86,7 +86,7 @@ const Footer = () => {
         </h2>
         <div className={`dropdown-content ${openSections[index] ? 'show' : ''}`}>
           {section.links.map((link, linkIndex) => (
-            <a key={linkIndex} href="/">{link}</a>
+            <a key={linkIndex} href="./bundles">{link}</a>
           ))}
         </div>
       </div>

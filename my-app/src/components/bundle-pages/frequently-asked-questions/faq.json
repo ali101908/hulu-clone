@@ -1,0 +1,44 @@
+{
+	"faqs": [
+		{
+			"question": "What are the different bundle plans available and how much do they cost?",
+			"answer": "Bundle plans include subscriptions to either Disney+ and Hulu, or Disney+, Hulu, and ESPN+, at discounted prices, as compared to the retail price of each subscription when purchased separately. View more plans [here](#).\n\nChoose between the following bundle plans:\n\n- **Disney+, Hulu Bundle Basic** for **$2.99/mo. for 4 mos.**, which includes **Disney+ (With Ads) and Hulu (With Ads)**\n- **Disney+, Hulu Bundle Premium** for **$19.99/month**, which includes **Disney+ (No Ads) and Hulu (No Ads)**\n- **Disney+, Hulu, ESPN+ Bundle Basic** for **$16.99/month**, which includes **Disney+ (With Ads), Hulu (With Ads), and ESPN+ (With Ads)**\n- **Disney+, Hulu, ESPN+ Bundle Premium** for **$26.99/month**, which includes **Disney+ (No Ads), Hulu (No Ads), and ESPN+ (With Ads)**\n\n*Ads will be served in select live and linear content.*\n\n_Not combinable with any free trial or other promotional offers or pricing (including a bundle); not redeemable via gift card. Any plan switch after redemption of this offer will result in forfeiture of the discount pricing._\n\nAccess content from each service separately. Location data may be required to watch certain content. Select Hulu content is available via Disney+ with valid Disney+ and Hulu subscriptions; additional content is only available via the Hulu app. Hulu content can be streamed via Disney+ on up to 2 devices simultaneously. Additional app features and device restrictions apply. For more information, including billing and cancellation details, please visit the Hulu Help Center."
+		},
+		{
+			"question": "What content can I watch with the bundle plans?",
+			"answer": "With your bundle plan, there is something for everyone! With Disney+, you get new releases, classics, series, and Originals from the creators at Disney, Pixar, Marvel, Star Wars, and Nat Geo. With Hulu, you can enjoy current hits, comfort classics, award-winning originals, and movies everyone is talking about. And with ESPN+, you can stream live sports, thousands of live events, top leagues and tournaments, ESPN+ Originals, and the complete 30 for 30 Library. Plus, get exclusive access to premium articles, fantasy tools, and archives."
+		},
+		{
+			"question": "How do I sign up for a bundle plan?",
+			"answer": "You can sign up for a bundle plan by visiting our official website and selecting the plan that suits you best."
+		},
+		{
+			"question": "If I have an existing Hulu subscription, can I still sign up for a bundle through Hulu?",
+			"answer": "Yes. Existing subscribers to any Hulu plan who are billed by Hulu* can sign up for a bundle through Hulu by visiting the Manage Account page.*At this time, you are not eligible to sign up for a bundle through Hulu if you are billed for your Hulu subscription through a third party (e.g. Sprint, Spotify, Apple iTunes, Roku) or if you subscribe pursuant to a promotional offer. You may be eligible to sign up for a bundle through Disney+."
+		},
+		{
+			"question": "Where can I watch bundle content?",
+			"answer": "After signing up for a bundle plan of your choice, download the Disney+, Hulu, and ESPN apps separately to access each service and stream across your favorite devices and platforms, including TV, computer, mobile and game consoles. Most ESPN+ content is also available to stream in the Hulu app. See here for a more detailed list of supported devices. Devices supported by Hulu Devices supported by Disney+ Devices supported by ESPN+ "
+		},
+		{
+			"question": "Which premium add-ons are available with a Hulu subscription?",
+			"answer": "You can add HBO®, SHOWTIME®, Cinemax®, or STARZ® to your Hulu subscription for additional monthly subscription fees."
+		},
+		{
+			"question": "Can I cancel my subscription?",
+			"answer": "Yes, you can cancel your subscription to a bundle anytime online or by calling us."
+		},
+		{
+			"question": "Is there a free trial for a bundle?",
+			"answer": "No, there is no free trial."
+		},
+		{
+			"question": "I’m under 18. Can I sign up for a bundle?",
+			"answer": "No. The bundle is only available to customers 18 and older."
+		},
+		{
+			"question": "If I live outside the U.S., can I sign up for a bundle?",
+			"answer": "No. The bundle is currently available to residents of the United States or certain U.S. territories."
+		}
+	]
+}
