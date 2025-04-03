@@ -31,33 +31,65 @@ const Footer = () => {
       {
         title: "BROWSE",
         links: [
-          "Streaming Library", "Live TV", "Live News", "Live Sports", 
-          "TV Shows", "Movies", "Originals", "Networks", "Kids", "FX", 
-          "Max", "Cinemax", "Paramount+ with SHOWTIME", "STARZ","Disney+, Hulu, ESPN+ Bundle Basic","Disney+, Hulu, ESPN+ Bundle Premium", "Disney+, Hulu Bundle", "Disney+, Hulu, Max Bundle", "Student Discount"
+          { text: "Streaming Library", url: "/streaming-library" },
+          { text: "Live TV", url: "/live-tv" },
+          { text: "Live News", url: "/live-news" },
+          { text: "Live Sports", url: "/live-sports" },
+          { text: "TV Shows", url: "/tv-shows" },
+          { text: "Movies", url: "/movies" },
+          { text: "Originals", url: "/originals" },
+          { text: "Networks", url: "/networks" },
+          { text: "Kids", url: "/kids" },
+          { text: "FX", url: "/fx" },
+          { text: "Max", url: "/max" },
+          { text: "Cinemax", url: "/cinemax" },
+          { text: "Paramount+ with SHOWTIME", url: "/paramount-showtime" },
+          { text: "STARZ", url: "/starz" },
+          { text: "Disney+, Hulu, ESPN+ Bundle Basic", url: "/bundles" },
+          { text: "Disney+, Hulu, ESPN+ Bundle Premium", url: "/disney-hulu-espn-premium" },
+          { text: "Disney+, Hulu Bundle", url: "/disney-hulu-bundle" },
+          { text: "Disney+, Hulu, Max Bundle", url: "/disney-hulu-max-bundle" },
+          { text: "Student Discount", url: "/student-discount" }
         ]
       },
       {
         title: "HELP",
-        links: ["Account & Billing", "Plans & Pricing", "Supported Devices", "Accessibility"]
+        links: [
+          { text: "Account & Billing", url: "/account-billing" },
+          { text: "Plans & Pricing", url: "/plans-pricing" },
+          { text: "Supported Devices", url: "/supported-devices" },
+          { text: "Accessibility", url: "/accessibility" }
+        ]
       },
       {
         title: "ABOUT US",
-        links: ["Shop Hulu", "Press", "Jobs", "Contact", "Guides | What to Watch"]
+        links: [
+          { text: "Shop Hulu", url: "/shop-hulu" },
+          { text: "Press", url: "/press" },
+          { text: "Jobs", url: "/jobs" },
+          { text: "Contact", url: "/contact" },
+          { text: "Guides | What to Watch", url: "/guides-what-to-watch" }
+        ]
       }
     ],
     socialIcons: [
-      { name: "Facebook", icon: FacebookIcon, link: "/" },
-      { name: "Twitter", icon: XIcon, link: "/" },
-      { name: "YouTube", icon: YoutubeIcon, link: "/" },
-      { name: "Instagram", icon: InstaIcon, link: "/" }
+      { name: "Facebook", icon: FacebookIcon, link: "https://www.facebook.com/hulu" },
+      { name: "Twitter", icon: XIcon, link: "https://www.twitter.com/hulu" },
+      { name: "YouTube", icon: YoutubeIcon, link: "https://www.youtube.com/hulu" },
+      { name: "Instagram", icon: InstaIcon, link: "https://www.instagram.com/hulu" }
     ],
     legalLinks: [
-      "About Ads", "Subscriber Agreement", "Privacy Policy", 
-      "Do Not Sell or Share My Personal Information", "Your US State Privacy Rights", 
-      "TV Parental Guidelines", "Sitemap"
+      { text: "About Ads", url: "/about-ads" },
+      { text: "Subscriber Agreement", url: "/subscriber-agreement" },
+      { text: "Privacy Policy", url: "/privacy-policy" },
+      { text: "Do Not Sell or Share My Personal Information", url: "/do-not-sell" },
+      { text: "Your US State Privacy Rights", url: "/state-privacy-rights" },
+      { text: "TV Parental Guidelines", url: "/tv-parental-guidelines" },
+      { text: "Sitemap", url: "/sitemap" }
     ],
     copyright: "© 2025 Hulu, LLC"
   };
+  
 
   return (
     <div className="footer-container">
@@ -69,8 +101,9 @@ const Footer = () => {
             <div key={index} className="footer-link-items">
               <h2>{section.title}</h2>
               {section.links.map((link, linkIndex) => (
-                <a key={linkIndex} href="./bundles">{link}</a>
-              ))}
+  <a key={linkIndex} href={link.url}>{link.text}</a>
+))}
+
             </div>
           ))}
         </div>
@@ -85,9 +118,10 @@ const Footer = () => {
           {section.title} <span className={`dropdown-icon ${openSections[index] ? 'open' : ''}`}>▼</span>
         </h2>
         <div className={`dropdown-content ${openSections[index] ? 'show' : ''}`}>
-          {section.links.map((link, linkIndex) => (
-            <a key={linkIndex} href="./bundles">{link}</a>
-          ))}
+        {section.links.map((link, linkIndex) => (
+  <a key={linkIndex} href={link.url}>{link.text}</a>
+))}
+
         </div>
       </div>
     ))}
@@ -113,8 +147,9 @@ const Footer = () => {
             <img src={AboutIcon} alt="About Icon" className="about-icon-img" />
           </a>
           {footerData.legalLinks.map((link, index) => (
-            <a key={index} href="/">{link}</a>
-          ))}
+  <a key={index} href={link.url}>{link.text}</a>
+))}
+
         </div>
       </div>
     </div>

@@ -7,19 +7,22 @@
     min-height: 80vh; /* Ensure full height */
 }
 
-.navbar {
+.navbar1 {
     position: sticky;
     /* position: -webkit-sticky; */
     top: 0;
-    z-index: 21000;
+    z-index: 1000;
     height: 80px;
-   
     opacity: 1; /* Make sure it's not transparent */
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	align-items: center;
 }
 
 
 
-.navbar a{
+.navbar1 a{
 	text-decoration: none;
 }
 

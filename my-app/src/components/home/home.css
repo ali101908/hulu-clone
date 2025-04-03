@@ -2,7 +2,7 @@
 	background-image: url('../../images/banner.jpeg');
 	max-width: 100%;
 	background-size: cover;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
   }
   
   .navbar {

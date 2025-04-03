@@ -22,7 +22,7 @@ const LoginPage = () => {
     <div className="login-container">
       {/* Go Back Button */}
       <button className="go-back-btn" onClick={() => navigate('/')}>
-        ← Go Back to Home
+        ← Home
       </button>
       <img className='top-logo' src={TopLogo} alt='top-logo' />
       <div className="login-box">
@@ -59,8 +59,9 @@ const LoginPage = () => {
         </div>
       </div>
 
-      <LoginFooter />
+      
     </div>
+    <LoginFooter />
     </div>
   );
 };

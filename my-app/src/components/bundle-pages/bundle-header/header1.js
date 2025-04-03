@@ -14,7 +14,7 @@ const Header1 = () => {
 
   return (
     <div className='bundle-container'>
-      <div className='navbar'>
+      <div className='navbar1'>
         {/* Logo */}
        <a href='/' > <h2 className='logo'>hulu</h2></a>
 
