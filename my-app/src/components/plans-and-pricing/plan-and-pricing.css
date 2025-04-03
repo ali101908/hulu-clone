@@ -1,0 +1,251 @@
+.plan-and-pricing-container{
+	max-width: 100%;
+}
+
+
+.plan-nav-container {
+	/* width: 1300px; */
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: #202124; /* Dark background color from the image */
+	padding: 5px 20px; 
+	color: white; /* Text color */
+  }
+  
+  .plan-nav {
+	display: flex;
+	align-items: center;
+  }
+  
+  .plan-nav a {
+	font-weight: bold;
+	font-size: 1.8em; /* Adjust font size as needed */
+	color: #1CE783; /* Hulu logo color */
+	text-decoration: none;
+	margin-right: 20px; /* Space between logo and help center button */
+  }
+  
+  .plan-nav button {
+	background-color: white;
+	border: 1px solid white; 
+	font-family: Graphik-Heavy, sans-serif;
+font-size: 14.4px;
+font-weight: 550;
+line-height: 21.6px;
+color: rgb(22, 24, 29);
+	/* padding: 5px 10px; */
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 20px; /* Space between help center button and nav links */
+  }
+  
+  .plan-nav ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .plan-nav ul li {
+	margin-right: 20px; /* Space between nav links */
+  }
+  
+  .plan-nav ul li a {
+	font-family: Graphik, sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 68px;
+color: rgb(255, 255, 255);
+	
+  }
+  
+  .plan-nav ul li a:hover{
+	text-decoration: underline;
+  }
+
+  .nav-search-bar {
+	display: flex;
+	align-items: center;
+	border: none;
+	/* background-color: white;  */
+  }
+  
+  .nav-search-bar input[type="text"] {
+	background-color: white; /* Light gray background */
+	border: none;
+	width: 300px;
+	height: 30px;
+	padding: 8px 15px;
+	border-radius: 5px;
+	margin-right: 10px; /* Space between input and login button */
+  }
+  
+  .nav-search-bar button {
+	background-color: transparent;
+	border: none ;
+	color: white;
+	cursor: pointer;
+	font-family: Graphik, sans-serif;
+font-size: 14px;
+font-weight: 400;
+  }
+
+  .nav-search-bar button:hover{
+	text-decoration: underline;
+  }
+
+  .search-input-container {
+	position: relative; /* Needed for absolute positioning of the icon */
+	display: flex; /* Ensures proper alignment within the container */
+	align-items: center; /* Vertically aligns the icon */
+	background-color: white;
+border-radius: 5px;
+
+  }
+  
+  .search-input-container input[type="text"] {
+	padding-right: 30px; /* Make room for the icon */
+outline: none;
+  }
+  
+  .search-icon {
+	position: relative;
+	color: black; /* Icon color */
+	font-size: 16px; /* Icon size */
+
+  }
+
+/* Responsive styles for max-width 768px */
+@media screen and (max-width: 768px) {
+	.plan-nav-container {
+	  flex-direction: column;
+	  align-items: center;
+	  padding: 10px;
+	}
+  
+	.plan-nav {
+	  flex-direction: column;
+	  text-align: center;
+	  width: 100%;
+	}
+  
+	.plan-nav a {
+	  font-size: 1.5em; /* Reduce logo size */
+	  margin-bottom: 5px;
+	}
+  
+	.plan-nav button {
+	  font-size: 14px;
+	  padding: 5px 10px;
+	  margin-bottom: 10px;
+	}
+  
+	.plan-nav ul {
+	  flex-direction: column;
+	  align-items: center;
+	  padding: 0;
+	}
+  
+	.plan-nav ul li {
+	  margin: 5px 0;
+	}
+  
+	.plan-nav ul li a {
+	  font-size: 14px;
+	  line-height: normal;
+	}
+  
+	.nav-search-bar {
+	  justify-content: center;
+	  width: 100%;
+	}
+  
+	.nav-search-bar input[type="text"] {
+	  width: 80%;
+	  max-width: 300px;
+	  font-size: 14px;
+	  padding: 5px 10px;
+	}
+  
+	.nav-search-bar button {
+	  font-size: 14px;
+	  padding: 5px 10px;
+	}
+  
+	.search-input-container {
+	  width: 90%;
+	}
+  
+	.search-icon {
+	  font-size: 18px;
+	}
+  }
+  
+  /* Responsive styles for max-width 400px */
+  @media screen and (max-width: 400px) {
+	.plan-nav-container {
+	  flex-direction: column;
+	  align-items: center;
+	  padding: 10px;
+	}
+  
+	.plan-nav {
+	  flex-direction: column;
+	  text-align: center;
+	  width: 100%;
+	}
+  
+	.plan-nav a {
+	  font-size: 1.2em; /* Further reduce logo size */
+	  margin-bottom: 5px;
+	}
+  
+	.plan-nav button {
+	  font-size: 12px;
+	  padding: 5px 10px;
+	  margin-bottom: 10px;
+	}
+  
+	.plan-nav ul {
+	  flex-direction: column;
+	  align-items: center;
+	  padding: 0;
+	}
+  
+	.plan-nav ul li {
+	  margin: 5px 0;
+	}
+  
+	.plan-nav ul li a {
+	  font-size: 12px;
+	  line-height: normal;
+	}
+  
+	.nav-search-bar {
+	  justify-content: center;
+	  width: 100%;
+	}
+  
+	.nav-search-bar input[type="text"] {
+	  width: 80%;
+	  max-width: 250px;
+	  font-size: 12px;
+	  padding: 5px 10px;
+	}
+  
+	.nav-search-bar button {
+	  font-size: 12px;
+	  padding: 5px 10px;
+	}
+  
+	.search-input-container {
+	  width: 90%;
+	}
+  
+	.search-icon {
+	  font-size: 14px;
+	}
+  }
+  
+  

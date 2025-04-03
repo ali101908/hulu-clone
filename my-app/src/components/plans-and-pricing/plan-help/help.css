@@ -1,0 +1,156 @@
+/* Default Styles (unchanged) */
+
+.help-container {
+	background-color: #f0f0f0; /* Light gray background */
+	padding: 50px 20px; /* Adjust padding as needed */
+	text-align: center;
+}
+  
+.help-title {
+	font-family: Graphik-Medium, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 43.2px;
+	color: rgb(11, 12, 15);
+	margin-bottom: 10px;
+}
+  
+.help-text {
+	font-family: Graphik, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: rgb(11, 12, 15);
+	margin-bottom: 30px;
+	text-align: center;
+}
+  
+.help-portion {
+	display: flex;
+	justify-content: center; /* Center the two sections */
+	gap: 40px; /* Space between the two sections */
+}
+  
+.help-portion > div {
+	display: flex;
+	background-color: white;
+	border-radius: 8px;
+	padding: 30px;
+	width: 600px; /* Adjust width as needed */
+	text-align: left;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+}
+  
+.help-portion img {
+	width: 50px; /* Adjust icon size as needed */
+	height: 50px;
+	margin-bottom: 20px;
+}
+  
+.help-portion h4, .help-portion h3 {
+	font-family: Graphik-Medium, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 28px;
+	color: rgb(0, 114, 210);
+	margin-bottom: 10px;
+}
+  
+.help-portion h4 a, .help-portion h3 a {
+	text-decoration: none;
+	color: inherit; /* Inherit color from the heading */
+}
+  
+.help-portion h4 a:hover, .help-portion h3 a:hover {
+	text-decoration: underline;
+}
+  
+.help-portion p {
+	font-size: 1em;
+	color: #666;
+	line-height: 1.6;
+}
+  
+/* Media Queries */
+  
+/* For max-width 768px (tablet and mobile screens) */
+@media screen and (max-width: 768px) {
+	.help-portion {
+	  flex-direction: column; /* Stack the help sections vertically */
+	  gap: 20px; /* Reduce space between sections */
+	  align-items: center; /* Center the divs horizontally */
+	}
+  
+	.help-portion > div {
+	  width: 80%; /* Make the divs take up 80% of the screen */
+	  padding: 20px;
+	  text-align: center; /* Center content inside */
+	  justify-content: center;
+	  align-items: center;
+	  flex-direction: column;
+	}
+  
+	.help-title {
+	  font-size: 22px; /* Reduce font size for smaller screens */
+	}
+  
+	.help-text {
+	  font-size: 14px; /* Adjust font size for readability */
+	}
+  
+	.help-portion img {
+	  width: 40px; /* Adjust icon size */
+	  height: 40px;
+	}
+  
+	.help-portion h4, .help-portion h3 {
+	  font-size: 14px; /* Reduce font size for headings */
+	}
+  
+	.help-portion p {
+	  font-size: 0.9em; /* Adjust font size for better readability */
+	}
+}
+  
+/* For max-width 400px (small phone screens) */
+@media screen and (max-width: 400px) {
+	.help-container {
+	  padding: 30px 10px; /* Adjust padding */
+	}
+  
+	.help-title {
+	  font-size: 20px; /* Reduce title font size */
+	}
+  
+	.help-text {
+	  font-size: 13px; /* Reduce text size */
+	}
+  
+	.help-portion {
+	  flex-direction: column; /* Stack sections vertically */
+	  gap: 15px; /* Reduce gap */
+	  align-items: center; /* Ensure sections are centered */
+	}
+  
+	.help-portion > div {
+	  width: 90%; /* Make sections take full width but with some margin */
+	  padding: 15px;
+	  text-align: center;
+	  justify-content: center;
+	  align-items: center;
+	  flex-direction: column;
+	}
+  
+	.help-portion img {
+	  width: 35px; /* Adjust icon size */
+	  height: 35px;
+	}
+  
+	.help-portion h4, .help-portion h3 {
+	  font-size: 12px; /* Smaller heading font size */
+	}
+  
+	.help-portion p {
+	  font-size: 0.85em; /* Slightly smaller font size */
+	}
+}

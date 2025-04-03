@@ -56,7 +56,7 @@ const Footer = () => {
         title: "HELP",
         links: [
           { text: "Account & Billing", url: "/account-billing" },
-          { text: "Plans & Pricing", url: "/plans-pricing" },
+          { text: "Plans & Pricing", url: "/plan-and-pricing" },
           { text: "Supported Devices", url: "/supported-devices" },
           { text: "Accessibility", url: "/accessibility" }
         ]

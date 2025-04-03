@@ -1,0 +1,233 @@
+/* Default styles (unchanged) */
+
+/* For all anchor tags */
+a {
+	text-decoration: none;
+	color: #0073e6;
+  }
+  
+  /* On hover, underline the links */
+  a:hover {
+	text-decoration: underline;
+  }
+  
+  /* Pricing section container */
+  .pricing-section-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 20px;
+  }
+  
+  .pricing-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 40px;
+  }
+  
+  .pricing-text {
+	flex: 1;
+	box-shadow: 0px 4px 10px rgba(117, 113, 113, 0.5);
+	left: 10px;
+	padding-left: 20px;
+  }
+  
+  .pricing-text h1 {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  .pricing-text p {
+	font-size: 16px;
+	line-height: 1.6;
+	color: #333;
+  }
+  
+  .pricing-text a.highlight {
+	color: #0073e6;
+	text-decoration: none;
+	font-weight: bold;
+  }
+  
+  .pricing-text ul {
+	list-style-type: disc;
+	padding-left: 20px;
+	margin-top: 10px;
+  }
+  
+  .pricing-text ul li {
+	margin-bottom: 5px;
+  }
+  
+  .suggested-articles {
+	flex-basis: 280px;
+	background: #f9f9f9;
+	padding: 20px;
+	border-radius: 8px;
+  }
+  
+  .suggested-articles h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  .articles-box {
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+  }
+  
+  .suggested-articles ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .suggested-articles ul li {
+	margin-bottom: 8px;
+  }
+  
+  .suggested-articles ul li a {
+	text-decoration: none;
+	color: #0073e6;
+	font-size: 14px;
+  }
+  
+  .suggested-articles ul li a:hover {
+	text-decoration: underline;
+  }
+  
+  .back-to-top {
+	display: block;
+	margin-left: auto;
+	padding: 10px 20px;
+	background: none;
+	color: rgb(0, 114, 210);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+  }
+  
+  .back-to-top:hover {
+	text-decoration: underline;
+  }
+  
+  .feedback-section {
+	margin-top: 20px;
+	padding: 20px;
+	border-top: 1px solid #ddd;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  
+  .feedback-section p {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 0;
+  }
+  
+  .feedback-buttons {
+	display: flex;
+	gap: 10px;
+  }
+  
+  .feedback-button {
+	padding: 8px 16px;
+	border: 1px solid #ccc;
+	background-color: #f9f9f9;
+	cursor: pointer;
+	font-size: 14px;
+  }
+  
+  .feedback-button.yes:hover,
+  .feedback-button.no:hover {
+	background-color: black;
+	color: white;
+  }
+  
+  /* Media Queries */
+  
+  /* For max-width 768px (tablet and smaller screens) */
+  @media screen and (max-width: 768px) {
+	.pricing-content {
+	  flex-direction: column;
+	  gap: 20px;
+	}
+  
+	.pricing-text {
+	  padding-left: 10px;
+	}
+  
+	.suggested-articles {
+	  flex-basis: 100%;
+	  margin-top: 20px;
+	}
+  
+	.back-to-top {
+	  width: 100%;
+	  text-align: center;
+	}
+  
+	.feedback-section {
+	  flex-direction: column;
+	  align-items: flex-start;
+	}
+  
+	.feedback-buttons {
+	  width: 100%;
+	  justify-content: flex-start;
+	}
+  
+	.feedback-button {
+	  width: 100%;
+	  margin-bottom: 5px;
+	}
+  }
+  
+  /* For max-width 400px (small phones) */
+  @media screen and (max-width: 400px) {
+	.pricing-section-container {
+	  padding: 20px 10px;
+	}
+  
+	.pricing-text h1 {
+	  font-size: 24px;
+	}
+  
+	.pricing-text p {
+	  font-size: 14px;
+	}
+  
+	.suggested-articles {
+	  padding: 15px;
+	  flex-basis: 100%;
+	  margin-top: 10px;
+	}
+  
+	.suggested-articles h2 {
+	  font-size: 18px;
+	}
+  
+	.suggested-articles ul li a {
+	  font-size: 12px;
+	}
+  
+	.back-to-top {
+	  font-size: 12px;
+	  padding: 8px 15px;
+	}
+  
+	.feedback-button {
+	  font-size: 12px;
+	}
+  
+	.feedback-buttons {
+	  width: 100%;
+	  justify-content: flex-start;
+	}
+  }
+  
