@@ -183,7 +183,6 @@ body {
 			width: 50px;
 		  }
 
-		 
 
 	.login-box {
 		width: 250px; 
@@ -192,17 +191,13 @@ body {
 	.footer-tags {
 	  flex-direction: row;
 	}
-
-	.footer-tags a{
-		font-size: 7px;
-	}
   
 	.footer-tags a:nth-last-child(1), 
 	.footer-tags a:last-child {
 	  flex-basis: 10%; 
 	  text-align: center;
 	  margin-top: 10px;
-	  width: 30px;
+	
 	}
   } 
    
