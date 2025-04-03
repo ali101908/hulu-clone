@@ -177,12 +177,6 @@ body {
 
     @media screen and (max-width: 400px) {
 
-
-/* .go-back-btn{
-width: 70px;
-height: 40px;
-} */
-
 		.top-logo {
 			display: block;
 			margin-bottom: 15px;
@@ -198,12 +192,17 @@ height: 40px;
 	.footer-tags {
 	  flex-direction: row;
 	}
+
+	.footer-tags a{
+		font-size: 7px;
+	}
   
-	.footer-tags a:nth-last-child(2), 
+	.footer-tags a:nth-last-child(1), 
 	.footer-tags a:last-child {
 	  flex-basis: 10%; 
 	  text-align: center;
 	  margin-top: 10px;
+	  width: 30px;
 	}
   } 
    
