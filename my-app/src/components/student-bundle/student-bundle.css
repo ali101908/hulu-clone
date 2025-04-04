@@ -29,6 +29,7 @@ text-align: center;
 	border: none;
 	border-radius: 4px;
 	height: 40px;
+	width: 500px;
 	font-family: "Graphik Web", sans-serif;
 font-size: 14px;
 font-weight: 600;
@@ -51,6 +52,10 @@ font-weight: 400;
 line-height: 14.6px;
 color: rgba(255, 255, 255, 0.6);
 text-align: center;
+}
+
+.st-bundle-content a{
+	color: rgba(255, 255, 255, 0.6);
 }
 
 .party-container{
@@ -87,6 +92,8 @@ color: rgb(88, 97, 116);
 
 @media (max-width: 768px) {
 
+
+
 .student-cont-img{
 	width: 250px;
 }
@@ -103,4 +110,9 @@ color: rgb(88, 97, 116);
 	.party-portion-img img{
 		width: 300px;
 	}
+
+.hero-btn3{
+	width: 300px;
+}
+
 }

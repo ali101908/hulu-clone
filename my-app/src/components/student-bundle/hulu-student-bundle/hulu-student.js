@@ -32,7 +32,7 @@ const HuluStudent = () => {
  
 	   <div className='basic-hero-footer'>
 	  
-		 <div className='hero-btn-footer'>
+		 <div className='hero-btn-footer1'>
 		   <button className='hero-btn3'>GET THIS DEAL</button>
 		  <p className='st-bundle-content'>Student discount offer for Hulu (With Ads) plan only. $1.99/month so long as student enrollment status remains <br />
 		  verified, then $9.99/month or then-current, regular monthly price. Offer valid for new and existing Hulu-billed <br />

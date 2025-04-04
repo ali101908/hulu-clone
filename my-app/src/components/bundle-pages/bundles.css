@@ -31,6 +31,10 @@
 	font-size: 12px;
 }
 
+.bundle-cont-img{
+	width: 500px;
+}
+
 .basic-title{
 	font-family: "Graphik Web", Graphik, sans-serif;
 font-size: 48px;
@@ -77,12 +81,11 @@ color: rgb(255, 255, 255);
 
 @media screen and (max-width: 768px) {
 	.bundle-cont-img{
-		width: 450px;
-	}
-}
-
-@media screen and (max-width: 400px) {
-	.bundle-cont-img{
 		width: 300px;
 	}
+
+.hero-btn-footer1{
+	text-align: center;
+}
+
 }
