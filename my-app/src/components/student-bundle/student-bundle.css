@@ -11,7 +11,7 @@
 	padding: 30px 0px;
 }
 
-.bundle-cont-img{
+.student-cont-img{
 	width: 400px;
 }
 
@@ -86,6 +86,10 @@ color: rgb(88, 97, 116);
 }
 
 @media (max-width: 768px) {
+
+.student-cont-img{
+	width: 250px;
+}
 
     .party-heading{
 		text-align: center;

@@ -15,7 +15,7 @@ const HuluStudent = () => {
 	 <div className='st-bundle-hero'>
 	   <div className='hero-logo'>
 		 {/* <h6 className='heading'>BUNDLE & SAVE</h6> */}
-		 <img className='bundle-cont-img' src={DiscountIcon} alt='Hulu Hero'  />
+		 <img className='student-cont-img' src={DiscountIcon} alt='Hulu Hero'  />
 	   </div>
  
 	   <div>
