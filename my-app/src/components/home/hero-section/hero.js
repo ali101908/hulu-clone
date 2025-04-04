@@ -11,7 +11,7 @@ const HeroSection = () => {
     <div className='hero-container'>
       <div className='hero-logo'>
         <h6 className='heading'>LIMITED TIME OFFER</h6>
-        <img src={heroImage} alt='Hulu Hero' width={300} height={100} />
+        <img className="hero-cont-img" src={heroImage} alt='Hulu Hero' />
       </div>
       <div>
         <h1>Get Disney+ and Hulu (both <br /> with ads) for $2.99/month <br /> for 4 months</h1>

@@ -15,7 +15,7 @@ const BasicBundle = () => {
     <div className='bundle-hero'>
       <div className='hero-logo'>
         <h6 className='heading'>BUNDLE & SAVE</h6>
-        <img src={DisneyIcon} alt='Hulu Hero' width={500} height={100} />
+        <img className='bundle-cont-img' src={DisneyIcon} alt='Hulu Hero' width={500} height={100} />
       </div>
 
       <div>
