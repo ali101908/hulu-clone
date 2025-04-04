@@ -1,0 +1,10 @@
+.max-container{
+
+		background-image: url("../max-images/original.jpeg");
+		background-size: cover;
+		opacity: 0.9;
+		overflow: visible;
+		position: relative;
+		min-height: 80vh; /* Ensure full height */
+	
+}

@@ -1,0 +1,102 @@
+.student-container{
+	background-image: url("./student-images/st-hero-bg.jpeg");
+		background-size: cover;
+		opacity: 0.9;
+		overflow: visible;
+		position: relative;
+		min-height: 80vh; /* Ensure full height */
+}
+
+.st-bundle-hero{
+	padding: 30px 0px;
+}
+
+.bundle-cont-img{
+	width: 400px;
+}
+
+.hero-content2{
+	font-family: "Graphik Web", Graphik, sans-serif;
+font-size: 24px;
+font-weight: 400;
+line-height: 29.76px;
+color: rgb(255, 255, 255);
+text-align: center;
+}
+
+.hero-btn3{
+	background-color: rgb(28, 231, 131);
+	border: none;
+	border-radius: 4px;
+	height: 40px;
+	font-family: "Graphik Web", sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 14px;
+color: rgb(4, 4, 5);
+}
+
+.hero-btn3:hover{
+	background-color: rgb(4, 4, 5);
+	color: rgb(28, 231, 131);
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+
+.st-bundle-content{
+	font-family: "Graphik Web", Graphik, sans-serif;
+font-size: 10px;
+font-weight: 400;
+line-height: 14.6px;
+color: rgba(255, 255, 255, 0.6);
+text-align: center;
+}
+
+.party-container{
+	padding: 30px 0px;
+	max-width: auto;
+}
+
+.party-heading{
+	font-family: "Graphik Web", sans-serif;
+font-size: 32px;
+font-weight: 600;
+line-height: 38.4px;
+color: rgb(39, 44, 52);
+}
+
+.party-content{
+	font-family: "Graphik Web", Graphik, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 21.76px;
+color: rgb(88, 97, 116);
+}
+
+.party-portion{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 20px 0px;
+}
+
+.party-portion-img img{
+	width: 500px;
+}
+
+@media (max-width: 768px) {
+
+    .party-heading{
+		text-align: center;
+	}
+
+	.party-portion{
+		flex-wrap: wrap;
+		padding: 0px 20px;
+	}
+
+	.party-portion-img img{
+		width: 300px;
+	}
+}

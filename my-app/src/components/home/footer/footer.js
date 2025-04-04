@@ -45,11 +45,11 @@ const Footer = () => {
           { text: "Cinemax", url: "/cinemax" },
           { text: "Paramount+ with SHOWTIME", url: "/paramount-showtime" },
           { text: "STARZ", url: "/starz" },
-          { text: "Disney+, Hulu, ESPN+ Bundle Basic", url: "/bundles" },
-          { text: "Disney+, Hulu, ESPN+ Bundle Premium", url: "/disney-hulu-espn-premium" },
-          { text: "Disney+, Hulu Bundle", url: "/disney-hulu-bundle" },
-          { text: "Disney+, Hulu, Max Bundle", url: "/disney-hulu-max-bundle" },
-          { text: "Student Discount", url: "/student-discount" }
+          { text: "Disney+, Hulu, ESPN+ Bundle Basic", url: "/basic-bundles" },
+          { text: "Disney+, Hulu, ESPN+ Bundle Premium", url: "/premium-bundle" },
+          { text: "Disney+, Hulu Bundle", url: "/hulu-bundle" },
+          { text: "Disney+, Hulu, Max Bundle", url: "/max-bundle" },
+          { text: "Student Discount", url: "/discount-bundle" }
         ]
       },
       {
