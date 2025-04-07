@@ -1,10 +1,10 @@
 /* Default styles (unchanged) */
 
 /* For all anchor tags */
-a {
+/* a {
 	text-decoration: none;
 	color: #0073e6;
-  }
+  } */
   
   /* On hover, underline the links */
   a:hover {

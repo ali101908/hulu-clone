@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import './max-head.css'; // Import CSS for styling
 import BasicBundle from '../../bundle-pages/disney-basic-bundle/hero-basic';
 
@@ -16,7 +16,7 @@ const MaxHead = () => {
 	  <div className='max-container'>
 		<div className='navbar1'>
 		  {/* Logo */}
-		 <a href='/' > <h2 className='logo'>hulu</h2></a>
+		 <Link to='/' > <h2 className='logo'>hulu</h2></Link>
   
 		  {/* Desktop login button */}
 		  <button className='log-btn' onClick={() => navigate('/login')}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import LoginFooter from './login-footer';
 
 
@@ -12,7 +12,7 @@ import Logo4 from "./logo4.svg";
 import Logo5 from "./logo5.svg";
 import Logo6 from "./logo6.svg";
 import Logo7 from "./logo7.svg";
-import './login.css';
+// import './login.css';
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -45,7 +45,7 @@ const LoginPage = () => {
         </p>
 
         <p className="footer-text">
-          MyDisney lets you seamlessly log in to services and experiences across The Walt <br /> Disney Family of Companies, such as Disney+, ESPN, Walt Disney World, <a href="#" style={{ color: "blue" }}>and more.</a>
+          MyDisney lets you seamlessly log in to services and experiences across The Walt  Disney Family of Companies, such as Disney+, ESPN, Walt Disney World, <Link to="#" style={{ color: "blue" }}>and more.</Link>
         </p>
 
         <div className="login-box-logos">

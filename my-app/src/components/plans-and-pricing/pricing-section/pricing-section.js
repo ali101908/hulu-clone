@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './pricing-section.css';
 
 const PricingSection = () => {
@@ -18,16 +19,16 @@ const PricingSection = () => {
           <p>
             Hulu offers different subscription options to fit a variety of budgets and entertainment needs.
             There are <br/> no hidden costs, long-term commitments, or cancellation fees, and you’re able to
-            <a className='highlight' href=''> switch plans and add-<br/>ons </a> at any time.
-            <a href='#'> Sign up </a> and get started today, or select an option from the following list.
+            <Link className='highlight' to=''> switch plans and add-ons </Link> at any time.
+            <Link to='#'> Sign up </Link> and get started today, or select an option from the following list.
           </p>
 
 		  <ul>
-			<li><a href='#'>Plans</a></li>
-			<li><a href='#'>Partner Add-ons</a></li>
-			<li><a href='#'>Premium Add-ons</a></li>
-			<li><a href='#'>Live TV Add-ons</a></li>
-			<li><a href='#'>Extra Member</a></li>
+			<li><Link to='#'>Plans</Link></li>
+			<li><Link to='#'>Partner Add-ons</Link></li>
+			<li><Link to='#'>Premium Add-ons</Link></li>
+			<li><Link to='#'>Live TV Add-ons</Link></li>
+			<li><Link to='#'>Extra Member</Link></li>
 		  </ul>
 
           <h2>Plans</h2>
@@ -35,67 +36,67 @@ const PricingSection = () => {
           
           <h3>Hulu plans</h3>
           <ul>
-            <li><a href='#'>Hulu:</a> Our ad-supported plan costs just <strong>$9.99/month</strong> (or <strong>$99.99/year</strong>) and gives you access to our ad-supported streaming library.</li>
-            <li><strong>Students:</strong> Get <a className='highlight' href='#'>Hulu (With Ads) for $1.99/month</a>, if eligible. Additional terms apply.</li>
-            <li><a href='#'>Hulu (No Ads):</a> For <strong>$18.99/month</strong>, you can watch most of those same shows and movies without the ad breaks.</li>
+            <li><Link href='#'>Hulu:</Link> Our ad-supported plan costs just <strong>$9.99/month</strong> (or <strong>$99.99/year</strong>) and gives you access to our ad-supported streaming library.</li>
+            <li><strong>Students:</strong> Get <Link className='highlight' to='#'>Hulu (With Ads) for $1.99/month</Link>, if eligible. Additional terms apply.</li>
+            <li><Link href='#'>Hulu (No Ads):</Link> For <strong>$18.99/month</strong>, you can watch most of those same shows and movies without the ad breaks.</li>
           </ul>
 
           <h3>Hulu + Live TV plans</h3>
           <ul>
-            <li><a href='#'>Hulu (With Ads) + Live TV, Disney+ (With Ads) and ESPN+ (With Ads):</a> Sign up for only <strong>$82.99/month</strong>.</li>
-            <li><a href='#'>Hulu (No Ads) + Live TV, Disney+ (No Ads) and ESPN+ (With Ads):</a> For <strong>$95.99/month</strong>.</li>
-            <li><a href='#'>Hulu (With Ads) + Live TV, Disney+ (No Ads) and ESPN+ (With Ads):</a> For <strong>$87.99/month</strong>.</li>
-            <li><a href='#'>Live TV Only:</a> For <strong>$81.99/month</strong>, this plan gives subscribers access to live content only.</li>
+            <li><Link to='#'>Hulu (With Ads) + Live TV, Disney+ (With Ads) and ESPN+ (With Ads):</Link> Sign up for only <strong>$82.99/month</strong>.</li>
+            <li><Link to='#'>Hulu (No Ads) + Live TV, Disney+ (No Ads) and ESPN+ (With Ads):</Link> For <strong>$95.99/month</strong>.</li>
+            <li><Link to='#'>Hulu (With Ads) + Live TV, Disney+ (No Ads) and ESPN+ (With Ads):</Link> For <strong>$87.99/month</strong>.</li>
+            <li><Link to='#'>Live TV Only:</Link> For <strong>$81.99/month</strong>, this plan gives subscribers access to live content only.</li>
           </ul>
 
           <p>ESPN+ through our Live TV plans is not available for subscribers who are billed by T-Mobile.</p>
 
           <h3>Bundle plans</h3>
-          <p>Interested in bundling your subscriptions? <a href='#'>Sign up</a> for a bundle plan with just Disney+ and Hulu or for a bundle plan with Disney+, Hulu, and ESPN+. Pricing will vary depending on the <a href='#'>bundle plan you choose</a>.</p>
-          <p><strong>NOTE:</strong> Bundle subscribers can now access select content from the <a href='#'>Hulu streaming library on the Disney+ app or website</a>.</p>
+          <p>Interested in bundling your subscriptions? <Link to='#'>Sign up</Link> for a bundle plan with just Disney+ and Hulu or for a bundle plan with Disney+, Hulu, and ESPN+. Pricing will vary depending on the <Link to='#'>bundle plan you choose</Link>.</p>
+          <p><strong>NOTE:</strong> Bundle subscribers can now access select content from the <Link to='#'>Hulu streaming library on the Disney+ app or website</Link>.</p>
 
           <h3>Disney+, Hulu, Max Bundle plans</h3>
-          <p>If you're interested in a <a href='#'>Disney+, Hulu, Max Bundle</a>, sign up for a plan that includes Disney+, Hulu, and Max. Pricing will vary depending on the plan you choose.</p>
+          <p>If you're interested in a <Link to='#'>Disney+, Hulu, Max Bundle</Link>, sign up for a plan that includes Disney+, Hulu, and Max. Pricing will vary depending on the plan you choose.</p>
           <p><button className='back-to-top' onClick={scrollToTop}>BACK TO TOP</button></p>
 
           <h3>Partner Add-ons</h3>
           <p>Add to an eligible plan:</p>
           <ul>
-            <li><a href='#'>ESPN+</a> for <strong>$11.99/month</strong></li>
+            <li><Link to='#'>ESPN+</Link> for <strong>$11.99/month</strong></li>
           </ul>
           <p><button className='back-to-top' onClick={scrollToTop}>BACK TO TOP</button></p>
 
           <h3>Premium Add-ons</h3>
           <p>Add to any plan*:</p>
           <ul>
-            <li><a href='#'>Max (With Ads)</a> for <strong>$9.99/month</strong></li>
-            <li><a href='#'>Max (Ad-Free)</a> for <strong>$16.99/month</strong></li>
-            <li><a href='#'>Cinemax</a> for <strong>$9.99/month</strong></li>
-            <li><a href='#'>Paramount+ with SHOWTIME</a> for <strong>$12.99/month</strong></li>
-            <li><a href='#'>STARZ</a> for <strong>$10.99/month</strong></li>
+            <li><Link to='#'>Max (With Ads)</Link> for <strong>$9.99/month</strong></li>
+            <li><Link to='#'>Max (Ad-Free)</Link> for <strong>$16.99/month</strong></li>
+            <li><Link to='#'>Cinemax</Link> for <strong>$9.99/month</strong></li>
+            <li><Link to='#'>Paramount+ with SHOWTIME</Link> for <strong>$12.99/month</strong></li>
+            <li><Link to='#'>STARZ</Link> for <strong>$10.99/month</strong></li>
           </ul>
           <p><em>*Third-party billing limitations apply.</em></p>
           <p><button className='back-to-top' onClick={scrollToTop}>BACK TO TOP</button></p>
 
           <h3>Live TV Add-ons</h3>
-          <p>Add to any <a href='#'>Live TV</a> plan:</p>
+          <p>Add to any <Link to='#'>Live TV</Link> plan:</p>
           <ul>
-            <li><a href='#'>Español Add-on</a> for <strong>$4.99/month</strong></li>
-            <li><a href='#'>Entertainment Add-on</a> for <strong>$7.99/month</strong></li>
-            <li><a href='#'>Sports Add-on</a> for <strong>$9.99/month</strong></li>
-            <li><a href='#'>Unlimited Screens Add-on</a> for <strong>$9.99/month</strong></li>
+            <li><Link to='#'>Español Add-on</Link> for <strong>$4.99/month</strong></li>
+            <li><Link to='#'>Entertainment Add-on</Link> for <strong>$7.99/month</strong></li>
+            <li><Link to='#'>Sports Add-on</Link> for <strong>$9.99/month</strong></li>
+            <li><Link to='#'>Unlimited Screens Add-on</Link> for <strong>$9.99/month</strong></li>
           </ul>
           <p>  <button className='back-to-top' onClick={scrollToTop}>BACK TO TOP</button></p>
 
           <h3>Extra Member</h3>
           <p><a href='#'>Extra Member</a> is only available with the following plans at this time for the following additional monthly fee:</p>
           <ul>
-            <li><a href='#'>Hulu</a> for <strong>$6.99/month</strong></li>
-            <li><a href='#'>Hulu (No Ads)</a> for <strong>$9.99/month</strong></li>
-            <li><a href='#'>Disney+, Hulu Bundle Basic</a> for <strong>$7.99/month</strong></li>
-            <li><a href='#'>Disney+, Hulu Bundle Premium</a> for <strong>$10.99/month</strong></li>
-            <li><a href='#'>Disney+, Hulu, ESPN+ Bundle Basic</a> for <strong>$11.99/month</strong></li>
-            <li><a href='#'>Disney+, Hulu, ESPN+ Bundle Premium</a> for <strong>$14.99/month</strong></li>
+            <li><Link to='#'>Hulu</Link> for <strong>$6.99/month</strong></li>
+            <li><Link to='#'>Hulu (No Ads)</Link> for <strong>$9.99/month</strong></li>
+            <li><Link to='#'>Disney+, Hulu Bundle Basic</Link> for <strong>$7.99/month</strong></li>
+            <li><Link to='#'>Disney+, Hulu Bundle Premium</Link> for <strong>$10.99/month</strong></li>
+            <li><Link to='#'>Disney+, Hulu, ESPN+ Bundle Basic</Link> for <strong>$11.99/month</strong></li>
+            <li><Link to='#'>Disney+, Hulu, ESPN+ Bundle Premium</Link> for <strong>$14.99/month</strong></li>
           </ul>
 
 		  <div className='feedback-section'>
@@ -112,12 +113,12 @@ const PricingSection = () => {
           <h2>Suggested Articles</h2>
           <div className='articles-box'>
             <ul>
-              <li><a href='#'>Hulu Payment Options</a></li>
-              <li><a href='#'>What is Hulu (No Ads)?</a></li>
-              <li><a href='#'>What Is Hulu?</a></li>
-              <li><a href='#'>Free Trials on Hulu</a></li>
-              <li><a href='#'>Live TV Home network</a></li>
-              <li><a href='#'>Create a New Hulu Account</a></li>
+              <li><Link to='#'>Hulu Payment Options</Link></li>
+              <li><Link to='#'>What is Hulu (No Ads)?</Link></li>
+              <li><Link to='#'>What Is Hulu?</Link></li>
+              <li><Link to='#'>Free Trials on Hulu</Link></li>
+              <li><Link to='#'>Live TV Home network</Link></li>
+              <li><Link to='#'>Create a New Hulu Account</Link></li>
             </ul>
           </div>
         </div>

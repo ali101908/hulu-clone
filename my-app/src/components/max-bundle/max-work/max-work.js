@@ -22,19 +22,19 @@ const MaxWork = () => {
 	<img src={Icon1} alt='icon1' />
 	<p>STEP 1</p>
 	<h2>Sign up for a bundle</h2>
-			<p>Click "Sign Up Now" to create your Hulu account <br /> and sign up for Disney+, Hulu, ESPN+ Bundle <br /> Premium. You'll be billed 26.99/mo. by Hulu for <br /> access to all three services.</p>
+			<p>Click "Sign Up Now" to create your Hulu account  and sign up for Disney+, Hulu, ESPN+ Bundle  Premium. You'll be billed 26.99/mo. by Hulu for  access to all three services.</p>
 			</div>
 			<div className='category-b'>
 			<img src={Icon2} alt='icon1' />
 			<p>STEP 2</p>
 			<h2>Access your Disney+ and ESPN+ <br /> accounts</h2>
-			<p>After signing up, you can use your Hulu account <br /> email address and password to log in to both <br /> Disney+ and ESPN+.</p>
+			<p>After signing up, you can use your Hulu account  email address and password to log in to both  Disney+ and ESPN+.</p>
 			</div>
 			<div className='category-c'>
 			<img src={Icon3} alt='icon1' />
 			<p>STEP 3</p>
 			<h2>Download apps and start <br /> streaming</h2>
-			<p>Log in to each app separately and stream across <br /> your favorite smart TVs, phones, tablets, laptops, <br /> and gaming consoles.</p>
+			<p>Log in to each app separately and stream across  your favorite smart TVs, phones, tablets, laptops,  and gaming consoles.</p>
 			</div>
 		  </div>
 		</div>

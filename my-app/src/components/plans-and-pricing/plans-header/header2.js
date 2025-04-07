@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../plan-and-pricing.css';
 import { FaSearch, FaBars, FaTimes } from 'react-icons/fa';
 
 const Header2 = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(false);
+ 
 
   return (
     <div className='plan-nav-container'>
       <div className='plan-nav'>
         <span>
-          <a href='/'>hulu</a>
+          <Link to='/'>hulu</Link>
           <button>Help Center</button>
         </span>
 
@@ -21,9 +21,9 @@ const Header2 = () => {
 
         {/* Navigation Menu */}
         <ul>
-          <li><a href='#'>Home</a></li>
-          <li><a href='#'>Help Topics</a></li>
-          <li><a href='#'>Contact Us</a></li>
+          <li><Link to='#'>Home</Link></li>
+          <li><Link to='#'>Help Topics</Link></li>
+          <li><Link to='#'>Contact Us</Link></li>
         </ul>
       </div>
 

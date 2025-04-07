@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import '../home.css';
+import styles from '../../../assets/component.module.css/component.module.css';
+
+
+
 import HeroSection from '../hero-section/hero';
 
 const Header = () => {
@@ -14,9 +18,9 @@ const Header = () => {
 
   return (
     <div className='container'>
-      <div className='navbar'>
+      <div className={`${styles.spaceBetween}`}>
         {/* Logo */}
-        <h2 className='logo'>hulu</h2>
+        <h2 className={`${styles.themeColor} logo`}>hulu</h2>
 
         {/* Desktop login button */}
         <button className='log-btn' onClick={() => navigate('/login')}>

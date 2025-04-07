@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './help.css'
 
 import ContactIcon
@@ -14,10 +15,10 @@ const Help = () => {
 <img src={ContactIcon} alt='contact-us-icon' />
 <div className='help-content'>
 <h4 className='left-title'>
-	<a href=''>Get in Touch</a>
+	<Link to=''>Get in Touch</Link>
 </h4>
 <p className='left-text'>
-We're happy to assist you, whenever you need us. Log <br /> in to visit our Contact page for further assistance.
+We're happy to assist you, whenever you need us. Log  in to visit our Contact page for further assistance.
 </p>
 </div>
 		</div>
@@ -25,10 +26,10 @@ We're happy to assist you, whenever you need us. Log <br /> in to visit our Cont
 		<img src={FeedBackIcon} alt='feedback-icon' />
 		<div className='help-content'>
 		<h3 className='right-title'>
-	<a href=''>Give feedback</a>
+	<Link to=''>Give feedback</Link>
 </h3>
 <p className='right-text'>
-How can we improve Hulu? Let us know through our <br /> feedback form!
+How can we improve Hulu? Let us know through our  feedback form!
 </p>
 </div>
 		</div>

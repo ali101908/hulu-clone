@@ -15,7 +15,7 @@
   
   .logo {
 	margin-left: 40px;
-	color: #1CE783;
+	
   }
   
   /* Desktop version login and sign-up buttons */
@@ -158,12 +158,12 @@
 	font-size: 45px;
 }
 
-.hero-content1{
+/* .hero-content1{
 	color: white;
 	text-align: center;
 	font-size: 25px;
 	font-weight: bolder;
-}
+} */
 
 .hero-btn-container{
 	display: flex;
@@ -192,20 +192,18 @@ justify-content: center;
 	cursor: pointer;
 }
 
-.hero-content{
+/* .hero-content{
 color: rgb(148, 144, 144);
 font-size: 11px;
 text-align: center;
-}
+} */
 
 .hero-content a{
 	color: white;
 	}
 
 	.hero-footer{
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
+	
 		border: 1px solid black;
 		background-color: black;
 		opacity: 0.8;
@@ -225,21 +223,10 @@ text-align: center;
 	text-align: center;
 	}
 
-	.saving{
-		color: white;
-		font-size: 11px;
-		text-align: center;
-	}
-
 	.hero-footer-content h3{
 		color: white;
 		font-family: Arial, Helvetica, sans-serif;
 		text-align: center;
-	}
-
-	.hero-btn-footer{
-		display: flex;
-		flex-direction: column;
 	}
 
 .hero-btn2{
@@ -251,13 +238,13 @@ text-align: center;
 	border-radius: 4px;
 	font-weight: bold;
 	font-size: 15px;
-	color: black; /* Keep text color same */
-	transition: filter 0.3s ease-in-out;
+	color: black; 
+	/* transition: filter 0.3s ease-in-out; */
 }
 
 .hero-btn2:hover{
 	cursor: pointer;
-	filter: brightness(60%);
+	/* filter: brightness(60%); */
 }
 
 	.hero-btn-footer a{

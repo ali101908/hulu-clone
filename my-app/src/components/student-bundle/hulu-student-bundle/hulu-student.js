@@ -1,4 +1,5 @@
 import React, { useState} from 'react';
+import { Link } from 'react-router-dom';
 import DiscountIcon from '../student-images/st-hero.png';
 import '../student-bundle.css';
 
@@ -19,10 +20,10 @@ const HuluStudent = () => {
 	   </div>
  
 	   <div>
-		 <h1 className='basic-title'>Students: Get Hulu For Just <br /> $1.99/Month</h1>
+		 <h1 className='basic-title'>Students: Get Hulu For Just  $1.99/Month</h1>
 		 <p className='hero-content1'>
-		 Stream tons of shows and movies with our Hulu (With Ads) <br />
-		 plan for just $9.99/month $1.99/month. <br />
+		 Stream tons of shows and movies with our Hulu (With Ads) 
+		 plan for just $9.99/month $1.99/month. 
 		 Valid as long as you're a college student.
 		 </p>
 
@@ -34,10 +35,10 @@ const HuluStudent = () => {
 	  
 		 <div className='hero-btn-footer1'>
 		   <button className='hero-btn3'>GET THIS DEAL</button>
-		  <p className='st-bundle-content'>Student discount offer for Hulu (With Ads) plan only. $1.99/month so long as student enrollment status remains <br />
-		  verified, then $9.99/month or then-current, regular monthly price. Offer valid for new and existing Hulu-billed <br />
-		  subscribers enrolled at a U.S. Title IV accredited college or university who meet verification qualifications. <br />
-		  Verification performed through SheerID.<a href='#' onClick={(e) => { e.preventDefault(); setShowTerms(true); }}> Additional terms apply.</a></p>
+		  <p className='st-bundle-content'>Student discount offer for Hulu (With Ads) plan only. $1.99/month so long as student enrollment status remains 
+		  verified, then $9.99/month or then-current, regular monthly price. Offer valid for new and existing Hulu-billed 
+		  subscribers enrolled at a U.S. Title IV accredited college or university who meet verification qualifications. 
+		  Verification performed through SheerID.<Link to='#' onClick={(e) => { e.preventDefault(); setShowTerms(true); }}> Additional terms apply.</Link></p>
 		 </div>
 	   </div>
  
@@ -48,9 +49,9 @@ const HuluStudent = () => {
 			 <p style={{ color: "white" }}>
 			   Cancel anytime, through your account settings or by contacting us, effective at the end of your billing period.
 			   No refunds or credits for partial months. Use of the services is subject to the
-			   <a href='#'> Disney+, ESPN+, and Hulu Subscriber Agreement</a>. Valid payment method required to redeem offer.
+			   <Link to='#'> Disney+, ESPN+, and Hulu Subscriber Agreement</Link>. Valid payment method required to redeem offer.
 			   Cannot be combined with any other offers, coupons, discounts or promotions. Not redeemable for cash or any other goods or services.
-			   Eligibility rules and offer timing may vary if you sign up through a third-party billing partner. <br />
+			   Eligibility rules and offer timing may vary if you sign up through a third-party billing partner. 
 			   Access content from each service separately. Location data may be required to watch certain content.
 			   For more information, including detailed information on billing and cancellation, please visit the Hulu Help Center.
 			 </p>

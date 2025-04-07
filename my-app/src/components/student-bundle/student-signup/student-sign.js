@@ -22,19 +22,19 @@ const StudentSign = () => {
 		<img src={Icon1} alt='icon1' />
 		<p>STEP 1</p>
 		<h2>Create Your Account</h2>
-				<p>Click "GET THIS DEAL" and create your Hulu <br /> account. You'll use your email and password to log <br />in and watch on your favorite devices.</p>
+				<p>Click "GET THIS DEAL" and create your Hulu  account. You'll use your email and password to log in and watch on your favorite devices.</p>
 				</div>
 				<div className='category-b'>
 				<img src={Sign2} alt='icon1' />
 				<p>STEP 2</p>
 				<h2>Verify Your Student Status</h2>
-				<p>We’ve partnered with Sheer ID to verify your <br /> student status. You’ll be redirected there to provide <br /> your details.</p>
+				<p>We’ve partnered with Sheer ID to verify your  student status. You’ll be redirected there to provide  your details.</p>
 				</div>
 				<div className='category-c'>
 				<img src={Sign3} alt='icon1' />
 				<p>STEP 3</p>
 				<h2>Download App & Start Streaming</h2>
-				<p>Stream across your favorite smart TVs, computers, <br />phones, tablets, and gaming consoles.</p>
+				<p>Stream across your favorite smart TVs, computers, phones, tablets, and gaming consoles.</p>
 				</div>
 			  </div>
 			</div>

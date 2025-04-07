@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './plan-foot.css'
 const Footer2 = () => {
   return (
@@ -6,11 +7,11 @@ const Footer2 = () => {
 	<h1 className='plan-foot-title'>hulu</h1>
 	  <div className='plan-footer-section'>
 	  <div className='plan-foot-tag'>
-	  <a href='#'>About Ads</a>
-      <a href='#'>Subscriber Agreement</a>
-      <a href='#'>Privacy Policy</a>
-      <a href='#'>Do Not Sell or Share My Personal Information</a>
-      <a href='#'>Your US State Privacy Rights</a>
+	  <Link to='#'>About Ads</Link>
+      <Link to='#'>Subscriber Agreement</Link>
+      <Link to='#'>Privacy Policy</Link>
+      <Link to='#'>Do Not Sell or Share My Personal Information</Link>
+      <Link to='#'>Your US State Privacy Rights</Link>
 	  </div>
 	<p className='plan-copyright'> © 2025 Hulu, LLC</p>
 	  </div>

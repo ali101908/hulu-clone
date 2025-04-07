@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate,Link } from 'react-router-dom'; // Import useNavigate
 import BasicBundle from '../disney-basic-bundle/hero-basic';
 import '../bundles.css'
 
@@ -16,7 +16,7 @@ const Header1 = () => {
     <div className='bundle-container'>
       <div className='navbar1'>
         {/* Logo */}
-       <a href='/' > <h2 className='logo'>hulu</h2></a>
+       <Link to='/' > <h2 className='logo'>hulu</h2></Link>
 
         {/* Desktop login button */}
         <button className='log-btn' onClick={() => navigate('/login')}>

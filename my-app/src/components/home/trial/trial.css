@@ -48,9 +48,9 @@ align-items: center;
 justify-content: center;
 }
 
-.trial-btn:hover{
+/* .trial-btn:hover{
 	cursor: pointer;
-}
+} */
 
 .trial-footer-content{
 	font-family: "Graphik Web", Graphik, sans-serif;
@@ -59,14 +59,15 @@ font-weight: 400;
 line-height: 10px;
 color: rgba(255, 255, 255, 0.6);
 text-align: center;
+width: 60%;
 }
 
-.trial-footer-link{
+/* .trial-footer-link{
 	font-family: "Graphik Web", Graphik, sans-serif;
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 16px;
-}
+} */
 
 /* Modal Background */
 .modal1 {
@@ -95,6 +96,11 @@ text-align: center;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   }
   
+
+.trial-content{
+width: 500px;
+}
+
   /* Close Button */
   .close1 {
 	position: absolute;

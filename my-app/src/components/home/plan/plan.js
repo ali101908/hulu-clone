@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './plan.css';
-import Pricing from '../pricing/pricing';
+import styles from '../../../assets/component.module.css/component.module.css';
+
 
 const Plan = () => {
   const [selectedPlan, setSelectedPlan] = useState('Disney+, Hulu Bundle');
@@ -14,27 +16,27 @@ const Plan = () => {
   ];
 
   return (
-    <div className='plan-container'>
-      <div className='plan-heading'>
-        <h1 className='plan-title'>Select Your Plan</h1>
-        <p className='plan-content'>
-          No hidden fees, equipment rentals, or installation appointments.<br />
+    <div className={`${styles.textCenter} ${styles.bgBlack} ${styles.widthAuto}`}>
+      <div className={styles.paddingCover}>
+        <h1 className={styles.fontWhite}>Select Your Plan</h1>
+        <p className={styles.fontWhite18px}>
+          No hidden fees, equipment rentals, or installation appointments.
           <b>Switch plans or cancel anytime.**</b>
         </p>
         <div className={`dropdown-btn ${isOpen ? 'open' : ''}`}>
           <button
-            className='dropdown-toggle'
+            className={`${styles.hover} ${styles.fontBlack} ${styles.bgWhite} ${styles.width250px} dropdown-toggle`}
             type='button'
             onClick={() => setIsOpen(!isOpen)}
           >
             {selectedPlan} ▼
           </button>
-          <div className={`dropdown-menu ${isOpen ? 'visible' : 'hidden'}`}>
+          <div className={`dropdown-menu ${isOpen ? 'visible' : 'hidden'} ${styles.bgWhite} ${styles.textLeft} ${styles.width250px}`}>
             {plans.map((plan, index) => (
-              <a
+              <Link
                 key={index}
-                href={plan.link}
-                className='dropdown-item'
+                to={plan.link}
+                className={`${styles.fontBlack} dropdown-item`}
                 onClick={(e) => {
                   e.preventDefault(); // Prevent navigation
                   setSelectedPlan(plan.name);
@@ -42,7 +44,7 @@ const Plan = () => {
                 }}
               >
                 {plan.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

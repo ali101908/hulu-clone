@@ -1,0 +1,236 @@
+.height80vh{
+	height: 80vh;
+}
+
+.height50vh{
+	height: 50vh;
+}
+
+.widthAuto{
+	max-width: auto;
+}
+
+.width250px{
+	width: 250px;
+}
+
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex{
+	display: flex;
+	justify-content: right;
+}
+
+.dFLEX{
+	display: flex;
+}
+
+.spaceEvenly{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.spaceBetween{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.directionColumn{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.flexStart{
+	align-items: flex-start;
+}
+
+.paddingComplete{
+	padding: 50px;
+}
+
+.paddingCover{
+	padding: 20px 0px;
+}
+
+.marginTop{
+	margin-top: 20px;
+}
+
+.marginBottom{
+	margin-bottom: 20px;
+}
+
+.gap{
+	gap: 20px;
+}
+
+.opacity{
+	opacity: 0.8;
+}
+
+.bgBlack{
+	background-color: black;
+}
+
+.bgWhite{
+	background-color: white;
+}
+
+.bgSkyGreen{
+	background-color: rgb(28, 231, 131);
+}
+
+
+.imgSize{
+	width: 250px;
+	height: 100px;
+   text-align: center;
+}
+
+.textCenter{
+	text-align: center;
+}
+
+.textEnd{
+	text-align: end;
+}
+
+.textLeft{
+	text-align: left;
+}
+
+.fontBlack{
+	font-family: "Graphik Web", Graphik, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: rgb(4, 4, 5);
+}
+
+.fontBlack12px{
+	font-family: "Graphik Web", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(22, 24, 29);
+}
+
+.fontGreen{
+	font-family: "Graphik Web", sans-serif;
+font-size: 12px;
+font-weight: 500;
+line-height: 12px;
+color: rgb(0, 237, 130);
+}
+
+.fontGreenBold{
+	font-family: "Graphik Web", sans-serif;
+font-size: 14px;
+font-weight: 500;
+line-height: 14px;
+color: rgb(0, 237, 130);
+}
+
+.fontWhite{
+	font-family: "Graphik Web", sans-serif;
+font-size: 48px;
+font-weight: 600;
+line-height: 60px;
+color: rgb(255, 255, 255);
+}
+
+.fontWhite32px{
+	font-family: "Graphik Web", sans-serif;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 38.4px;
+	color: rgb(255, 255, 255);
+}
+
+.fontGray{
+	color: rgb(148, 144, 144);
+font-size: 11px;
+}
+
+.fontWhiteBold{
+	color: white;
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+.fontWhite18px{
+	font-family: "Graphik Web", sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 23.76px;
+color: rgb(255, 255, 255);
+		
+}
+
+.fontWhite14px{
+	color: white;
+	font-family: "Graphik Web", sans-serif;
+font-size: 14px;
+font-weight: 900;
+line-height: 13.5px;
+}
+
+.fontWhite12px{
+	font-family: "Graphik Web", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.fontWhite10px{
+	font-family: "Graphik Web", Graphik, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14.6px;
+    color: rgb(255, 255, 255);
+}
+
+.fontWidth{
+width: 600px;
+}
+
+.fontWidth2{
+	width: 1000px;
+}
+
+.fontWidth3{
+	width: 1200px;
+}
+
+.themeColor{
+	color: #1CE783;
+}
+
+.atags{
+	text-decoration: none;
+	color: white;
+	font-size: 11px;
+}
+
+.hover{
+	cursor: pointer;
+}
+
+.bgImage{
+	background-size: cover;
+	background-position: center;
+}
+
+.overflowX{
+	overflow-x: hidden;
+}
+
+.overflowY{
+	overflow-y: hidden;
+}

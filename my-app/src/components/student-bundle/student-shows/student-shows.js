@@ -12,7 +12,7 @@ const StudentShows = () => {
 		<h6 className='heading2'>INCLUDED IN HULU STUDENT DEAL</h6>
 		<h1 style={{ color: 'white' }}>Unlimited Access To The Hulu Streaming Library</h1>
 		<p className='show-content' style={{ color: 'white' }}>
-		Stream full seasons of exclusive series, current-season episodes, hit movies, Hulu Originals, <br />
+		Stream full seasons of exclusive series, current-season episodes, hit movies, Hulu Originals, 
 		and more.
 		</p>
 	  </div>

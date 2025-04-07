@@ -30,7 +30,7 @@ const Iconic = () => {
     <div className='iconic-container'>
       <div className='iconic-header'>
         <h1 className='iconic-title'>Iconic hits with Max</h1>
-        <p className='iconic-subtitle'>Get all of HBO, the DC Universe, new releases from Warner Bros. and A24, and more. From <br /> award-winning series and movies to fresh originals and family favorites, Max is the one to watch.</p>
+        <p className='iconic-subtitle'>Get all of HBO, the DC Universe, new releases from Warner Bros. and A24, and more. From  award-winning series and movies to fresh originals and family favorites, Max is the one to watch.</p>
       </div>
       <div className='iconic-tabs'>
         {Object.keys(categories).map((category) => (

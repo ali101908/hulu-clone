@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './footer.css';
+import { Link } from 'react-router-dom';
+// import './footer.css';
 import FacebookIcon from '../../../images/facebook.svg';
 import InstaIcon from '../../../images/instagram.svg';
 import XIcon from '../../../images/x_logo.svg';
@@ -101,7 +102,7 @@ const Footer = () => {
             <div key={index} className="footer-link-items">
               <h2>{section.title}</h2>
               {section.links.map((link, linkIndex) => (
-  <a key={linkIndex} href={link.url}>{link.text}</a>
+  <Link key={linkIndex} to={link.url}>{link.text}</Link>
 ))}
 
             </div>
@@ -119,7 +120,7 @@ const Footer = () => {
         </h2>
         <div className={`dropdown-content ${openSections[index] ? 'show' : ''}`}>
         {section.links.map((link, linkIndex) => (
-  <a key={linkIndex} href={link.url}>{link.text}</a>
+  <Link  key={linkIndex} to={link.url}>{link.text}</Link>
 ))}
 
         </div>
@@ -133,9 +134,9 @@ const Footer = () => {
       <div className="social-media">
         <div className="social-icons">
           {footerData.socialIcons.map((social, index) => (
-            <a key={index} href={social.link} className="social-icon-link" aria-label={social.name}>
+            <Link key={index} to={social.link} className="social-icon-link" aria-label={social.name}>
               <img src={social.icon} alt={social.name} className="social-icon-img" />
-            </a>
+            </Link>
           ))}
         </div>
       </div>
@@ -143,11 +144,11 @@ const Footer = () => {
       <div className="footer-bottom">
         <small className='footer-copyright'>{footerData.copyright}</small>
         <div className="footer-legal">
-          <a href="/" className="about-icon-link">
+          <Link to="/" className="about-icon-link">
             <img src={AboutIcon} alt="About Icon" className="about-icon-img" />
-          </a>
+          </Link>
           {footerData.legalLinks.map((link, index) => (
-  <a key={index} href={link.url}>{link.text}</a>
+  <Link key={index} to={link.url}>{link.text}</Link>
 ))}
 
         </div>

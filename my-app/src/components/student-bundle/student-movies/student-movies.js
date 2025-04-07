@@ -12,7 +12,7 @@ const StudentMovies = () => {
 	  <div className='movies-portion'>
 		<div className='movies-portion-a'>
 			<h1>Tons of shows and movies with Hulu</h1>
-			<p className='box-content'>Get access to Hulu with thousands of episodes of every kind of TV. From Shōgun to Only <br /> Murders in The Building to The Kardashians – there’s plenty of all the things you’re into.</p>
+			<p className='box-content'>Get access to Hulu with thousands of episodes of every kind of TV. From Shōgun to Only  Murders in The Building to The Kardashians – there’s plenty of all the things you’re into.</p>
 			<div className='portion-a-movies'>
 <img src={sm1} alt='img1' />
 <img src={sm2} alt='img1' />

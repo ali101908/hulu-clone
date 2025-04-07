@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './news.css';
+import styles from '../../../assets/component.module.css/component.module.css';
 
 // Import images
 import icon1 from '../../../images/i1.png';
@@ -49,13 +51,13 @@ const Newssection = () => {
    const [showTerms, setShowTerms] = useState(false);
 
   return (
-    <div className='news-container' style={{ backgroundImage: `url(${activeTab.backgroundImage})` }}>
+    <div className={`  ${styles.directionColumn} ${styles.flexStart}  ${styles.height80vh} ${styles.bgImage} ${styles.overflowX} ${styles.paddingComplete} news-container`} style={{ backgroundImage: `url(${activeTab.backgroundImage})` }}>
       {/* Navigation Tabs */}
       <div className='news-tabs'>
         {newsData.map((news) => (
           <button
             key={news.id}
-            className={`news-tab ${activeTab.id === news.id ? 'active' : ''}`}
+            className={`news-tab ${activeTab.id === news.id ? 'active' : ''} ${styles.fontWhite14px}`}
             onClick={() => setActiveTab(news)}
           >
             {news.title}
@@ -65,21 +67,21 @@ const Newssection = () => {
 
       {/* Content Section */}
       <div className='news-content'>
-        <h1>{activeTab.title}</h1>
-        <p>{activeTab.description}</p>
+        <h1 className={styles.fontWhite}>{activeTab.title}</h1>
+        <p className={styles.fontWhite18px}>{activeTab.description}</p>
 
         {/* Icons */}
-        <div className='icons'>
+        <div className={`${styles.flex} ${styles.gap} ${styles.marginTop}`}>
           {activeTab.icons.map((icon, index) => (
-            <img key={index} src={icon} alt={`icon-${index}`} />
+            <img className='icons-img' key={index} src={icon} alt={`icon-${index}`} />
           ))}
         </div>
 
       
       </div>
         {/* Disclaimer */}
-        <p className='news-footer'>
-          Live TV plan required. Regional restrictions, blackouts, and additional terms apply.<a href='#' onClick={(e) => { e.preventDefault(); setShowTerms(true); }} style={{ color: 'gray' }}> See details</a>
+        <p className={styles.fontGray}>
+          Live TV plan required. Regional restrictions, blackouts, and additional terms apply.<Link to='#' onClick={(e) => { e.preventDefault(); setShowTerms(true); }} style={{ color: 'gray' }}> See details</Link>
         </p>
 
         {showTerms && (
@@ -87,7 +89,7 @@ const Newssection = () => {
           <div className='modal-content'>
             <span className='close' onClick={() => setShowTerms(false)}>&times;</span>
             <p style={{color:"white"}}>
-              Cancel anytime, through your account settings or by contacting us, effective at the end of your billing period. No refunds or credits for partial months. Use of the services is subject to the <a href='#'> Disney+, ESPN+, and Hulu Subscriber Agreement</a>. Valid payment method required to redeem offer. Cannot be combined with any other offers, coupons, discounts or promotions. Not redeemable for cash or any other goods or services. Eligibility rules and offer timing may vary if you sign up through a third party billing partner. <br />
+              Cancel anytime, through your account settings or by contacting us, effective at the end of your billing period. No refunds or credits for partial months. Use of the services is subject to the <Link to='#'> Disney+, ESPN+, and Hulu Subscriber Agreement</Link>. Valid payment method required to redeem offer. Cannot be combined with any other offers, coupons, discounts or promotions. Not redeemable for cash or any other goods or services. Eligibility rules and offer timing may vary if you sign up through a third party billing partner. 
               Access content from each service separately. Location data may be required to watch certain content. For more information, including detailed information on billing and cancelation, please visit the Hulu Help Center.
             </p>
           </div>
