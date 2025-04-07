@@ -43,6 +43,7 @@
 	background: white; /* White background */
 	padding: 8px; /* Adds spacing inside the circle */
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a slight shadow for better visibility */
+	/* text-align: left; */
   }
 
   .news-footer{

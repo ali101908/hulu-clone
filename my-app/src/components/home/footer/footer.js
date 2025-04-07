@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import './footer.css';
+import './footer.css';
+import styles from '../../../assets/component.module.css/component.module.css';
 import FacebookIcon from '../../../images/facebook.svg';
 import InstaIcon from '../../../images/instagram.svg';
 import XIcon from '../../../images/x_logo.svg';
@@ -93,16 +94,16 @@ const Footer = () => {
   
 
   return (
-    <div className="footer-container">
+    <div className={`${styles.paddingComplete} ${styles.overflowX} footer-container`}>
       
       {/* Static version for desktop */}
       {!isMobile && (
-        <div className="footer-links">
+        <div className={`${styles.center} ${styles.textCenter} footer-links`}>
           {footerData.sections.map((section, index) => (
             <div key={index} className="footer-link-items">
-              <h2>{section.title}</h2>
+              <h2 className={`${styles.fontDarkBlue} ${styles.hover}`}>{section.title}</h2>
               {section.links.map((link, linkIndex) => (
-  <Link key={linkIndex} to={link.url}>{link.text}</Link>
+  <Link className={`${styles.fontLightGray}`} key={linkIndex} to={link.url}>{link.text}</Link>
 ))}
 
             </div>
@@ -112,15 +113,15 @@ const Footer = () => {
 
       {/* Dropdown version for mobile */}
       {isMobile && (
-  <div className="footer-links">
+  <div className={`${styles.center} ${styles.textCenter} footer-links`}>
     {footerData.sections.map((section, index) => (
       <div key={index} className="footer-link-items">
-        <h2 className="dropdown-title" onClick={() => toggleSection(index)}>
+        <h2 className={`${styles.fontDarkBlue} ${styles.hover}`} onClick={() => toggleSection(index)}>
           {section.title} <span className={`dropdown-icon ${openSections[index] ? 'open' : ''}`}>▼</span>
         </h2>
         <div className={`dropdown-content ${openSections[index] ? 'show' : ''}`}>
         {section.links.map((link, linkIndex) => (
-  <Link  key={linkIndex} to={link.url}>{link.text}</Link>
+  <Link className={`${styles.fontLightGray}`}  key={linkIndex} to={link.url}>{link.text}</Link>
 ))}
 
         </div>
@@ -131,8 +132,8 @@ const Footer = () => {
 
       <hr className="footer-divider" />
 
-      <div className="social-media">
-        <div className="social-icons">
+      <div className={`${styles.dFlex} ${styles.heightfull}`}>
+        <div className={`${styles.center} ${styles.gap} ${styles.width600px}`}>
           {footerData.socialIcons.map((social, index) => (
             <Link key={index} to={social.link} className="social-icon-link" aria-label={social.name}>
               <img src={social.icon} alt={social.name} className="social-icon-img" />
@@ -142,13 +143,13 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <small className='footer-copyright'>{footerData.copyright}</small>
-        <div className="footer-legal">
+        <small className={`${styles.center} ${styles.width600px} ${styles.fontLightGray}`}>{footerData.copyright}</small>
+        <div className={`${styles.flexWrap} ${styles.fontLightGray} ${styles.gap} `}>
           <Link to="/" className="about-icon-link">
             <img src={AboutIcon} alt="About Icon" className="about-icon-img" />
           </Link>
           {footerData.legalLinks.map((link, index) => (
-  <Link key={index} to={link.url}>{link.text}</Link>
+  <Link className={`${styles.textDecoration} ${styles.grayColour}`} key={index} to={link.url}>{link.text}</Link>
 ))}
 
         </div>

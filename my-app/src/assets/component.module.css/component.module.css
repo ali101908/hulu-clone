@@ -1,3 +1,7 @@
+.heightfull{
+	height: 100%;
+}
+
 .height80vh{
 	height: 80vh;
 }
@@ -12,6 +16,10 @@
 
 .width250px{
 	width: 250px;
+}
+
+.width600px{
+	width: 600px;
 }
 
 .center{
@@ -51,6 +59,12 @@
 	align-items: flex-start;
 }
 
+.flexWrap{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
 .paddingComplete{
 	padding: 50px;
 }
@@ -73,6 +87,10 @@
 
 .opacity{
 	opacity: 0.8;
+}
+
+.grayColour{
+	color: #777;
 }
 
 .bgBlack{
@@ -104,6 +122,14 @@
 
 .textLeft{
 	text-align: left;
+}
+
+.fontLightGray{
+	font-family: "Graphik Web", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    color: rgb(88, 97, 116);
 }
 
 .fontBlack{
@@ -196,6 +222,14 @@ line-height: 13.5px;
     color: rgb(255, 255, 255);
 }
 
+.fontDarkBlue{
+	font-family: "Graphik Web", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    color: rgb(39, 44, 52);
+}
+
 .fontWidth{
 width: 600px;
 }
@@ -233,4 +267,8 @@ width: 600px;
 
 .overflowY{
 	overflow-y: hidden;
+}
+
+.textDecoration{
+	text-decoration: none;
 }
