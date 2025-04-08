@@ -8,7 +8,7 @@ const Trial = () => {
   const [zipCode, setZipCode] = useState("");
 
   return (
-    <div className={`${styles.directionColumn} ${styles.overflowX} ${styles.paddingComplete}`} style={{ backgroundColor: "#0B0C0F" }}>
+    <div className={`${styles.directionColumn} ${styles.height80vh}  ${styles.paddingComplete}`} style={{ backgroundColor: "#0B0C0F" }}>
       <p className={styles.fontGreenBold}>
         TRY HULU (WITH ADS) + LIVE TV FREE FOR 3 DAYS
       </p>
@@ -23,9 +23,10 @@ const Trial = () => {
         content.  Includes access to endless entertainment with Disney+
         and live sports with ESPN+.
       </p>
-      <Link to="./login" className={`${styles.hover} ${styles.d} trial-btn`} style={{ backgroundColor: "#1CE783" }}>
+      <div className={styles.center}>
+      <Link to="./login" className={`${styles.hover}  trial-btn`} style={{ backgroundColor: "#1CE783" }}>
         START YOUR FREE TRIAL
-      </Link>
+      </Link></div>
       <p className={`${styles.fontGray} ${styles.textCenter} `} >
         Hulu (With Ads) + Live TV plan $82.99/mo. after 3-day free trial (if
         any) unless canceled. Cancel anytime. Regional restrictions, blackouts

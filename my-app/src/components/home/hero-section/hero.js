@@ -10,7 +10,7 @@ const HeroSection = () => {
   const [showTerms, setShowTerms] = useState(false);
 
   return (
-    <div className={`${styles.overflowX} hero-container`}>
+    <div className={` hero-container`}>
       <div className='hero-logo'>
         <h6 className={styles.fontGreen}>LIMITED TIME OFFER</h6>
         <img className={styles.imgSize} src={heroImage} alt='Hulu Hero' />

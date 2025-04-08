@@ -94,7 +94,7 @@ const Footer = () => {
   
 
   return (
-    <div className={`${styles.paddingComplete} ${styles.overflowX} footer-container`}>
+    <div className={`${styles.paddingComplete} footer-container`}>
       
       {/* Static version for desktop */}
       {!isMobile && (
@@ -133,7 +133,7 @@ const Footer = () => {
       <hr className="footer-divider" />
 
       <div className={`${styles.dFlex} ${styles.heightfull}`}>
-        <div className={`${styles.center} ${styles.gap} ${styles.width600px}`}>
+        <div className={`${styles.center} ${styles.gap} `}>
           {footerData.socialIcons.map((social, index) => (
             <Link key={index} to={social.link} className="social-icon-link" aria-label={social.name}>
               <img src={social.icon} alt={social.name} className="social-icon-img" />
@@ -143,7 +143,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <small className={`${styles.center} ${styles.width600px} ${styles.fontLightGray}`}>{footerData.copyright}</small>
+        <small className={`${styles.center}  ${styles.fontLightGray}`}>{footerData.copyright}</small>
         <div className={`${styles.flexWrap} ${styles.fontLightGray} ${styles.gap} `}>
           <Link to="/" className="about-icon-link">
             <img src={AboutIcon} alt="About Icon" className="about-icon-img" />

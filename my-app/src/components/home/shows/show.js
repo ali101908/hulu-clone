@@ -10,7 +10,7 @@ import Trial from '../trial/trial';
 
 const Show = () => {
   return (
-    <div className={`${styles.paddingCover} ${styles.overflowX}`} style={{ backgroundColor: '#0B0C0F' }}>
+    <div className={`${styles.paddingCover} `} style={{ backgroundColor: '#0B0C0F' }}>
       <div className='show-title'>
         <div className='show-header'>
           <h6 className={`${styles.fontGreenBold} ${styles.textCenter}`}>INCLUDED IN ALL PLANS</h6>
@@ -22,8 +22,8 @@ const Show = () => {
         </div>
       </div>
       <div className='shows'>
-        <div className={`${styles.spaceEvenly} `}>
-          <div className={`${styles.spaceEvenly} ${styles.gap}`}>
+        <div className={`${styles.flexWrap}`}>
+          <div className={`${styles.flexWrap}  ${styles.gap}`}>
             <div className='show-item'>
               <img src={list1} alt='Hulu Shows' width={280} height={440} />
               <div className='show-overlay'>
@@ -38,8 +38,8 @@ const Show = () => {
                 <h2>Movies</h2>
               </div>
             </div>
-          </div>
-          <div className='show-row'>
+          {/* </div> */}
+          {/* <div className={styles.FlexWrap}> */}
             <div className='show-item'>
               <img src={list3} alt='Hulu Shows' width={280} height={440} />
               <div className='show-overlay'>
@@ -57,7 +57,7 @@ const Show = () => {
           </div>
         </div>
       </div>
-      <p className={`${styles.fontGray} ${styles.textEnd} ${styles.fontWidth3}`}>Premium network add-ons available for an additional cost</p>
+      <p className={`${styles.fontGray} ${styles.textCenter}`}>Premium network add-ons available for an additional cost</p>
       {/* <Trial /> */}
     </div>
   );

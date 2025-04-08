@@ -51,7 +51,7 @@ const Newssection = () => {
    const [showTerms, setShowTerms] = useState(false);
 
   return (
-    <div className={` ${styles.overflowX}  ${styles.directionColumn} ${styles.flexStart}  ${styles.height80vh} ${styles.bgImage} ${styles.overflowX} ${styles.paddingComplete} news-container`} style={{ backgroundImage: `url(${activeTab.backgroundImage})` }}>
+    <div className={` ${styles.directionColumn} ${styles.flexStart}  ${styles.height80vh} ${styles.bgImage} ${styles.overflowX} ${styles.paddingComplete} news-container`} style={{ backgroundImage: `url(${activeTab.backgroundImage})` }}>
       {/* Navigation Tabs */}
       <div className='news-tabs'>
         {newsData.map((news) => (
@@ -71,7 +71,7 @@ const Newssection = () => {
         <p className={styles.fontWhite18px}>{activeTab.description}</p>
 
         {/* Icons */}
-        <div className={`${styles.flex} ${styles.gap} ${styles.marginTop}`}>
+        <div className={`${styles.spaceEvenly} ${styles.gap} ${styles.marginTop}`}>
           {activeTab.icons.map((icon, index) => (
             <img className='icons-img' key={index} src={icon} alt={`icon-${index}`} />
           ))}

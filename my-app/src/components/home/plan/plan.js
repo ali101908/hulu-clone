@@ -16,7 +16,7 @@ const Plan = () => {
   ];
 
   return (
-    <div className={`${styles.textCenter} ${styles.overflowX} ${styles.bgBlack} ${styles.widthAuto}`}>
+    <div className={`${styles.textCenter}  ${styles.bgBlack} ${styles.widthAuto}`}>
       <div className={styles.paddingCover}>
         <h1 className={styles.fontWhite}>Select Your Plan</h1>
         <p className={styles.fontWhite18px}>
