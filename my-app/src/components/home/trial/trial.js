@@ -8,8 +8,8 @@ const Trial = () => {
   const [zipCode, setZipCode] = useState("");
 
   return (
-    <div className={`${styles.directionColumn} ${styles.height80vh}  ${styles.paddingComplete}`} style={{ backgroundColor: "#0B0C0F" }}>
-      <p className={styles.fontGreenBold}>
+    <div className={`${styles.directionColumn}  ${styles.gap} ${styles.paddingComplete}`} style={{ backgroundColor: "#0B0C0F" }}>
+      <p className={`${styles.fontGreenBold} ${styles.textCenter} `}>
         TRY HULU (WITH ADS) + LIVE TV FREE FOR 3 DAYS
       </p>
       <h1 className={`${styles.fontWhite} ${styles.textCenter}`}>
