@@ -60,7 +60,7 @@
     }
 
     .dropdown-content.show {
-        display: grid; /* Grid layout applied */
+        display: grid; 
     }
 
     .dropdown-icon {
@@ -86,7 +86,6 @@
         display: none;
         grid-template-columns: repeat(1, minmax(100px, auto)); /* Three columns */
         gap: 10px;
-        /* text-align: center; */
         padding-left: 0; /* Remove left padding */
         width: 100%; 
         max-width: 300px; /* Adjust max width to fit screen */
