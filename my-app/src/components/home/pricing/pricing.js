@@ -54,7 +54,7 @@ const Pricing = () => {
           <div key={index} className={styles.fontWhite14px}>
             <img src={PriceLogo} alt='Disney Plus Logo' />
             <p className={styles.fontWhite12px}>{bundle.name}</p>
-            <button className={`${styles.width250px} ${styles.fontBlack} pricing-btn`}>{bundle.price}</button>
+            <button className={`${styles.width250px} ${styles.fontBlack} ${styles.hover} pricing-btn`}>{bundle.price}</button>
             <p className={`${styles.fontWhite12px} ${styles.width250px}`}>{bundle.footer}</p>
           </div>
         ))}
@@ -62,7 +62,7 @@ const Pricing = () => {
       </div>
       
 	  <div className='table-container'>
-  <div className='table-content'>
+  <div className={styles.marginTop}>
   {/* <hr className='table-line' /> */}
     {pricingData.table.map((row, index) => (
       <div key={index} className={`${styles.spaceEvenly} ${styles.paddingCover} table-row`}>
@@ -106,8 +106,8 @@ const Pricing = () => {
   <hr className='table-line' />
   {showAddOns && (
     <div className='Add-On'>
-      <h1 className={`${styles.fontWhite32px} ${styles.flex} ${styles.textCenter} available`}>Available Add-ons</h1>
-      <p className={`${styles.flex} ${styles.fontWhite14px} add-content`}>Add-ons available at an additional cost.  Add them after you sign up for Hulu.</p>
+      <h1 className={`${styles.fontWhite32px}  ${styles.textCenter} available`}>Available Add-ons</h1>
+      <p className={` ${styles.fontWhite14px} ${styles.textCenter} add-content`}>Add-ons available at an additional cost.  Add them after you sign up for Hulu.</p>
 
 	  
       <div className='add-on-table'>

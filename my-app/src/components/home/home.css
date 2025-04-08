@@ -2,23 +2,12 @@
 	background-image: url('../../images/banner.jpeg');
 	max-width: 100%;
 	background-size: cover;
-	
-  }
-  
-  .navbar {
-	display: flex;
-	justify-content: space-between;
-	height: 50px;
-	position: relative;
-	align-items: center;
   }
   
   .logo {
 	margin-left: 40px;
-	
   }
   
-  /* Desktop version login and sign-up buttons */
   .log-btn, .sign-up-btn {
 	margin-top: 20px;
 	margin-right: 20px;
@@ -30,7 +19,7 @@
 	color: rgb(167, 163, 163);
 	font-size: 14px;
 	font-weight: bold;
-	display: inline-block; /* Ensure it is inline on larger screens */
+	display: inline-block;
   }
   
   .log-btn:hover, .sign-up-btn:hover {
@@ -42,19 +31,12 @@
 .menu-icon {
     display: none;
     font-size: 18px;
-    cursor: pointer;
-    color: white;
     background-color: #323843;
     border: none;
     border-radius: 10px;
     height: 40px;
     width: 40px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-
 
 .mobile-menu {
     display: none; 
@@ -103,11 +85,7 @@
     transition: 0.3s;
 }
 
-.hero-cont-img{
-	width: 250px;
-}
 
-/* Responsive Design for Mobile Screens */
 @media (max-width: 768px) {
     .navbar {
         justify-content: space-between;
@@ -118,97 +96,30 @@
 		width: 250px;
 	}
 
-    /* Hide desktop buttons */
     .log-btn, .sign-up-btn {
         display: none;
     }
 
-    /* Show hamburger menu */
     .menu-icon {
         display: flex;
         margin-right: 20px;
     }
 
-    /* Adjust mobile menu */
     .mobile-menu {
         width: 250px;
         height: auto;
     }
 }
 
-
-
-.hero-logo{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-	
-
-.heading{
-	color: #1CE783;
-	font-weight: 600;
-	font-size: 13px;
-}
-
-.hero-container h1{
-	color: white;
-	text-align: center;
-	font-size: 45px;
-}
-
-/* .hero-content1{
-	color: white;
-	text-align: center;
-	font-size: 25px;
-	font-weight: bolder;
-} */
-
-.hero-btn-container{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 .hero-btn{
-	background-color: #1CE783;
 	height: 45px;
 	width: 700px;
 	border: 0;
 	border-radius: 6px;
-	font-family: "Graphik Web", sans-serif;
-font-size: 14px;
-font-weight: 600;
-line-height: 14px;
-color: rgb(0, 0, 0);
-text-decoration: none;
-display: flex;
-align-items: center;
-justify-content: center;
 }
-
-.hero-btn:hover{
-	cursor: pointer;
-}
-
-/* .hero-content{
-color: rgb(148, 144, 144);
-font-size: 11px;
-text-align: center;
-} */
-
-.hero-content a{
-	color: white;
-	}
 
 	.hero-footer{
-	
 		border: 1px solid black;
-		background-color: black;
-		opacity: 0.8;
-		max-width: auto;
-	padding: 20px 0px;
 	}
 
 	.hero-footer img{
@@ -216,78 +127,38 @@ text-align: center;
 		height: 80px;
 	}
 
-	.foot-head{
-		color: #1CE783;
-	font-weight: 600;
-	font-size: 13px;
-	text-align: center;
-	}
-
-	.hero-footer-content h3{
-		color: white;
-		font-family: Arial, Helvetica, sans-serif;
-		text-align: center;
-	}
-
 .hero-btn2{
-	background-color: #1CE783;
-	text-align: center;
 	height: 52px;
 	width: 140px;
 	border: 0;
 	border-radius: 4px;
 	font-weight: bold;
 	font-size: 15px;
-	color: black; 
-	/* transition: filter 0.3s ease-in-out; */
-}
+}        
 
-.hero-btn2:hover{
-	cursor: pointer;
-	/* filter: brightness(60%); */
-}
-
-	.hero-btn-footer a{
-		color: white;
-		font-size: 11px;
-		text-align: center;
-	}
-
-	/* Modal Background */
 .modal {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8); 
 	z-index: 1000;
   }
-  
-  /* Modal Content Box */
+
   .modal-content {
-	background-color: #1a1a1a; /* Dark gray background */
+	background-color: #1a1a1a;
 	padding: 20px;
 	width: 50%;
 	max-width: 600px;
 	border-radius: 10px;
-	text-align: left;
-	color: white;
 	position: relative;
 	box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
   }
   
-  /* Close Button */
   .close {
 	position: absolute;
 	top: 10px;
 	right: 15px;
 	font-size: 24px;
-	color: white;
-	cursor: pointer;
 	background: none;
 	border: none;
   }
@@ -296,16 +167,8 @@ text-align: center;
 	color: red;
   }
   
-  /* Modal Text */
-  .modal-content p {
-	font-family: Graphik, Helvetica, Arial, sans-serif;
-font-size: 16px;
-font-weight: 400;
-line-height: normal;
-  }
-  
   .modal-content a {
-	color: #1dbf73; /* Greenish link */
+	color: #1dbf73;
 	text-decoration: underline;
   }
   
@@ -313,7 +176,6 @@ line-height: normal;
 	color: #17a864;
   }
   
-
 	@media screen and (max-width: 768px){
 		.hero-footer{
 			flex-wrap: wrap;		
@@ -332,7 +194,6 @@ line-height: normal;
 		.hero-footer-content h3{
 			font-size: 12px;
 		}	
-		
 	}
 
 	

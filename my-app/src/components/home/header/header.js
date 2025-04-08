@@ -29,7 +29,7 @@ const Header = () => {
 
         {/* Hamburger menu for mobile screens */}
         {window.innerWidth <= 768 && (
-          <div className='menu-icon' onClick={toggleMenu}>
+          <div className={`${styles.whiteColour} ${styles.hover} ${styles.center} ${styles.textCenter} menu-icon`} onClick={toggleMenu}>
             &#9776;
           </div>
         )}

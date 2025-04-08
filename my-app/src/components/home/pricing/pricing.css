@@ -26,18 +26,12 @@
 }
 
 .pricing-btn:hover {
-    cursor: pointer;
     filter: brightness(80%);
 }
-
 
 .table-container {
     width: 80%;
     margin: auto;
-}
-
-.table-content {
-    margin: 20px 0;
 }
 
 .table-line {
@@ -47,15 +41,10 @@
     width: 60%;
 }
 
-.table-footer a{
-    color: rgb(255, 255, 255);
-}
-
 .table-row {
     position: relative;
 }
 
-/* Horizontal Line Above & Below Each Row */
 .table-row::before,
 .table-row::after {
     content: "";
@@ -66,7 +55,7 @@
 }
 
 .table-row::before {
-    top: 0; /* Line above */
+    top: 0; 
 }
 
 .table-row::after {
@@ -77,15 +66,12 @@
     width: 40%;
     position: relative;
     padding-right: 10px;
-    z-index: 1; /* Ensures text is above hr */
 }
 
-/* Table Value */
 .table-value {
     width: 30%;
     position: relative;
     padding: 0 5px;
-    z-index: 1; 
 }
 
 .table-value:last-child {
@@ -96,9 +82,6 @@
     text-decoration: line-through;
     margin-right: 5px;
 }
-
-/* Add-ons */
-
 
 .table-btn {
     background: none;
@@ -116,15 +99,7 @@
   
   .table-btn.active::after {
     content: "⏶";
-    transform: rotate(180deg);
 }
-  .available{
-width: 34.5%;
-  }
-
-  .add-content{
-width: 51%;
-  }
 
 .add-on-table {
     width: 60%;
@@ -160,7 +135,6 @@ width: 51%;
     z-index: 1;
 }
 
-/* Add-on Checkmarks */
 .add-on-value {
     width: 30%;
     position: relative;
@@ -180,71 +154,14 @@ width: 51%;
         width: 100%;
         gap: 10px;
     }
-
-    .pricing-btn {
-        width: 90%; /* Adjust button width for smaller screens */
-    }
-    .table-container {
-        width: 90%;
-    }
-    .table-content {
-        width: 100%;
-    }
-    .table-heading {
-        width: 40%;
-    }
-    .table-value {
-        width: 30%;
-    }
-    .table-value:last-child {
-        text-align: right;
-    }
-    .list-price {
-        font-size: 12px;
-    }
-    .table-btn {
-        font-size: 14px;
-    }
-    .add-on-table {
-        width: 70%;
-    }
-    .add-on-name {
-        width: 40%;
-    }
-    .add-on-value {
-        width: 30%;
-    }
-    .add-on-value:last-child {
-        text-align: right;
-    }
+  
     .available{
-        font-family: "Graphik Web", sans-serif;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 29.76px;
-        color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    width: 100vw;
+    width: 80vw;
       }
     
       .add-content{
-        font-family: "Graphik Web", Graphik, sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 19.6px;
-        color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
    width: auto;
       }
-
-      .table-footer{
-        text-align: center;
-        margin-bottom: 20px;
-    
-    }
-    
 }
 
 @media screen and (max-width: 440px) {

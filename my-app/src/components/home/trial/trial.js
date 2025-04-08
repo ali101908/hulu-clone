@@ -24,7 +24,7 @@ const Trial = () => {
         and live sports with ESPN+.
       </p>
       <div className={styles.center}>
-      <Link to="./login" className={`${styles.hover}  trial-btn`} style={{ backgroundColor: "#1CE783" }}>
+      <Link to="./login" className={`${styles.hover} ${styles.fontBlack12px} ${styles.textDecoration} ${styles.center}  trial-btn`} style={{ backgroundColor: "#1CE783" }}>
         START YOUR FREE TRIAL
       </Link></div>
       <p className={`${styles.fontGray} ${styles.textCenter} `} >
@@ -47,9 +47,9 @@ const Trial = () => {
           VIEW CHANNELS IN YOUR AREA →
         </Link>
         {showTerms && (
-          <div className="modal1">
-            <div className="modal-content1">
-              <span className="close1" onClick={() => setShowTerms(false)}>
+          <div className={`${styles.center} ${styles.heightfull}  modal1`}>
+            <div className={`${styles.textLeft} ${styles.bgWhite} ${styles.paddingComplete} ${styles.blackColour} modal-content1`}>
+              <span className={`${styles.blackColour} ${styles.hover} close1`} onClick={() => setShowTerms(false)}>
                 &times;
               </span>
               <h2>Channels in your area</h2>
@@ -61,10 +61,10 @@ const Trial = () => {
                   value={zipCode}
                   onChange={(e) => setZipCode(e.target.value)}
                 />
-                <button className="submit-btn">SUBMIT</button>
+                <button className={`${styles.bgBlack} ${styles.whiteColour} ${styles.hover} submit-btn`}>SUBMIT</button>
               </div>
               <div className="trial-content">
-              <p className="modal-description1">
+              <p className={`${styles.fontGray} ${styles.marginTop} modal-description1 `}>
                 Live TV is available for those live local, regional, and
                 national channels available in your area, which are subject to
                 change. Certain channels or content may not be available in all

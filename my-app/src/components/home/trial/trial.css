@@ -1,114 +1,32 @@
-.trial-container{
-max-height: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 30px 0px;
-	overflow-x: hidden;
-}
-
-.trial-head{
-	font-family: "Graphik Web", Graphik, sans-serif;
-font-size: 14px;
-font-weight: 500;
-line-height: 14px;
-color: rgb(28, 231, 131);
-font-weight: bold;
-}
-
-.trial-head2{
-	
-	font-family: "Graphik Web", Graphik, sans-serif;
-font-size: 48px;
-font-weight: 600;
-line-height: 60px;
-}
-
-.trial-content{
-	font-family: "Graphik Web", Graphik, sans-serif;
-font-size: 18px;
-font-weight: 400;
-line-height: 23.76px;
-text-align: center;
-}
-
 .trial-btn{
-	font-family: "Graphik Web", sans-serif;
-font-size: 14px;
-font-weight: 600;
-line-height: 14px;
-color: rgb(0, 0, 0);
 height: 55px;
 width: 220px;
 border-radius: 5px;
 border: 0;
-text-decoration: none;
-display: flex;
-align-items: center;
-justify-content: center;
 }
 
-/* .trial-btn:hover{
-	cursor: pointer;
-} */
-
-.trial-footer-content{
-	font-family: "Graphik Web", Graphik, sans-serif;
-font-size: 10px;
-font-weight: 400;
-line-height: 10px;
-color: rgba(255, 255, 255, 0.6);
-text-align: center;
-width: 60%;
-}
-
-/* .trial-footer-link{
-	font-family: "Graphik Web", Graphik, sans-serif;
-	font-size: 16px;
-	font-weight: 600;
-	line-height: 16px;
-} */
-
-/* Modal Background */
 .modal1 {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
 	background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	z-index: 1000;
   }
   
-  /* Modal Content Box */
   .modal-content1 {
-	background-color: white;
-	padding: 30px;
 	width: 50%;
 	max-width: 500px;
 	border-radius: 10px;
-	text-align: left;
-	color: black;
 	position: relative;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   }
   
-
-.trial-content{
-width: 500px;
-}
-
-  /* Close Button */
   .close1 {
 	position: absolute;
 	top: 15px;
 	right: 20px;
 	font-size: 24px;
-	color: black;
-	cursor: pointer;
 	background: none;
 	border: none;
   }
@@ -117,21 +35,18 @@ width: 500px;
 	color: red;
   }
   
-  /* Heading */
   .modal-content1 h2 {
 	font-size: 22px;
 	font-weight: bold;
 	margin-bottom: 10px;
   }
   
-  /* Input Container */
   .input-container {
 	display: flex;
 	gap: 10px;
 	margin-top: 10px;
   }
   
-  /* Input Field */
   .input-container input {
 	flex: 1;
 	padding: 10px;
@@ -140,39 +55,33 @@ width: 500px;
 	border-radius: 5px;
   }
   
-  /* Submit Button */
   .submit-btn {
 	padding: 10px 20px;
 	font-size: 16px;
 	font-weight: bold;
-	background-color: black;
-	color: white;
 	border: none;
 	border-radius: 5px;
-	cursor: pointer;
   }
   
   .submit-btn:hover {
 	background-color: gray;
   }
   
-  /* Modal Description */
   .modal-description1 {
-	margin-top: 20px;
 	font-size: 14px;
 	color: gray;
 	line-height: 1.5;
   }
 
-  /* Responsive Design */
+
 @media (max-width: 768px) {
 	.modal-content1 {
-	  width: 90%; /* Make modal take up more space on smaller screens */
+	  width: 90%; 
 	  padding: 20px;
 	}
   
 	.input-container {
-	  flex-direction: column; /* Stack input and button */
+	  flex-direction: column; 
 	}
   
 	.submit-btn {
@@ -183,7 +92,7 @@ width: 500px;
   
   @media (max-width: 480px) {
 	.modal-content1 {
-	  width: 55%; /* Use more screen space */
+	  width: 55%; 
 	  padding: 15px;
 	}
   
