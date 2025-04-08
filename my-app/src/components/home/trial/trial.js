@@ -8,7 +8,7 @@ const Trial = () => {
   const [zipCode, setZipCode] = useState("");
 
   return (
-    <div className={`${styles.directionColumn} ${styles.paddingComplete}`} style={{ backgroundColor: "#0B0C0F" }}>
+    <div className={`${styles.directionColumn} ${styles.overflowX} ${styles.paddingComplete}`} style={{ backgroundColor: "#0B0C0F" }}>
       <p className={styles.fontGreenBold}>
         TRY HULU (WITH ADS) + LIVE TV FREE FOR 3 DAYS
       </p>

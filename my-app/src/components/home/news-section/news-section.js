@@ -51,7 +51,7 @@ const Newssection = () => {
    const [showTerms, setShowTerms] = useState(false);
 
   return (
-    <div className={`  ${styles.directionColumn} ${styles.flexStart}  ${styles.height80vh} ${styles.bgImage} ${styles.overflowX} ${styles.paddingComplete} news-container`} style={{ backgroundImage: `url(${activeTab.backgroundImage})` }}>
+    <div className={` ${styles.overflowX}  ${styles.directionColumn} ${styles.flexStart}  ${styles.height80vh} ${styles.bgImage} ${styles.overflowX} ${styles.paddingComplete} news-container`} style={{ backgroundImage: `url(${activeTab.backgroundImage})` }}>
       {/* Navigation Tabs */}
       <div className='news-tabs'>
         {newsData.map((news) => (

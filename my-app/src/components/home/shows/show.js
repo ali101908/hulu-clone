@@ -10,7 +10,7 @@ import Trial from '../trial/trial';
 
 const Show = () => {
   return (
-    <div className={styles.paddingCover} style={{ backgroundColor: '#0B0C0F' }}>
+    <div className={`${styles.paddingCover} ${styles.overflowX}`} style={{ backgroundColor: '#0B0C0F' }}>
       <div className='show-title'>
         <div className='show-header'>
           <h6 className={`${styles.fontGreenBold} ${styles.textCenter}`}>INCLUDED IN ALL PLANS</h6>
