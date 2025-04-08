@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate,Link } from 'react-router-dom'; // Import useNavigate
 import BasicBundle from '../disney-basic-bundle/hero-basic';
 import '../bundles.css'
+import styles from '../../../assets/component.module.css/component.module.css';
 
 const Header1 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,9 +15,9 @@ const Header1 = () => {
 
   return (
     <div className='bundle-container'>
-      <div className='navbar1'>
+      <div className={`${styles.spaceBetween}`}>
         {/* Logo */}
-       <Link to='/' > <h2 className='logo'>hulu</h2></Link>
+       <Link to='/' > <h2 className={`${styles.themeColor} ${styles.textDecoration} logo`}>hulu</h2></Link>
 
         {/* Desktop login button */}
         <button className='log-btn' onClick={() => navigate('/login')}>
@@ -25,7 +26,7 @@ const Header1 = () => {
 
         {/* Hamburger menu for mobile screens */}
         {window.innerWidth <= 768 && (
-          <div className='menu-icon' onClick={toggleMenu}>
+          <div className={`${styles.whiteColour} ${styles.hover} ${styles.center} ${styles.textCenter} menu-icon`} onClick={toggleMenu}>
             &#9776;
           </div>
         )}

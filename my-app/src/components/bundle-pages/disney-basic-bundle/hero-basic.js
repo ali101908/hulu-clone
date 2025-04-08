@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'; // Import Link for navigation
 import "../bundles.css";
 import DisneyIcon from '../../../images/bundle-images/disney-icon.png';
 import ArrowDown from '../../../images/bundle-images/arrow_down.svg';
+import styles from '../../../assets/component.module.css/component.module.css';
 
 const BasicBundle = () => {
   const [showTerms, setShowTerms] = useState(false);
@@ -14,14 +15,14 @@ const BasicBundle = () => {
 
   return (
     <div className='bundle-hero'>
-      <div className='hero-logo'>
-        <h6 className='heading'>BUNDLE & SAVE</h6>
-        <img className='bundle-cont-img' src={DisneyIcon} alt='Hulu Hero'  />
+      <div className={styles.directionColumn}>
+        <h6 className={styles.fontGreen}>BUNDLE & SAVE</h6>
+        <img className={styles.imgSize} src={DisneyIcon} alt='Hulu Hero'  />
       </div>
 
       <div>
-        <h1 className='basic-title'>BUNDLE ALL THREE</h1>
-        <p className='hero-content1'>
+        <h1 className={`${styles.fontWhite} ${styles.textCenter}`}>BUNDLE ALL THREE</h1>
+        <p className={`${styles.fontWhite18px} ${styles.textCenter}`}>
           Get your favorite stories, Originals, and live sports with 
           Disney+, Hulu, ESPN+ Bundle Basic, which includes Hulu, 
           Disney+, and ESPN+, all with ads.
@@ -29,16 +30,16 @@ const BasicBundle = () => {
       </div>
 
       <div className='basic-hero-footer'>
-        <div className='hero-btn-footer'>
-          <button className='hero-btn2'>GET ALL THREE</button>
-          <Link to='#' onClick={(e) => { e.preventDefault(); setShowTerms(true); }}>Terms apply</Link>
+        <div className={styles.directionColumn}>
+          <button className={`${styles.bgTheme} hero-btn2`}>GET ALL THREE</button>
+          <Link className={`${styles.fontWhite12px} ${styles.textDecoration}`} to='#' onClick={(e) => { e.preventDefault(); setShowTerms(true); }}>Terms apply</Link>
         </div>
       </div>
 
       {showTerms && (
-        <div className='modal'>
-          <div className='modal-content'>
-            <span className='close' onClick={() => setShowTerms(false)}>&times;</span>
+        <div className={`${styles.center} ${styles.heightfull} ${styles.width100} modal `}>
+          <div className={` ${styles.whiteColour} ${styles.textLeft} modal-content`}>
+            <span className={` ${styles.whiteColour} ${styles.hover} close`} onClick={() => setShowTerms(false)}>&times;</span>
             <p style={{ color: "white" }}>
               Cancel anytime, through your account settings or by contacting us, effective at the end of your billing period.
               No refunds or credits for partial months. Use of the services is subject to the

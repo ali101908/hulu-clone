@@ -213,6 +213,15 @@ color: rgb(255, 255, 255);
 	color: rgb(255, 255, 255);
 }
 
+.fontWhite24px{
+	font-family: "Graphik Web", Graphik, sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 29.76px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	}
+
 .fontGray{
 	color: rgb(148, 144, 144);
 font-size: 11px;
