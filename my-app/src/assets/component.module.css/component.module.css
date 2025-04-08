@@ -37,6 +37,11 @@
 	justify-content: left;
 }
 
+.justifyR{
+	display: flex;
+	justify-content: right;
+}
+
 .dFLEX{
 	display: flex;
 }
@@ -88,6 +93,10 @@
 
 .gap{
 	gap: 20px;
+}
+
+.gap5{
+	gap: 5px;
 }
 
 .opacity{

@@ -49,7 +49,7 @@ const Pricing = () => {
     <div className={`${styles.textCenter}  ${styles.paddingCover} ${styles.bgBlack}`}>
     <div className={`${styles.bgBlack} pricing-sticky`}> 
       <p className={`${styles.bgSkyGreen} ${styles.bgBlack12px} pricing-title`}>{pricingData.title}</p>
-      <div className={`${styles.gap} ${styles.flex} pricing-portion`}>
+      <div className={`${styles.gap} ${styles.justifyR} pricing-portion`}>
         {pricingData.bundles.map((bundle, index) => (
           <div key={index} className={styles.fontWhite14px}>
             <img src={PriceLogo} alt='Disney Plus Logo' />
