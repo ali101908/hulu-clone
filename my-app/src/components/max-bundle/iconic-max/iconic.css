@@ -13,12 +13,12 @@
   }
   
   .iconic-content-image {
-	display: flex;
+	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	/* justify-items: center; */
+	justify-items: center;
 	justify-content: space-evenly;
 	/* flex-direction: column; */
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	max-width: 900px;
 	margin: 0 auto;
   }
@@ -33,9 +33,9 @@
   }
   
   @media screen and (max-width: 768px) {
-	.iconic-container{
+	/* .iconic-container{
 		padding: 10px 20px;
-	}
+	} */
 
 	.iconic-content-image {
 		grid-template-columns: repeat(2, 1fr);

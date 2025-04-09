@@ -28,10 +28,10 @@ const Iconic = () => {
   const [activeCategory, setActiveCategory] = useState('Originals');
 
   return (
-    <div className={`${styles.width100} ${styles.textCenter} ${styles.paddingCover} ${styles.overflowX} iconic-container`}>
+    <div className={`${styles.width100} ${styles.textCenter}  ${styles.paddingCover}  iconic-container`}>
       <div className='iconic-header'>
         <h1 className={styles.fontWhite32px}>Iconic hits with Max</h1>
-        <p className={`${styles.fontWhite18px} ${styles.marginComplete} ${styles.textCenter}`}>Get all of HBO, the DC Universe, new releases from Warner Bros. and A24, and more. From  award-winning series and movies to fresh originals and family favorites, Max is the one to watch.</p>
+        <p className={`${styles.fontWhite18px}  ${styles.textCenter}`}>Get all of HBO, the DC Universe, new releases from Warner Bros. and A24, and more. From  award-winning series and movies to fresh originals and family favorites, Max is the one to watch.</p>
       </div>
       <div className={`${styles.center} ${styles.gap} ${styles.marginBottom}`}>
         {Object.keys(categories).map((category) => (
@@ -44,8 +44,8 @@ const Iconic = () => {
           </h3>
         ))}
       </div>
-      <div className='iconic-content'>
-        <div className={`${styles.gap}  iconic-content-image`}>
+      <div className={styles.marginComplete}>
+        <div className={`${styles.gap} iconic-content-image`}>
           {categories[activeCategory].map((image, index) => (
             <img className={styles.width100} key={index} src={image} alt='iconic' />
           ))}
