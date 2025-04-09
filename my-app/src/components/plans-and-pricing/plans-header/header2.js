@@ -2,42 +2,32 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../plan-and-pricing.css';
 import { FaSearch, FaBars, FaTimes } from 'react-icons/fa';
-
+import styles from '../../../assets/component.module.css/component.module.css';
 const Header2 = () => {
  
 
   return (
-    <div className='plan-nav-container'>
-      <div className='plan-nav'>
+    <div className={`${styles.spaceEvenly} ${styles.whiteColour} plan-nav-container`}>
+      <div className={`${styles.daCenter} plan-nav`}>
         <span>
           <Link to='/'>hulu</Link>
-          <button>Help Center</button>
+          <button className={`${styles.bgWhite} ${styles.marginRight} ${styles.fontBlack} ${styles.hover}`}>Help Center</button>
         </span>
 
-        {/* Menu Toggle Button */}
-        {/* <button className='menu-toggle' onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <FaTimes /> : <FaBars />}
-        </button> */}
-
-        {/* Navigation Menu */}
-        <ul>
+        <ul className={styles.dFlex}>
           <li><Link to='#'>Home</Link></li>
           <li><Link to='#'>Help Topics</Link></li>
           <li><Link to='#'>Contact Us</Link></li>
         </ul>
       </div>
 
-      {/* Search Icon for Mobile */}
-      <div className='nav-search-bar'>
-        {/* <FaSearch className="search-icon-container" onClick={() => setSearchOpen(!searchOpen)} /> */}
-
-        {/* Search Input (Hidden by Default) */}
+      <div className={`${styles.daCenter} nav-search-bar`}>
         <div className='search-input-container' >
           <FaSearch className="search-icon" />
-          <input type='text' placeholder='Enter a question or topic' />
+          <input className={styles.bgWhite} type='text' placeholder='Enter a question or topic' />
         </div>
 
-        <button>Log In</button>
+        <button className={styles.fontWhite14px}>Log In</button>
       </div>
     </div>
   );

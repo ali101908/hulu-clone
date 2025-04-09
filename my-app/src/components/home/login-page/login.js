@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import LoginFooter from './login-footer';
 
-
 import TopLogo from "./top-logo.svg"
 import loginlogo from "./login-logo.svg";
 import Logo1 from "./logo1.svg";
@@ -21,10 +20,11 @@ const LoginPage = () => {
   return (
     <div className={`${styles.width100} login-page`}>
     <div className={`${styles.directionColumn} ${styles.widthAuto} login-container`}>
-      {/* Go Back Button */}
+    
       <button className={`${styles.themeColor} ${styles.hover} go-back-btn`} onClick={() => navigate('/')}>
         ← 
       </button>
+
       <img className='top-logo' src={TopLogo} alt='top-logo' />
       <div className={`${styles.bgWhite} login-box`}>
       

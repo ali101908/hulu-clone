@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+// import { Alert } from 'reactstrap';
+import { Button } from "antd";
 import '../home.css';
 import heroImage from '../../../images/hero-img.png';
 import heroImage2 from '../../../images/hero-img2.png';
 import styles from '../../../assets/component.module.css/component.module.css';
 
 
+
 const HeroSection = () => {
+
+  const [visible, setVisible] = useState(false);
+  const onDismiss = () => setVisible(true);
   const [showTerms, setShowTerms] = useState(false);
 
   return (
@@ -20,8 +26,12 @@ const HeroSection = () => {
         <p className={`${styles.fontWhiteBold} ${styles.textCenter}`}>Save 72% per month for 4 months on Disney+, Hulu  Bundle Basic. Ends 3/30/25.</p>
       </div>
       <div className={styles.center}>
-        <Link to = './login' className={`${styles.fontBlack14px} ${styles.textDecoration} ${styles.center} ${styles.hover} ${styles.bgTheme} hero-btn`}>GET THIS DEAL</Link>
+        <Button  color="cyan" variant="solid" className={`${styles.fontBlack14px} ${styles.textDecoration} ${styles.center} ${styles.hover} ${styles.bgTheme} hero-btn`}>GET THIS DEAL</Button>
+      
       </div>
+
+
+      
       <p className={`${styles.fontGray} ${styles.textCenter} `}>
         Savings compared to the then-current regular monthly price of Disney+, Hulu Bundle Basic. Offer applies to ad-
         supported Disney+, Hulu Bundle plan. Valid only for new and eligible returning Disney+, Hulu, and/or ESPN+ 

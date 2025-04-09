@@ -32,6 +32,12 @@
 	align-items: center;
 }
 
+
+.daCenter{
+	display: flex;
+	align-items: center;
+}
+
 .flex{
 	display: flex;
 	justify-content: left;
@@ -100,6 +106,10 @@
 
 .marginBottom{
 	margin-bottom: 20px;
+}
+
+.marginRight{
+	margin-right: 20px;
 }
 
 .marginComplete{
