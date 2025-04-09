@@ -13,9 +13,12 @@
   }
   
   .iconic-content-image {
-	display: grid;
+	display: flex;
 	grid-template-columns: repeat(3, 1fr);
-	justify-items: center;
+	/* justify-items: center; */
+	justify-content: space-evenly;
+	/* flex-direction: column; */
+	flex-wrap: wrap;
 	max-width: 900px;
 	margin: 0 auto;
   }
