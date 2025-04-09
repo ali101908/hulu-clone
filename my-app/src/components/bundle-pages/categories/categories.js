@@ -3,10 +3,12 @@ import './category.css'
 import Icon1 from '../../../images/bundle-images/icon1.png'
 import Icon2 from '../../../images/bundle-images/icon2.png'
 import Icon3 from '../../../images/bundle-images/icon3.png'
+import styles from '../../../assets/component.module.css/component.module.css';
+
 const Categories = () => {
   return (
 	<div className='category-container' >
-	  <div className='categories'>
+	  <div className={`${styles.spaceEvenly} ${styles.textCenter} ${styles.paddingCover} categories`}>
 		<div className='category-a'>
 <img src={Icon1} alt='icon1' />
 <h2>The stories you love</h2>

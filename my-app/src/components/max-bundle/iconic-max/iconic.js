@@ -16,6 +16,7 @@ import iconic13 from '../max-images/I13.webp';
 import iconic14 from '../max-images/I14.webp';
 import iconic15 from '../max-images/I15.webp';
 import iconic16 from '../max-images/I16.webp';
+import styles from '../../../assets/component.module.css/component.module.css';
 
 const categories = {
   Originals: [iconic1, iconic2, iconic3, iconic4, iconic5, iconic6],
@@ -27,16 +28,16 @@ const Iconic = () => {
   const [activeCategory, setActiveCategory] = useState('Originals');
 
   return (
-    <div className='iconic-container'>
+    <div className={`${styles.width100} ${styles.textCenter} ${styles.paddingCover} iconic-container`}>
       <div className='iconic-header'>
-        <h1 className='iconic-title'>Iconic hits with Max</h1>
-        <p className='iconic-subtitle'>Get all of HBO, the DC Universe, new releases from Warner Bros. and A24, and more. From  award-winning series and movies to fresh originals and family favorites, Max is the one to watch.</p>
+        <h1 className={styles.fontWhite32px}>Iconic hits with Max</h1>
+        <p className={`${styles.fontWhite18px} ${styles.marginBottom} ${styles.textCenter}`}>Get all of HBO, the DC Universe, new releases from Warner Bros. and A24, and more. From  award-winning series and movies to fresh originals and family favorites, Max is the one to watch.</p>
       </div>
-      <div className='iconic-tabs'>
+      <div className={`${styles.center} ${styles.gap} ${styles.marginBottom}`}>
         {Object.keys(categories).map((category) => (
           <h3 
             key={category} 
-            className={`iconic-content-title ${activeCategory === category ? 'active' : ''}`} 
+            className={`iconic-content-title ${styles.fontWhite18px} ${styles.hover}  ${activeCategory === category ? 'active' : ''}`} 
             onClick={() => setActiveCategory(category)}
           >
             {category}
@@ -44,9 +45,9 @@ const Iconic = () => {
         ))}
       </div>
       <div className='iconic-content'>
-        <div className='iconic-content-image'>
+        <div className={`${styles.gap} iconic-content-image`}>
           {categories[activeCategory].map((image, index) => (
-            <img key={index} src={image} alt='iconic' />
+            <img className={styles.width100} key={index} src={image} alt='iconic' />
           ))}
         </div>
       </div>

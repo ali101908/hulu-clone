@@ -1,46 +1,4 @@
-.work-container{
-	background: white;
-}
-
-.work-portion{
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-}
-
-.work-portion h1{
-	font-family: "Graphik Web", Graphik, sans-serif;
-font-size: 40px;
-font-weight: 900;
-line-height: 46.4px;
-color: rgb(22, 24, 29);
-}
-
-.work-content{
-	text-align: center;
-	height: 60px;
-	padding-top: 10px;
-	font-family: Graphik, Helvetica, Arial, sans-serif;
-font-size: 16px;
-font-weight: 700;
-line-height: normal;
-color: rgb(39, 44, 52);
-}
-
-.work-content a{
-	color: black;
-}
-
 .work-content a:hover{
 	text-decoration: none;
 	color: rgb(23, 110, 225);
-}
-
-.work-heading{
-	text-align: center;
-	font-family: Graphik, Helvetica, Arial, sans-serif;
-font-size: 16px;
-font-weight: 700;
-line-height: normal;
-color: rgb(39, 44, 52);
 }

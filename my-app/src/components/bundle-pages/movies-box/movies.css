@@ -1,15 +1,5 @@
-.movies-container{
-	max-width:auto;
-	/* text-align: center; */
-	
-}
-
 .movies-portion{
-	text-align: center;
-	padding-bottom: 50px;
 	background-color: #070C0F;
-	padding-top: 50px;
-
 }
 
 .movies-portion-a h1{
@@ -21,29 +11,7 @@ color: rgb(255, 255, 255);
 }
 
 .box-content{
-	font-family: "Graphik Web", Graphik, sans-serif;
-font-size: 16px;
-font-weight: 400;
-line-height: 21.76px;
-color: rgb(255, 255, 255);
-text-align: center;
 padding-bottom: 10px;
-}
-
-.copyright{
-	font-family: "Graphik Web", Graphik, sans-serif;
-font-size: 10px;
-font-weight: 400;
-line-height: 14.6px;
-color: rgb(128, 128, 128);
-text-align: center;
-}
-
-.portion-a-movies{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 15px;
 }
 
 .portion-a-movies img{
@@ -52,8 +20,7 @@ text-align: center;
 	border-radius: 3px;
 }
 
-@media screen and (max-width:786px) {
-	
+@media screen and (max-width:786px) {	
 	.portion-a-movies img{
 		width: 200px;
 	}

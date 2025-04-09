@@ -4,22 +4,23 @@ import './work-portion.css'
 import Icon1 from '../../../images/bundle-images/signup-icon.png'
 import Icon2 from '../../../images/bundle-images/access-icon.png'
 import Icon3 from '../../../images/bundle-images/Download-icon.png'
+import styles from '../../../assets/component.module.css/component.module.css';
 
 const Work = () => {
   return (
 	<div className='work-container'>
-	  <div className='work-portion'>
-		<h1 style={{color:"black"}}>How it works</h1>
-		<p className='work-content' style={{backgroundColor:"#1CE783"}}>Already a Hulu subscriber? <br /> 
-		Visit the <Link to='#'>Manage Account</Link>  page to switch to a bundle now, or <Link to='#'>learn more</Link>  about how to sign up.
+	  <div className={`${styles.textCenter}`}>
+		<h1>How it works</h1>
+		<p className={`${styles.bgTheme} ${styles.textCenter} ${styles.fontBlack} work-content`}>Already a Hulu subscriber? <br /> 
+		Visit the <Link className={styles.fontBlack} to='#'>Manage Account</Link>  page to switch to a bundle now, or <Link className={styles.fontBlack} to='#'>learn more</Link>  about how to sign up.
 		</p>
 	  </div>
 
-	  <h5 className='work-heading' style={{color:"black"}}>New to Hulu? Start watching in three easy steps:</h5>
+	  <h5 className={`${styles.textCenter} ${styles.fontBlack}`}>New to Hulu? Start watching in three easy steps:</h5>
 	  
 	<div className='category-container' >
 	
-	  <div className='categories'>
+	  <div className={`${styles.spaceEvenly} ${styles.textCenter} ${styles.paddingCover} categories`}>
 		<div className='category-a'>
 <img src={Icon1} alt='icon1' />
 <p>STEP 1</p>

@@ -2,12 +2,13 @@ import React from 'react'
 import Icon1 from '../../../images/bundle-images/signup-icon.png'
 import Sign2 from '../student-images/sign-2.png'
 import Sign3 from '../student-images/sign-3.png'
+import styles from '../../../assets/component.module.css/component.module.css';
 
 const StudentSign = () => {
   return (
 	<div className='work-container'>
-			  <div className='work-portion'>
-				<h1 style={{color:"black"}}>How it works</h1>
+			  <div className={`${styles.textCenter}`}>
+				<h1>How it works</h1>
 				{/* <p className='work-content' style={{backgroundColor:"#1CE783"}}>Already a Hulu subscriber? <br /> 
 				Visit the <a href='#'>Manage Account</a>  page to switch to a bundle now, or <a href='#'>learn more</a>  about how to sign up.
 				</p> */}
@@ -17,7 +18,7 @@ const StudentSign = () => {
 			  
 			<div className='category-container' >
 			
-			  <div className='categories'>
+			  <div className={`${styles.spaceEvenly} ${styles.textCenter} ${styles.paddingCover} categories`}>
 				<div className='category-a'>
 		<img src={Icon1} alt='icon1' />
 		<p>STEP 1</p>
