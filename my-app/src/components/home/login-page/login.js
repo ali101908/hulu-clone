@@ -12,43 +12,44 @@ import Logo4 from "./logo4.svg";
 import Logo5 from "./logo5.svg";
 import Logo6 from "./logo6.svg";
 import Logo7 from "./logo7.svg";
-// import './login.css';
+import './login.css';
+import styles from '../../../assets/component.module.css/component.module.css';
 
 const LoginPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="login-page">
-    <div className="login-container">
+    <div className={`${styles.width100} login-page`}>
+    <div className={`${styles.directionColumn} ${styles.widthAuto} login-container`}>
       {/* Go Back Button */}
-      <button className="go-back-btn" onClick={() => navigate('/')}>
+      <button className={`${styles.themeColor} ${styles.hover} go-back-btn`} onClick={() => navigate('/')}>
         ← 
       </button>
       <img className='top-logo' src={TopLogo} alt='top-logo' />
-      <div className="login-box">
+      <div className={`${styles.bgWhite} login-box`}>
       
         <img className="img-log" src={loginlogo} alt="login-logo" width={100} />
-        <h3>Enter your email to continue</h3>
-        <p>
+        <h3 className={`${styles.textLeft} ${styles.font24px}  ${styles.deepDarkColor} ${styles.fontBold}`}>Enter your email to continue</h3>
+        <p className={`${styles.textLeft} ${styles.font18px} ${styles.deepDarkColor} ${styles.marginBottom}`}>
           Log in to Hulu with your MyDisney account. If you don’t have one, you will be prompted to create one.
         </p>
 
         <form>
-          <input type="email" placeholder="Email" required className="email-input" />
-          <button type="submit" className="continue-btn">Continue</button>
+          <input type="email" placeholder="Email" required className={`${styles.font16px} ${styles.width100} ${styles.marginBottom} email-input`} />
+          <button type="submit" className={` ${styles.font16px} ${styles.fontBold} ${styles.bgBlack} ${styles.whiteColour} ${styles.width100} ${styles.hover} continue-btn`}>Continue</button>
         </form>
 
         <hr />
 
-        <p className="footer-title">
+        <p className={`${styles.textLeft} ${styles.fontLightGray}`}>
           Hulu is part of <strong>The Walt Disney Family of Companies</strong>.
         </p>
 
-        <p className="footer-text">
+        <p className={`${styles.textLeft} ${styles.fontGray}`}>
           MyDisney lets you seamlessly log in to services and experiences across The Walt  Disney Family of Companies, such as Disney+, ESPN, Walt Disney World, <Link to="#" style={{ color: "blue" }}>and more.</Link>
         </p>
 
-        <div className="login-box-logos">
+        <div className={`${styles.spaceAround} ${styles.marginTop}`}>
           <img src={Logo1} alt="logo1" height={20} />
           <img src={Logo2} alt="logo2" height={20} />
           <img src={Logo3} alt="logo3" height={20} />

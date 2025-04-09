@@ -1,30 +1,22 @@
 .login-page{
-	max-width: 100%;
 	background-color: #0F222B;
 }
-  /* Hulu Logo Styling */
+
   .top-logo {
 	display: block;
 	margin-bottom: 50px;
 	width: 200px;
-	color: #1CE783;
   }
   
   .login-container {
-	display: flex;
-	flex-direction: column; /* Stack Hulu logo and login box */
-	justify-content: center;
-	align-items: center;
 	height: 100vh;
-	width: auto;
   }
   
   .login-box {
-	background-color: white;
 	padding: 35px;
 	border-radius: 20px;
 	width: 450px; 
-	height: auto; /* Adjust height dynamically */
+	height: auto; 
 	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   }
   
@@ -33,13 +25,11 @@
 	top: 20px;
 	left: 20px;
 	background-color: transparent;
-	color: #1CE783;
 	font-size: 16px;
 	font-weight: bold;
 	border: 2px solid #1CE783;
 	padding: 8px 15px;
 	border-radius: 5px;
-	cursor: pointer;
 	transition: all 0.3s ease-in-out;
   }
   
@@ -48,106 +38,46 @@
 	color: white;
   }
   
-
-  h3 {
-	font-size: 24px;
-	font-weight: bold;
-	color: rgb(37, 37, 38);
-	text-align: left;
-  }
-  
-  p {
-	font-size: 16px;
-	color: rgb(37, 37, 38);
-	margin-bottom: 15px;
-	text-align: left;
-  }
-  
-  /* Email Input Styling */
   .email-input {
-	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
-	border-radius: 10px; /* Rounded corners */
-	margin-bottom: 15px;
-	font-size: 16px;
+	border-radius: 10px;
   }
   
-  /* Continue Button */
   .continue-btn {
-	width: 100%;
 	padding: 14px;
-	background-color: black;
-	color: white;
-	font-size: 16px;
-	font-weight: bold;
 	border: none;
-	border-radius: 25px; /* More rounded */
-	cursor: pointer;
+	border-radius: 25px; 
   }
   
   .continue-btn:hover {
 	background-color: #222;
   }
   
-  /* Footer text adjustments */
-  .footer-title {
-	font-size: 14px;
-	font-weight: 600;
-	color: rgb(95, 97, 102);
-	text-align: left;
-  }
-  
-  .footer-text {
-	font-size: 12px;
-	color: rgb(95, 97, 102);
-	text-align: left;
-  }
-  
-  /* Logo container for footer */
-  .login-box-logos {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin-top: 15px;
-  }
-  
   .footer-tags {
 	position: absolute; 
 	bottom: 0;
-	/* left: 0; */
-	width: 100%;
-	background-color: white;
-	text-align: center;
 	padding: 15px 0;
-	display: flex;
-	justify-content: center;
-	gap: 15px; /* Adds spacing between links */
-	flex-wrap: wrap; /* Allows wrapping on small screens */
+	flex-wrap: wrap; 
 	font-size: 14px;
-	color: black;
   }
   
   .footer-tags a {
 	text-decoration: none;
 	color: black;
 	font-weight: 500;
-	white-space: nowrap; /* Prevents breaking words */
+	white-space: nowrap; 
   }
   
   .footer-tags a:hover {
 	text-decoration: underline;
   }
   
-  /* Mobile View: Move Privacy Policy & Copyright to the next line */
   @media screen and (max-width: 600px) {
-
-
 	.top-logo {
 		display: block;
 		margin-bottom: 10px;
 		width: 150px;
-	
 	  }
 	  
 	  .login-container {
@@ -156,7 +86,6 @@
 
 	.login-box {
 		width: 200px; 
-		/* height: 50vh; */
 	  }
 
 	.footer-tags {
@@ -165,20 +94,17 @@
   
 	.footer-tags a:nth-last-child(2), 
 	.footer-tags a:last-child {
-	  flex-basis: 100%; /* Forces these two links to take the full width */
+	  flex-basis: 100%; 
 	  text-align: center;
 	  margin-top: 10px;
 	}
   }
-
     @media screen and (max-width: 400px) {
-
 		.top-logo {
 			display: block;
 			margin-bottom: 15px;
 			width: 50px;
 		  }
-
 
 	.login-box {
 		width: 250px; 
@@ -193,7 +119,6 @@
 	  flex-basis: 10%; 
 	  text-align: center;
 	  margin-top: 10px;
-	
 	}
   } 
    
