@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import { Alert } from 'reactstrap';
+// import { Button } from 'reactstrap';
 import { Button } from "antd";
 import '../home.css';
 import heroImage from '../../../images/hero-img.png';
@@ -26,7 +26,7 @@ const HeroSection = () => {
         <p className={`${styles.fontWhiteBold} ${styles.textCenter}`}>Save 72% per month for 4 months on Disney+, Hulu  Bundle Basic. Ends 3/30/25.</p>
       </div>
       <div className={styles.center}>
-        <Button  color="cyan" variant="solid" className={`${styles.fontBlack14px} ${styles.textDecoration} ${styles.center} ${styles.hover} ${styles.bgTheme} hero-btn`}>GET THIS DEAL</Button>
+        <Button color="green" variant="solid" className={`${styles.fontBlack14px} ${styles.textDecoration} ${styles.center} ${styles.hover} hero-btn`}>GET THIS DEAL</Button>
       
       </div>
 
@@ -61,7 +61,7 @@ const HeroSection = () => {
           <p className={`${styles.fontWhite18px} ${styles.textCenter}`}>Savings compared to regular monthly price of each service.</p>
         </div>
         <div className={`${styles.directionColumn} ${styles.atags} ${styles.paddingCover} ${styles.textCenter}`}>
-          <button className={`${styles.hover}  ${styles.blackColour} ${styles.bgTheme} hero-btn2`}>LEARN MORE</button>
+          <Button color="green" variant="solid"  className={`${styles.hover}  ${styles.blackColour} ${styles.bgTheme} hero-btn2`}>LEARN MORE</Button>
           <Link to='#' className={styles.fontGray} onClick={(e) => { e.preventDefault(); setShowTerms(true); }}>Terms apply</Link>
         </div>
       </div>

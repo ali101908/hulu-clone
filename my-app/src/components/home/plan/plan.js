@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './plan.css';
 import styles from '../../../assets/component.module.css/component.module.css';
+import { CaretDownOutlined } from '@ant-design/icons';
+
 
 
 const Plan = () => {
@@ -29,7 +31,7 @@ const Plan = () => {
             type='button'
             onClick={() => setIsOpen(!isOpen)}
           >
-            {selectedPlan} ▼
+            {selectedPlan} <CaretDownOutlined />
           </button>
           <div className={`dropdown-menu ${isOpen ? 'visible' : 'hidden'} ${styles.bgWhite} ${styles.textLeft} ${styles.width250px}`}>
             {plans.map((plan, index) => (
@@ -38,7 +40,7 @@ const Plan = () => {
                 to={plan.link}
                 className={`${styles.fontBlack} dropdown-item`}
                 onClick={(e) => {
-                  e.preventDefault(); // Prevent navigation
+                  e.preventDefault();
                   setSelectedPlan(plan.name);
                   setIsOpen(false);
                 }}

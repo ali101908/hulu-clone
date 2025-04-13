@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './faq.css';
-import FaqIcon from '../../../images/bundle-images/faq-icon.png';
+import { DownCircleOutlined } from '@ant-design/icons'; 
 import faqData from './faq.json';
 import styles from '../../../assets/component.module.css/component.module.css';
 
@@ -19,22 +19,31 @@ const Faq = () => {
           We’re here to help! Visit our <a href="#">Help Center</a> to learn more.
         </p>
       </div>
+
       <div className={`${styles.onlyColumn} ${styles.gap} faq-options`}>
         {faqData.faqs.map((faq, index) => (
           <div key={index} className="faq-item">
-            <div className={`${styles.paddingCover} ${styles.spaceBetween} ${styles.hover} faq-question `} onClick={() => toggleFaq(index)}>
+            <div
+              className={`${styles.paddingCover} ${styles.spaceBetween} ${styles.hover} faq-question`}
+              onClick={() => toggleFaq(index)}
+            >
               <p className={`${styles.textLeft} questionnaire`}>{faq.question}</p>
-              <img
-                src={FaqIcon}
-                alt="faq-icon"
+              <DownCircleOutlined
                 className={`faq-icon ${openIndex === index ? 'rotated' : ''}`}
               />
             </div>
-            {openIndex === index && <p className={`${styles.fontDarkBlue} ${styles.textLeft} ${styles.bgOffWhite}`}>{faq.answer}</p>}
+            {openIndex === index && (
+              <p className={`${styles.fontDarkBlue} ${styles.textLeft} ${styles.bgOffWhite}`}>
+                {faq.answer}
+              </p>
+            )}
           </div>
         ))}
       </div>
-	  <p className={`${styles.fontDarkBlack} ${styles.textCenter}`}>© 2025 Disney and its related entities.</p>
+
+      <p className={`${styles.fontDarkBlack} ${styles.textCenter}`}>
+        © 2025 Disney and its related entities.
+      </p>
     </div>
   );
 };

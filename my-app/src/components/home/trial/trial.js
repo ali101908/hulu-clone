@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from '../../../assets/component.module.css/component.module.css';
+import { Button } from "antd";
 import "./trial.css";
 
 const Trial = () => {
@@ -24,9 +25,9 @@ const Trial = () => {
         and live sports with ESPN+.
       </p>
       <div className={styles.center}>
-      <Link to="./login" className={`${styles.hover} ${styles.fontBlack12px} ${styles.textDecoration} ${styles.center}  trial-btn`} style={{ backgroundColor: "#1CE783" }}>
+      <Button color="green" variant="solid" to="./login" className={`${styles.hover} ${styles.fontBlack12px} ${styles.textDecoration} ${styles.center}  trial-btn`} >
         START YOUR FREE TRIAL
-      </Link></div>
+      </Button></div>
       <p className={`${styles.fontGray} ${styles.textCenter} `} >
         Hulu (With Ads) + Live TV plan $82.99/mo. after 3-day free trial (if
         any) unless canceled. Cancel anytime. Regional restrictions, blackouts

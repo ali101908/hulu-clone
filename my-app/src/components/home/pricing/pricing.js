@@ -4,6 +4,9 @@ import PriceLogo from '../../../images/price-logo.svg';
 import TickBtn from '../../../images/tick-btn.svg';
 import './pricing.css';
 import styles from '../../../assets/component.module.css/component.module.css';
+import { CaretDownOutlined } from '@ant-design/icons';
+import { Button } from "antd";
+
 
 const Pricing = () => {
   const [showAddOns, setShowAddOns] = useState(false);
@@ -54,7 +57,7 @@ const Pricing = () => {
           <div key={index} className={styles.fontWhite14px}>
             <img src={PriceLogo} alt='Disney Plus Logo' />
             <p className={styles.fontWhite12px}>{bundle.name}</p>
-            <button className={`${styles.width250px} ${styles.fontBlack} ${styles.hover} pricing-btn`}>{bundle.price}</button>
+            <Button color="green" variant='solid'   className={`${styles.width250px} ${styles.fontBlack} ${styles.hover} pricing-btn`}>{bundle.price}</Button>
             <p className={`${styles.fontWhite12px} ${styles.width250px}`}>{bundle.footer}</p>
           </div>
         ))}
@@ -98,36 +101,45 @@ const Pricing = () => {
       )}
 </div>
 
-<div className='add-on-portion'>
+<div className="add-on-portion">
   <hr className={`${styles.dFlex} table-line`} />
-  <button className={`${styles.hover} ${styles.fontWhite14px} ${styles.textCenter} table-btn`} onClick={() => setShowAddOns(!showAddOns)}>
+  
+  <button
+    className={`${styles.hover} ${styles.fontWhite14px} ${styles.textCenter} table-btn`}
+    onClick={() => setShowAddOns(!showAddOns)}
+  >
     {showAddOns ? 'Hide Add-ons' : 'Show Add-ons'}
+    <CaretDownOutlined className={`caret-icon ${showAddOns ? 'rotated' : ''}`} />
   </button>
-  <hr className='table-line' />
-  {showAddOns && (
-    <div className='Add-On'>
-      <h1 className={`${styles.fontWhite32px}  ${styles.textCenter} available`}>Available Add-ons</h1>
-      <p className={` ${styles.fontWhite14px} ${styles.textCenter} add-content`}>Add-ons available at an additional cost.  Add them after you sign up for Hulu.</p>
 
-	  
-      <div className='add-on-table'>
-	 
+  <hr className="table-line" />
+  
+  {showAddOns && (
+    <div className="Add-On">
+      <h1 className={`${styles.fontWhite32px} ${styles.textCenter} available`}>Available Add-ons</h1>
+      <p className={`${styles.fontWhite14px} ${styles.textCenter} add-content`}>
+        Add-ons available at an additional cost. Add them after you sign up for Hulu.
+      </p>
+
+      <div className="add-on-table">
         {pricingData.addOns.map((addOn, index) => (
           <div key={index} className={`${styles.spaceBetween} ${styles.paddingCover} add-on-row`}>
-            <hr  />
-            <p className={`${styles.fontWhite14px} ${styles.textLeft} ${styles.bgBlack} add-on-name`}>{addOn.name}</p>
+            <hr />
+            <p className={`${styles.fontWhite14px} ${styles.textLeft} ${styles.bgBlack} add-on-name`}>
+              {addOn.name}
+            </p>
             {addOn.included.map((included, i) => (
-              <p key={i} className='add-on-value'>
-                {included ? <img src={TickBtn} alt='tick btn' /> : '—'}
+              <p key={i} className="add-on-value">
+                {included ? <img src={TickBtn} alt="tick btn" /> : '—'}
               </p>
             ))}
           </div>
         ))}
       </div>
-      {/* <hr className='table-line' /> */}
     </div>
   )}
 </div>
+
 
     </div>
    

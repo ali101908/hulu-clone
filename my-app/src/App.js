@@ -9,6 +9,7 @@ import Premium from './components/premium-bundle/premium';
 import Hulu from './components/hulu-bundle/hulu';
 import Max from './components/max-bundle/max';
 import StudentBundle from './components/student-bundle/student-bundle';
+import TvShows from './components/tv-shows/tv-shows'
 import './assets/component.module.css/component.module.css'
 
 
@@ -26,7 +27,7 @@ const App = () => {
       <Route path="/max-bundle" element={<Max />} />
       <Route path="/discount-bundle" element={<StudentBundle />} />
       <Route path="/plan-and-pricing" element={<PlanAndPricing />} />
-
+      <Route path="/tv-shows" element={<TvShows />} />
         {/* Define the route for login page */}
         {/* <Route path="/login" element={<Login />} /> */}
       </Routes>

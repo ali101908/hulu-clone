@@ -91,7 +91,7 @@
 
   }
   
-  .table-btn::after {
+  /* .table-btn::after {
     content: "▼"; 
     font-size: 14px;
     transition: transform 0.3s ease-in-out;
@@ -99,7 +99,7 @@
   
   .table-btn.active::after {
     content: "⏶";
-}
+} */
 
 .add-on-table {
     width: 60%;

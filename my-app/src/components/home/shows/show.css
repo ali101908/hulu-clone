@@ -17,8 +17,8 @@
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); 
 	padding: 20px;
 	border-radius: 0 0 10px 10px; 
-	display: flex;
-	flex-direction: column;
+	/* display: flex;
+	flex-direction: column; */
 }
 
 .show-overlay h3 {
@@ -37,7 +37,7 @@
 
 .show-item {
 	position: relative;
-	width: 280px;
+	/* width: 280px; */
 	height: 440px;
 	border-radius: 10px;
 	overflow: hidden;
