@@ -6,7 +6,7 @@ import './pricing.css';
 import styles from '../../../assets/component.module.css/component.module.css';
 import { CaretDownOutlined } from '@ant-design/icons';
 import { Button } from "antd";
-import { Table, Button as ReactstrapButton } from 'reactstrap';
+
 
 
 const Pricing = () => {
@@ -110,7 +110,7 @@ const Pricing = () => {
     onClick={() => setShowAddOns(!showAddOns)}
   >
     {showAddOns ? 'Hide Add-ons' : 'Show Add-ons'}
-    <CaretDownOutlined className={`caret-icon ${showAddOns ? 'rotated' : ''}`} />
+    <CaretDownOutlined className={showAddOns ? 'rotate-icon' : ''} />
   </button>
 
   <hr className="table-line" />

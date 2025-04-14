@@ -32,7 +32,7 @@ const HeroSection = () => {
 
 
       
-      <p className={`${styles.fontGray} ${styles.textCenter} `}>
+      <p className={`${styles.fontGray} ${styles.textCenter}  `}>
         Savings compared to the then-current regular monthly price of Disney+, Hulu Bundle Basic. Offer applies to ad-
         supported Disney+, Hulu Bundle plan. Valid only for new and eligible returning Disney+, Hulu, and/or ESPN+ 
         subscribers, who are 18 years of age or older. <b> After 4-month promo period, Disney+, Hulu Bundle Basic auto-

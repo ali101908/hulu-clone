@@ -6,6 +6,8 @@ import DisneyIcon from '../../../images/bundle-images/disney-icon.png';
 import styles from '../../../assets/component.module.css/component.module.css';
 import { DownCircleOutlined } from '@ant-design/icons';
 import { Button } from "antd";
+import {  UncontrolledPopover, PopoverBody, PopoverHeader } from 'reactstrap';
+
 
 const BasicBundle = () => {
   const [showTerms, setShowTerms] = useState(false);
@@ -33,7 +35,27 @@ const BasicBundle = () => {
 
       <div className='basic-hero-footer'>
         <div className={styles.directionColumn}>
-          <Button color="green" variant="solid" className='hero-btn2'>GET ALL THREE</Button>
+        <div className="text-center">
+      <Button
+        id="ScheduleUpdateButton"
+        color="success"
+        className={`${styles.bgTheme} hero-btn2`}
+      >
+        GET ALL THREE
+      </Button>
+
+      <UncontrolledPopover
+  placement="top"
+  target="ScheduleUpdateButton"
+  trigger="click"
+  className="popover-white-bg"
+>
+  <PopoverHeader>Popover Title</PopoverHeader>
+  <PopoverBody>
+    Content inside the popover goes here!
+  </PopoverBody>
+</UncontrolledPopover>
+    </div>
           <Link className={`${styles.fontWhite12px} ${styles.textDecoration}`} to='#' onClick={(e) => { e.preventDefault(); setShowTerms(true); }}>Terms apply</Link>
         </div>
       </div>
