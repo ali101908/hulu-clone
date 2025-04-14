@@ -2,13 +2,19 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from '../../../assets/component.module.css/component.module.css';
 import { Button } from "antd";
+// import { Popover, PopoverHeader, PopoverBody } from 'reactstrap';
 import "./trial.css";
 
 const Trial = () => {
-  const [showTerms, setShowTerms] = useState(false);
+ 
+  const [popoverOpen1, setPopoverOpen1] = useState(false);
   const [zipCode, setZipCode] = useState("");
 
+  const togglePopover1 = () => setPopoverOpen1(!popoverOpen1);
+  const [showTerms , setShowTerms] = useState(false)
+
   return (
+    <>
     <div className={`${styles.directionColumn}  ${styles.gap} ${styles.paddingComplete}`} style={{ backgroundColor: "#0B0C0F" }}>
       <p className={`${styles.fontGreenBold} ${styles.textCenter} `}>
         TRY HULU (WITH ADS) + LIVE TV FREE FOR 3 DAYS
@@ -76,7 +82,10 @@ const Trial = () => {
           </div>
         )}
       </div>
-    </div>
+      
+</div>
+   </>
+    
   );
 };
 

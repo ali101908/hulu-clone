@@ -7,12 +7,7 @@ import styles from '../../../assets/component.module.css/component.module.css';
 
 const HuluStudent = () => {
   const [showTerms, setShowTerms] = useState(false);
-//    const bottomRef = useRef(null); 
- 
-//    const scrollToBottom = () => {
-// 	 bottomRef.current?.scrollIntoView({ behavior: "smooth" });
-//    };
- 
+
    return (
 	 <div className={styles.paddingComplete}>
 	   <div className={styles.center}>
@@ -36,7 +31,7 @@ const HuluStudent = () => {
 	  
 		 <div className={styles.directionColumn}>
 		   <button className={`${styles.fontBlack14px} ${styles.bgSkyGreen} ${styles.hover} hero-btn3`}>GET THIS DEAL</button>
-		  <p className='st-bundle-content'>Student discount offer for Hulu (With Ads) plan only. $1.99/month so long as student enrollment status remains 
+		  <p className={` ${styles.maxWidth1000px} st-bundle-content`}>Student discount offer for Hulu (With Ads) plan only. $1.99/month so long as student enrollment status remains 
 		  verified, then $9.99/month or then-current, regular monthly price. Offer valid for new and existing Hulu-billed 
 		  subscribers enrolled at a U.S. Title IV accredited college or university who meet verification qualifications. 
 		  Verification performed through SheerID.<Link to='#' onClick={(e) => { e.preventDefault(); setShowTerms(true); }}> Additional terms apply.</Link></p>

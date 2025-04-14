@@ -6,7 +6,6 @@ import list1 from '../../../images/list1.jpeg';
 import list2 from '../../../images/list2.jpeg';
 import list3 from '../../../images/list3.jpeg';
 import list4 from '../../../images/list4.jpeg';
-
 import Trial from '../trial/trial';
 
 const Show = () => {

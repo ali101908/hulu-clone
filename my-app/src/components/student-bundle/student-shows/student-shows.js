@@ -4,6 +4,7 @@ import ss1 from '../student-images/ss1.jpeg'
 import ss2 from '../student-images/ss2.webp'
 import ss4 from '../student-images/ss4.webp'
 import styles from '../../../assets/component.module.css/component.module.css';
+import { Flex } from 'antd';
 
 const StudentShows = () => {
    return (
@@ -18,8 +19,7 @@ const StudentShows = () => {
 		 </div>
 	   </div>
 	   <div className='shows'>
-		 <div className={`${styles.flexWrap}`}>
-		   <div className={`${styles.flexWrap}  ${styles.gap}`}>
+		<Flex wrap="wrap" justify="center" gap="large">
 			 <div className='show-item'>
 			   <img src={ss1}l alt='Hulu Shows' width={280} height={440} />
 			   <div className='show-overlay'>
@@ -35,8 +35,7 @@ const StudentShows = () => {
 				 <h3>TRAPPED IN THE ROCKY MOUNTAINS</h3>
 			   </div>
 			 </div>
-		   {/* </div> */}
-		   {/* <div className={styles.FlexWrap}> */}
+	
 			 <div className='show-item'>
 			   <img src={list3} alt='Hulu Shows' width={280} height={440} />
 			   <div className='show-overlay'>
@@ -52,8 +51,7 @@ const StudentShows = () => {
 				 <h3>EXTRACTED</h3>
 			   </div>
 			 </div>
-		   </div>
-		 </div>
+		   </Flex>
 	   </div>
 	   <p className={`${styles.fontGray} ${styles.textCenter}`}>Premium network add-ons available for an additional cost</p>
 	   {/* <Trial /> */}

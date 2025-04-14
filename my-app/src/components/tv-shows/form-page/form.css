@@ -1,0 +1,76 @@
+.custom-form {
+  max-width: 700px;
+  margin:  auto;
+  margin-top: 10px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.custom-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.custom-label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #333;
+}
+
+.custom-input,
+.custom-select,
+.custom-textarea {
+  width: 90%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.custom-textarea {
+  min-height: 100px;
+}
+
+.custom-form-text {
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.custom-legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.custom-radio-group,
+.custom-checkbox-group {
+  margin-bottom: 1rem;
+}
+
+.custom-radio,
+.custom-checkbox {
+  margin-right: 8px;
+}
+
+.custom-radio-label,
+.custom-checkbox-label {
+  color: #555;
+}
+
+.custom-submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.custom-submit-button:hover {
+  background-color: #0056b3;
+}

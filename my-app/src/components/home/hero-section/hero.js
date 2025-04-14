@@ -12,7 +12,7 @@ import styles from '../../../assets/component.module.css/component.module.css';
 const HeroSection = () => {
 
   const [visible, setVisible] = useState(false);
-  const onDismiss = () => setVisible(true);
+  // const onDismiss = () => setVisible(true);
   const [showTerms, setShowTerms] = useState(false);
 
   return (

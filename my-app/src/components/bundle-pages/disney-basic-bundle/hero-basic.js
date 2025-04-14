@@ -2,8 +2,10 @@ import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom'; // Import Link for navigation
 import "../bundles.css";
 import DisneyIcon from '../../../images/bundle-images/disney-icon.png';
-import ArrowDown from '../../../images/bundle-images/arrow_down.svg';
+// import ArrowDown from '../../../images/bundle-images/arrow_down.svg';
 import styles from '../../../assets/component.module.css/component.module.css';
+import { DownCircleOutlined } from '@ant-design/icons';
+import { Button } from "antd";
 
 const BasicBundle = () => {
   const [showTerms, setShowTerms] = useState(false);
@@ -31,7 +33,7 @@ const BasicBundle = () => {
 
       <div className='basic-hero-footer'>
         <div className={styles.directionColumn}>
-          <button className={`${styles.bgTheme} hero-btn2`}>GET ALL THREE</button>
+          <Button color="green" variant="solid" className='hero-btn2'>GET ALL THREE</Button>
           <Link className={`${styles.fontWhite12px} ${styles.textDecoration}`} to='#' onClick={(e) => { e.preventDefault(); setShowTerms(true); }}>Terms apply</Link>
         </div>
       </div>
@@ -55,7 +57,7 @@ const BasicBundle = () => {
 
       <div className='scroll-down' onClick={scrollToBottom} style={{ cursor: "pointer" }}>
         <p style={{ color: "white" }}>HOW IT WORKS</p>
-        <img src={ArrowDown} alt='arrowdown' />
+      <span className='down-icon'><DownCircleOutlined /></span>
       </div>
 
       {/* Scroll Target */}

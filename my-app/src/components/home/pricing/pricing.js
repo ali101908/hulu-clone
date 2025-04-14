@@ -6,6 +6,7 @@ import './pricing.css';
 import styles from '../../../assets/component.module.css/component.module.css';
 import { CaretDownOutlined } from '@ant-design/icons';
 import { Button } from "antd";
+import { Table, Button as ReactstrapButton } from 'reactstrap';
 
 
 const Pricing = () => {
