@@ -81,8 +81,8 @@ const Newssection = () => {
 
    
       <div className="news-content">
-        <h1 style={{ color: '#fff' }}>{activeTab.title}</h1>
-        <p style={{ color: '#fff', fontSize: '18px' }}>{activeTab.description}</p>
+        <h1>{activeTab.title}</h1>
+        <p className={styles.fontWhite18px}>{activeTab.description}</p>
 
       
         <Flex gap="small" wrap="wrap" style={{ marginTop: '1rem' }}>

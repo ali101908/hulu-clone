@@ -1,9 +1,5 @@
 .news-container {
 	max-width: auto;
-	/* display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;  */
 	color: white;
 	transition: background-image 0.5s ease-in-out;
 	filter: brightness(80%);
@@ -21,7 +17,6 @@
 	color: white;
 	cursor: pointer;
 	padding-bottom: 5px;
-	/* transition: color 0.3s ease-in-out; */
 	
   }
   
@@ -39,11 +34,11 @@
   .icons-img {
 	width: 35px;
 	height: 35px;
-	border-radius: 50%; /* Makes the icons circular */
-	background: white; /* White background */
-	padding: 8px; /* Adds spacing inside the circle */
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a slight shadow for better visibility */
-	/* text-align: left; */
+	border-radius: 50%; 
+	background: white; 
+	padding: 8px; 
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+
   }
 
   .news-footer{
