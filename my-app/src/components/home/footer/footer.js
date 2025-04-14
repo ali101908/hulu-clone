@@ -96,7 +96,7 @@ const Footer = () => {
   return (
     <div className={`${styles.paddingComplete} footer-container`}>
       
-      {/* Static version for desktop */}
+     
       {!isMobile && (
         <div className={`${styles.center} ${styles.textCenter} footer-links`}>
           {footerData.sections.map((section, index) => (
@@ -111,7 +111,7 @@ const Footer = () => {
         </div>
       )}
 
-      {/* Dropdown version for mobile */}
+     
       {isMobile && (
   <div className={`${styles.center} ${styles.textCenter} footer-links`}>
     {footerData.sections.map((section, index) => (

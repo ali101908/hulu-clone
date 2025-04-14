@@ -51,12 +51,12 @@
 
     .dropdown-content {
         display: none;
-        grid-template-columns: repeat(2, minmax(100px, auto)); /* Three columns */
+        grid-template-columns: repeat(2, minmax(100px, auto)); 
         gap: 10px;
-        padding-left: 0; /* Remove left padding */
-        width: 100%; /* Ensure it doesn't overflow */
-        max-width: 300px; /* Adjust max width to fit screen */
-        margin: 0 auto; /* Center the dropdown */
+        padding-left: 0; 
+        width: 100%; 
+        max-width: 300px; 
+        margin: 0 auto; 
     }
 
     .dropdown-content.show {

@@ -1,17 +1,7 @@
-/* Default styles (unchanged) */
-
-/* For all anchor tags */
-/* a {
-	text-decoration: none;
-	color: #0073e6;
-  } */
-  
-  /* On hover, underline the links */
   a:hover {
 	text-decoration: underline;
   }
   
-  /* Pricing section container */
   .pricing-section-container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -149,9 +139,6 @@
 	color: white;
   }
   
-  /* Media Queries */
-  
-  /* For max-width 768px (tablet and smaller screens) */
   @media screen and (max-width: 768px) {
 	.pricing-content {
 	  flex-direction: column;
@@ -188,7 +175,6 @@
 	}
   }
   
-  /* For max-width 400px (small phones) */
   @media screen and (max-width: 400px) {
 	.pricing-section-container {
 	  padding: 20px 10px;
