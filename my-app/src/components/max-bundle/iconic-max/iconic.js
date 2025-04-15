@@ -33,7 +33,7 @@ const Iconic = () => {
       <div className='iconic-header'>
         <h1 className={styles.fontWhite32px}>Iconic hits with Max</h1>
         <Row justify='center'>
-        <Col span={12} >
+        <Col xs={24} sm={16} md={12} >
         <p className={`${styles.fontWhite18px}  ${styles.textCenter}`}>Get all of HBO, the DC Universe, new releases from Warner Bros. and A24, and more. From  award-winning series and movies to fresh originals and family favorites, Max is the one to watch.</p>
         </Col>
         </Row>

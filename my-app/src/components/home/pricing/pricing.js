@@ -82,7 +82,7 @@ const Pricing = () => {
     ))}
   </div>
   <Row justify='center'>
-  <Col span={5}>
+  <Col xs={24} sm={16} md={5}>
 <p className={`${styles.fontWhite10px} ${styles.textCenter} ${styles.marginBottom}`}>*Savings compared to regular monthly price of each service. <Link to='#' className={styles.fontGray} onClick={(e) => { e.preventDefault(); setShowTerms(true); }}> Terms apply.</Link>
 **Switches from Live TV to Hulu take effect as of the next billing cycle 
 †For current-season shows in the streaming library only 
@@ -122,7 +122,7 @@ const Pricing = () => {
     <div className="Add-On">
       <h1 className={`${styles.fontWhite32px} ${styles.textCenter} available`}>Available Add-ons</h1>
       <Row justify='center'>
-      <Col span={4}>
+      <Col xs={24} sm={16} md={4}>
       <p className={`${styles.fontWhite14px} ${styles.textCenter} add-content`}>
         Add-ons available at an additional cost. Add them after you sign up for Hulu.
       </p>

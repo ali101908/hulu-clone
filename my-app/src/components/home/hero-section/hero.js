@@ -62,9 +62,11 @@ const HeroSection = () => {
       )}
 
       <Row justify="space-evenly" align="middle" className={`hero-footer ${styles.bgBlack} ${styles.paddingCover} ${styles.opacity}`}>
+   
         <Col xs={24} sm={12} md={6}>
-          <img src={heroImage2} alt="Hulu Hero" width={300} height={100} />
+          <center><img src={heroImage2} alt="Hulu Hero" width={300} height={100} /></center>
         </Col>
+        
         <Col xs={24} sm={16} md={9}>
           <p className={`${styles.fontGreenBold} ${styles.textCenter}`}>DISNEY+, HULU, MAX BUNDLE</p>
           <h3 className={`${styles.textCenter} ${styles.whiteColour}`}>
@@ -74,6 +76,7 @@ const HeroSection = () => {
             Savings compared to regular monthly price of each service.
           </p>
         </Col>
+        <Row justify='center'>
         <Col xs={24} sm={12} md={4}>
           <Space direction="vertical" align="center">
             <Button color="green" variant='solid' className={`hero-btn2 ${styles.hover} ${styles.blackColour} ${styles.bgTheme}`}>
@@ -84,6 +87,7 @@ const HeroSection = () => {
             </Link>
           </Space>
         </Col>
+        </Row>
       </Row>
     </div>
   );

@@ -26,7 +26,7 @@ const BasicBundle = () => {
       <div>
         <h1 className={`${styles.fontWhite} ${styles.textCenter}`}>BUNDLE ALL THREE</h1>
         <Row justify='center'>
-        <Col span={7}>
+        <Col xs={24} sm={16} md={7}>
         <p className={`${styles.fontWhite18px} ${styles.textCenter} `}>
           Get your favorite stories, Originals, and live sports with 
           Disney+, Hulu, ESPN+ Bundle Basic, which includes Hulu, 

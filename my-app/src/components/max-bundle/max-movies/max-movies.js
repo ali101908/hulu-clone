@@ -21,7 +21,7 @@ const MaxMovies = () => {
 			<div className='movies-portion-a'>
 				<h1>Tons of shows and movies with Hulu</h1>
 				<Row justify="center">
-				<Col span={10}>
+				<Col xs={24} sm={16} md={10}>
 				<p className={`${styles.fontWhite14px} ${styles.textCenter} box-content`}>Get access to Hulu with thousands of episodes of every kind of TV. From Shōgun to Only  Murders in The Building to The Kardashians – there’s plenty of all the things you’re into.</p>
 				</Col>
 				</Row>
@@ -37,7 +37,7 @@ const MaxMovies = () => {
 			<div className='movies-portion-a'>
 				<h1>Disney+ has your favorite stories</h1>
 				<Row justify="center">
-				<Col span={10}>
+				<Col xs={24} sm={16} md={10}>
 				<p className={`${styles.fontWhite14px} ${styles.textCenter} box-content`}>Stream the best of Disney, Pixar, Marvel, Star Wars, National Geographic, and more. From  new releases and exclusive originals to your favorite blockbusters and classics, all of these  and more are now streaming on Disney+.</p>
 				<p className={`${styles.fontGray} ${styles.textCenter}`}>
 				© 2025 Disney and its related entities

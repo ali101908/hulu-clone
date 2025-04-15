@@ -23,7 +23,7 @@ const Plan = () => {
       <div className={styles.paddingCover}>
         <h1 className={styles.fontWhite}>Select Your Plan</h1>
         <Row justify='center'>
-        <Col span={8}>
+        <Col xs={24} sm={16} md={8}>
         <p className={`${styles.fontWhite18px}`}>
           No hidden fees, equipment rentals, or installation appointments.
           <b>Switch plans or cancel anytime.**</b>

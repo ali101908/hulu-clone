@@ -18,7 +18,7 @@ const Trial = () => {
       <h1 className={`${styles.fontWhite} ${styles.textCenter}`}>
         Watch Live TV From 95+ Channels
       </h1>
-      <Col span={10}>
+      <Col xs={24} sm={16} md={10}>
       <p className={`${styles.fontWhite18px} ${styles.textCenter} `}>
         Get top national and local channels on Hulu (With Ads) + Live TV with
         your favorite live  sports, news, and events - plus the entire
@@ -32,7 +32,7 @@ const Trial = () => {
       <Button color="green" variant="solid" to="./login" className={`${styles.hover} ${styles.fontBlack12px} ${styles.textDecoration} ${styles.center}  trial-btn`} >
         START YOUR FREE TRIAL
       </Button></div>
-      <Col span={16}>
+      <Col xs={24} sm={16} md={10}>
       <p className={`${styles.fontGray} ${styles.textCenter} `} >
         Hulu (With Ads) + Live TV plan $82.99/mo. after 3-day free trial (if
         any) unless canceled. Cancel anytime. Regional restrictions, blackouts
