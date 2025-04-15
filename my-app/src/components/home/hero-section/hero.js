@@ -63,7 +63,7 @@ const HeroSection = () => {
 
       <Row justify="space-evenly" align="middle" className={`hero-footer ${styles.bgBlack} ${styles.paddingCover} ${styles.opacity}`}>
    
-        <Col xs={24} sm={12} md={6}>
+        <Col xs={24} sm={12} md={4}>
           <center><img src={heroImage2} alt="Hulu Hero" width={300} height={100} /></center>
         </Col>
         
