@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from '../../../assets/component.module.css/component.module.css';
-import { Button } from "antd";
-// import { Popover, PopoverHeader, PopoverBody } from 'reactstrap';
+import { Button ,Row ,Col } from "antd";
 import "./trial.css";
 
 const Trial = () => {
  
-  const [popoverOpen1, setPopoverOpen1] = useState(false);
   const [zipCode, setZipCode] = useState("");
-
-  const togglePopover1 = () => setPopoverOpen1(!popoverOpen1);
   const [showTerms , setShowTerms] = useState(false)
 
   return (
@@ -22,6 +18,7 @@ const Trial = () => {
       <h1 className={`${styles.fontWhite} ${styles.textCenter}`}>
         Watch Live TV From 95+ Channels
       </h1>
+      <Col span={10}>
       <p className={`${styles.fontWhite18px} ${styles.textCenter} `}>
         Get top national and local channels on Hulu (With Ads) + Live TV with
         your favorite live  sports, news, and events - plus the entire
@@ -30,10 +27,12 @@ const Trial = () => {
         content.  Includes access to endless entertainment with Disney+
         and live sports with ESPN+.
       </p>
+      </Col>
       <div className={styles.center}>
       <Button color="green" variant="solid" to="./login" className={`${styles.hover} ${styles.fontBlack12px} ${styles.textDecoration} ${styles.center}  trial-btn`} >
         START YOUR FREE TRIAL
       </Button></div>
+      <Col span={16}>
       <p className={`${styles.fontGray} ${styles.textCenter} `} >
         Hulu (With Ads) + Live TV plan $82.99/mo. after 3-day free trial (if
         any) unless canceled. Cancel anytime. Regional restrictions, blackouts
@@ -42,6 +41,7 @@ const Trial = () => {
         eligible subscribers only.{" "}
         <Link to="#" className={styles.fontGray}>See details.</Link>
       </p>
+      </Col>
       <div className={styles.textCenter}>
         <Link
           to="#"

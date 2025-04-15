@@ -5,12 +5,14 @@ import MoviesBox from '../bundle-pages/movies-box/movies-box'
 import Work from '../bundle-pages/work-portion/work'
 import Faq from '../bundle-pages/frequently-asked-questions/faq'
 import Footer from '../home/footer/footer'
+import GreenBg from '../bundle-pages/green-bg/greenBg'
 
 const Premium = () => {
   return (
 	<div>
 	   <Header1 />
 	  <Categories />
+	   <GreenBg />
 	  <MoviesBox />
 	  <Work />
 	  <Faq />

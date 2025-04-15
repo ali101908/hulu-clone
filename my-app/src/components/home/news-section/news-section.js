@@ -18,7 +18,7 @@ import news1 from '../../../images/news1.jpeg';
 import news2 from '../../../images/news2.jpeg';
 import news3 from '../../../images/news3.jpeg';
 
-// Data Array
+
 const newsData = [
   {
     id: 1,
@@ -55,24 +55,18 @@ const Newssection = () => {
       vertical 
       align="flex-start"
       justify='center'
-      className="news-container" 
+      className={`${styles.paddingComplete} ${styles.overflowX} news-container`}
       style={{
         backgroundImage: `url(${activeTab.backgroundImage})`,
-        height: '80vh',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        overflowX: 'hidden',
-        padding: '2rem',
       }}
     >
   
-      <Flex gap="small" style={{ marginBottom: '1rem' }}>
+      <Flex gap="small" >
         {newsData.map((news) => (
           <button
             key={news.id}
-            className={`news-tab ${activeTab.id === news.id ? 'active' : ''}`}
+            className={`news-tab ${styles.fontWhite14px} ${activeTab.id === news.id ? 'active' : ''}`}
             onClick={() => setActiveTab(news)}
-            style={{ color: '#fff', fontSize: '14px' }}
           >
             {news.title}
           </button>
@@ -85,19 +79,19 @@ const Newssection = () => {
         <p className={styles.fontWhite18px}>{activeTab.description}</p>
 
       
-        <Flex gap="small" wrap="wrap" style={{ marginTop: '1rem' }}>
+        <Flex gap="small" wrap="wrap">
           {activeTab.icons.map((icon, index) => (
             <img className="icons-img" key={index} src={icon} alt={`icon-${index}`} />
           ))}
         </Flex>
       </div>
 
-      <p style={{ color: 'gray', marginTop: '1rem' }}>
+      <p className={styles.fontGray}>
         Live TV plan required. Regional restrictions, blackouts, and additional terms apply.
         <Link 
           to="#"
           onClick={(e) => { e.preventDefault(); setShowTerms(true); }} 
-          style={{ color: 'gray', marginLeft: '5px' }}
+          className={styles.fontGray}
         >
           See details
         </Link>
@@ -107,7 +101,6 @@ const Newssection = () => {
         <Flex 
           align="center" 
           justify="center"
-        
           className={`${styles.center} ${styles.heightfull} ${styles.width100} modal `}
         >
           <div className={`${styles.whiteColour} ${styles.textLeft} modal-content`}>

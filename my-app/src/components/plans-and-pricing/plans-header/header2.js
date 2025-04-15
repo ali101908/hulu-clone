@@ -5,7 +5,7 @@ import { FaSearch, FaBars, FaTimes } from 'react-icons/fa';
 import styles from '../../../assets/component.module.css/component.module.css';
 import '../plan-and-pricing.css';
 
-const { useBreakpoint } = Grid; // Ant Design Hook
+const { useBreakpoint } = Grid; 
 
 const Header2 = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -14,7 +14,7 @@ const Header2 = () => {
   const showDrawer = () => setOpenDrawer(true);
   const closeDrawer = () => setOpenDrawer(false);
 
-  const isMobile = !screens.md; // md breakpoint (768px)
+  const isMobile = !screens.md; 
 
   return (
     <div className={`${styles.spaceEvenly} ${styles.whiteColour} plan-nav-container`}>

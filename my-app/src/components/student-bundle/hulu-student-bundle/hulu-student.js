@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import DiscountIcon from '../student-images/st-hero.png';
 import '../student-bundle.css';
 import styles from '../../../assets/component.module.css/component.module.css';
-
+import { Col, Row } from 'antd';
 
 const HuluStudent = () => {
   const [showTerms, setShowTerms] = useState(false);
@@ -16,6 +16,8 @@ const HuluStudent = () => {
 	   </div>
  
 	   <div>
+	   <Row justify='center'>
+	   <Col span={6}>
 		 <h1 className='basic-title'>Students: Get Hulu For Just  $1.99/Month</h1>
 		 <p className={`${styles.fontWhite12px} ${styles.textCenter}`}>
 		 Stream tons of shows and movies with our Hulu (With Ads) 
@@ -24,7 +26,8 @@ const HuluStudent = () => {
 		 </p>
 
 		 <h2 className={`${styles.fontWhite24px} `}>Save 80% off the regular monthly price. Cancel anytime.</h2>
-
+</Col>
+</Row>
 	   </div>
  
 	   <div className='basic-hero-footer'>

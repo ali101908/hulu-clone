@@ -5,7 +5,7 @@ import TickBtn from '../../../images/tick-btn.svg';
 import './pricing.css';
 import styles from '../../../assets/component.module.css/component.module.css';
 import { CaretDownOutlined } from '@ant-design/icons';
-import { Button } from "antd";
+import { Button,Col, Row } from "antd";
 
 
 
@@ -81,18 +81,21 @@ const Pricing = () => {
       </div>
     ))}
   </div>
-  
+  <Row justify='center'>
+  <Col span={5}>
 <p className={`${styles.fontWhite10px} ${styles.textCenter} ${styles.marginBottom}`}>*Savings compared to regular monthly price of each service. <Link to='#' className={styles.fontGray} onClick={(e) => { e.preventDefault(); setShowTerms(true); }}> Terms apply.</Link>
 **Switches from Live TV to Hulu take effect as of the next billing cycle 
 †For current-season shows in the streaming library only 
-^Savings compared to the then-current regular monthly price of Disney+, Hulu Bundle Basic. Offer applies to ad-supported Disney+, Hulu Bundle plan. Valid only for new and eligible returning Disney+, Hulu, and/or ESPN+ subscribers, who are 18 years of age or older. After 4-month promo period, Disney+, Hulu Bundle Basic auto-renews at then-current monthly retail price ($10.99/mo (plus tax, where applicable)) until canceled. Select Hulu content available via Disney+ with valid Hulu and Disney+ subscriptions; additional content only available via Hulu app. Hulu content can be streamed via Disney+ on up to 2 devices simultaneously. Additional app feature and device restrictions apply. Offer valid until 11:59 PM PT on 3/30/25. <Link to='#' className={styles.fontGray} onClick={(e) => { e.preventDefault(); setShowTerms(true); }}>Additional terms apply</Link>
 ©2025 Disney and its related entities.
-
 </p>
+</Col>
+</Row>
   {showTerms && (
-        <div className='modal'>
-          <div className='modal-content'>
-            <span className='close' onClick={() => setShowTerms(false)}>&times;</span>
+       <div className={`modal ${styles.center} ${styles.heightfull} ${styles.width100}`}>
+                 <div className={`modal-content ${styles.whiteColour} ${styles.textLeft}`}>
+                   <span className={`close ${styles.whiteColour} ${styles.hover}`} onClick={() => setShowTerms(false)}>
+                     &times;
+                   </span>
             <p style={{color:"white"}}>
               Cancel anytime, through your account settings or by contacting us, effective at the end of your billing period. No refunds or credits for partial months. Use of the services is subject to the <Link to='#'> Disney+, ESPN+, and Hulu Subscriber Agreement</Link>. Valid payment method required to redeem offer. Cannot be combined with any other offers, coupons, discounts or promotions. Not redeemable for cash or any other goods or services. Eligibility rules and offer timing may vary if you sign up through a third party billing partner. 
               Access content from each service separately. Location data may be required to watch certain content. For more information, including detailed information on billing and cancelation, please visit the Hulu Help Center.
@@ -118,10 +121,13 @@ const Pricing = () => {
   {showAddOns && (
     <div className="Add-On">
       <h1 className={`${styles.fontWhite32px} ${styles.textCenter} available`}>Available Add-ons</h1>
+      <Row justify='center'>
+      <Col span={4}>
       <p className={`${styles.fontWhite14px} ${styles.textCenter} add-content`}>
         Add-ons available at an additional cost. Add them after you sign up for Hulu.
       </p>
-
+      </Col>
+</Row>
       <div className="add-on-table">
         {pricingData.addOns.map((addOn, index) => (
           <div key={index} className={`${styles.spaceBetween} ${styles.paddingCover} add-on-row`}>

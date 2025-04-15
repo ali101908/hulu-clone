@@ -12,10 +12,14 @@ const Work = () => {
     <div className='work-container'>
       <div className={`${styles.textCenter}`}>
         <h1>How it works</h1>
-        <p className={`${styles.bgTheme} ${styles.textCenter} ${styles.fontBlack} work-content`}>
-          Already a Hulu subscriber? <br />
-          Visit the <Link className={styles.fontBlack} to='#'>Manage Account</Link> page to switch to a bundle now, or <Link className={styles.fontBlack} to='#'>learn more</Link> about how to sign up.
+       
+        <div className={styles.bgTheme}>
+       <p className={` ${styles.textCenter} ${styles.fontBlack} work-content`}>
+          Already a Hulu subscriber? 
         </p>
+  <p className={` ${styles.textCenter} ${styles.fontBlack} work-content`}>  Visit the <Link className={styles.fontBlack} to='#'>Manage Account</Link> page to switch to a bundle now, or <Link className={styles.fontBlack} to='#'>learn more</Link> about how to sign up.</p>
+        </div>
+        
       </div>
 
       <h5 className={`${styles.textCenter} ${styles.fontBlack}`}>
@@ -24,7 +28,7 @@ const Work = () => {
 
       <div className='category-container'>
         <Row gutter={[32, 32]} justify="center" align="top" className={`${styles.textCenter} ${styles.paddingCover}`}>
-          <Col xs={24} sm={12} md={8} className="category-a">
+          <Col xs={20} sm={12} md={8} className="category-a">
             <img src={Icon1} alt='icon1' />
             <p>STEP 1</p>
             <h2>Sign up for a bundle</h2>
@@ -35,7 +39,7 @@ const Work = () => {
             </p>
           </Col>
 
-          <Col xs={24} sm={12} md={8} className="category-b">
+          <Col xs={20} sm={12} md={8} className="category-b">
             <img src={Icon2} alt='icon1' />
             <p>STEP 2</p>
             <h2>Access your Disney+ and ESPN+ accounts</h2>
@@ -46,7 +50,7 @@ const Work = () => {
             </p>
           </Col>
 
-          <Col xs={24} sm={12} md={8} className="category-c">
+          <Col xs={20} sm={12} md={8} className="category-c">
             <img src={Icon3} alt='icon1' />
             <p>STEP 3</p>
             <h2>Download apps and start <br /> streaming</h2>

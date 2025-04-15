@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './plan.css';
 import styles from '../../../assets/component.module.css/component.module.css';
 import { CaretDownOutlined } from '@ant-design/icons';
+import { Col, Row } from 'antd';
 
 
 
@@ -21,10 +22,14 @@ const Plan = () => {
     <div className={`${styles.textCenter}  ${styles.bgBlack} ${styles.widthAuto}`}>
       <div className={styles.paddingCover}>
         <h1 className={styles.fontWhite}>Select Your Plan</h1>
-        <p className={styles.fontWhite18px}>
+        <Row justify='center'>
+        <Col span={8}>
+        <p className={`${styles.fontWhite18px}`}>
           No hidden fees, equipment rentals, or installation appointments.
           <b>Switch plans or cancel anytime.**</b>
         </p>
+        </Col>
+        </Row>
         <div className={`dropdown-btn ${isOpen ? 'open' : ''}`}>
           <button
             className={`${styles.hover} ${styles.fontBlack} ${styles.bgWhite} ${styles.width250px} dropdown-toggle`}

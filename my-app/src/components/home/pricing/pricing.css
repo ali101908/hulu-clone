@@ -150,13 +150,13 @@
         gap: 10px;
     }
   
-    .available{
+    /* .available{
     width: 80vw;
       }
     
       .add-content{
    width: auto;
-      }
+      } */
 }
 
 @media screen and (max-width: 440px) {

@@ -17,6 +17,7 @@ import iconic14 from '../max-images/I14.webp';
 import iconic15 from '../max-images/I15.webp';
 import iconic16 from '../max-images/I16.webp';
 import styles from '../../../assets/component.module.css/component.module.css';
+import { Row,Col } from 'antd';
 
 const categories = {
   Originals: [iconic1, iconic2, iconic3, iconic4, iconic5, iconic6],
@@ -31,7 +32,11 @@ const Iconic = () => {
     <div className={`${styles.width100} ${styles.textCenter}  ${styles.paddingCover}  iconic-container`}>
       <div className='iconic-header'>
         <h1 className={styles.fontWhite32px}>Iconic hits with Max</h1>
+        <Row justify='center'>
+        <Col span={12} >
         <p className={`${styles.fontWhite18px}  ${styles.textCenter}`}>Get all of HBO, the DC Universe, new releases from Warner Bros. and A24, and more. From  award-winning series and movies to fresh originals and family favorites, Max is the one to watch.</p>
+        </Col>
+        </Row>
       </div>
       <div className={`${styles.center} ${styles.gap} ${styles.marginBottom}`}>
         {Object.keys(categories).map((category) => (

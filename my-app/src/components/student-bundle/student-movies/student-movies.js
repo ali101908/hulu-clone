@@ -6,18 +6,21 @@ import sm4 from '../student-images/sm4.webp';
 import sm5 from '../student-images/sm5.webp';
 import m2 from '../../../images/bundle-images/m2.webp';
 import styles from '../../../assets/component.module.css/component.module.css';
-import { Flex } from 'antd';
+import { Flex , Col , Row } from 'antd';
 
 const StudentMovies = () => {
   return (
     <div className={styles.widthAuto}>
       <div className={`${styles.textCenter} ${styles.paddingComplete} movies-portion`}>
         <div className='movies-portion-a'>
+        <Row justify='center'>
+          <Col span={12}>
           <h1>Tons of shows and movies with Hulu</h1>
-          <p className={`${styles.fontWhite14px} ${styles.textCenter} box-content`}>
+          <p className={`${styles.fontWhite14px} box-content`}>
             Get access to Hulu with thousands of episodes of every kind of TV. From Shōgun to Only Murders in The Building to The Kardashians – there’s plenty of all the things you’re into.
           </p>
-
+          </Col>
+        </Row>
          
 		  <div className='portion-a-movies'>
           <Flex wrap="wrap" justify="center" gap="small">

@@ -1,17 +1,16 @@
 import React, { useState, useRef } from 'react';
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { Link } from 'react-router-dom'; 
 import "../bundles.css";
 import DisneyIcon from '../../../images/bundle-images/disney-icon.png';
-// import ArrowDown from '../../../images/bundle-images/arrow_down.svg';
 import styles from '../../../assets/component.module.css/component.module.css';
 import { DownCircleOutlined } from '@ant-design/icons';
-import { Button } from "antd";
+import { Button,Col, Row } from "antd";
 import {  UncontrolledPopover, PopoverBody, PopoverHeader } from 'reactstrap';
 
 
 const BasicBundle = () => {
   const [showTerms, setShowTerms] = useState(false);
-  const bottomRef = useRef(null); // Reference for scrolling
+  const bottomRef = useRef(null); 
 
   const scrollToBottom = () => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -26,11 +25,15 @@ const BasicBundle = () => {
 
       <div>
         <h1 className={`${styles.fontWhite} ${styles.textCenter}`}>BUNDLE ALL THREE</h1>
-        <p className={`${styles.fontWhite18px} ${styles.textCenter}`}>
+        <Row justify='center'>
+        <Col span={7}>
+        <p className={`${styles.fontWhite18px} ${styles.textCenter} `}>
           Get your favorite stories, Originals, and live sports with 
           Disney+, Hulu, ESPN+ Bundle Basic, which includes Hulu, 
           Disney+, and ESPN+, all with ads.
         </p>
+        </Col>
+        </Row>
       </div>
 
       <div className='basic-hero-footer'>
@@ -77,13 +80,14 @@ const BasicBundle = () => {
         </div>
       )}
 
-      <div className='scroll-down' onClick={scrollToBottom} style={{ cursor: "pointer" }}>
+      <div className='scroll-down'>
         <p style={{ color: "white" }}>HOW IT WORKS</p>
-      <span className='down-icon'><DownCircleOutlined /></span>
+      <span className={`down-icon ${styles.hover}`} onClick={scrollToBottom}><DownCircleOutlined /></span>
+      <span ref={bottomRef} ></span>
       </div>
 
-      {/* Scroll Target */}
-      <div ref={bottomRef} style={{ height: "50px" }}></div>
+     
+      
     </div>
   );
 };

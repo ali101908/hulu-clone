@@ -5,11 +5,13 @@ import MoviesBox from './movies-box/movies-box'
 import Footer from '../home/footer/footer'
 import Work from './work-portion/work'
 import Faq from './frequently-asked-questions/faq'
+import GreenBg from './green-bg/greenBg'
 const Bundle = () => {
   return (
 	<div>
 	  <Header1 />
 	  <Categories />
+	  <GreenBg />
 	  <MoviesBox />
 	  <Work />
 	  <Faq />

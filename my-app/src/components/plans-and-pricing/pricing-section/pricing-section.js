@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Row, Col, Flex, Button } from 'antd';
 import './pricing-section.css';
+import styles from '../../../assets/component.module.css/component.module.css';
 
 const PricingSection = () => {
   const scrollToTop = () => {
@@ -15,7 +16,7 @@ const PricingSection = () => {
     <div className='pricing-section-container'>
       <Row gutter={[24, 24]} className='pricing-content'>
         
-        <Col xs={24} md={16}>
+        <Col xs={24} md={14}>
           <div className='pricing-text'>
             <h1>Hulu plans and prices</h1>
             <p>
@@ -60,7 +61,7 @@ const PricingSection = () => {
             <h3>Disney+, Hulu, Max Bundle plans</h3>
             <p>If you're interested in a <Link to='#'>Disney+, Hulu, Max Bundle</Link>, sign up for a plan that includes Disney+, Hulu, and Max. Pricing will vary depending on the plan you choose.</p>
 
-            <Flex justify='center' style={{ marginTop: 16 }}>
+            <Flex justify='center' className={styles.marginTop}>
               <Button className='back-to-top' onClick={scrollToTop}>BACK TO TOP</Button>
             </Flex>
 
@@ -70,7 +71,7 @@ const PricingSection = () => {
               <li><Link to='#'>ESPN+</Link> for <strong>$11.99/month</strong></li>
             </ul>
 
-            <Flex justify='center' style={{ marginTop: 16 }}>
+            <Flex justify='center' className={styles.marginTop}>
               <Button className='back-to-top' onClick={scrollToTop}>BACK TO TOP</Button>
             </Flex>
 
@@ -85,7 +86,7 @@ const PricingSection = () => {
             </ul>
             <p><em>*Third-party billing limitations apply.</em></p>
 
-            <Flex justify='center' style={{ marginTop: 16 }}>
+            <Flex justify='center' className={styles.marginTop}>
               <Button className='back-to-top' onClick={scrollToTop}>BACK TO TOP</Button>
             </Flex>
 
@@ -98,7 +99,7 @@ const PricingSection = () => {
               <li><Link to='#'>Unlimited Screens Add-on</Link> for <strong>$9.99/month</strong></li>
             </ul>
 
-            <Flex justify='center' style={{ marginTop: 16 }}>
+            <Flex justify='center' className={styles.marginTop}>
               <Button className='back-to-top' onClick={scrollToTop}>BACK TO TOP</Button>
             </Flex>
 

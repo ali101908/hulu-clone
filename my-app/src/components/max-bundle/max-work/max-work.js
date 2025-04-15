@@ -16,15 +16,14 @@ const MaxWork = () => {
         </Col>
       </Row>
 
-      <Row justify="space-evenly" gutter={[24, 24]} className={`category-container ${styles.paddingCover}`}>
+      <Row justify="space-evenly" gutter={[12,12]} className={`category-container ${styles.paddingCover}`}>
         <Col xs={24} md={8}>
           <Card 
             hoverable 
             bordered={false} 
-            className="category-a" 
-            style={{ textAlign: 'center', background: 'transparent' }}
+            className={`category-a ${styles.textCenter}`}
           >
-            <img src={Icon1} alt="icon1" style={{ marginBottom: '1rem', maxWidth: '100px' }} />
+            <img src={Icon1} alt="icon1" />
             <Paragraph strong>STEP 1</Paragraph>
             <Title level={3}>Sign up for a bundle</Title>
             <Paragraph>
@@ -38,10 +37,9 @@ const MaxWork = () => {
           <Card 
             hoverable 
             bordered={false} 
-            className="category-b" 
-            style={{ textAlign: 'center', background: 'transparent' }}
+            className={`category-b ${styles.textCenter}`}
           >
-            <img src={Icon2} alt="icon2" style={{ marginBottom: '1rem', maxWidth: '100px' }} />
+            <img src={Icon2} alt="icon2"  />
             <Paragraph strong>STEP 2</Paragraph>
             <Title level={3}>Access your Disney+ and ESPN+ accounts</Title>
             <Paragraph>
@@ -55,10 +53,9 @@ const MaxWork = () => {
           <Card 
             hoverable 
             bordered={false} 
-            className="category-c" 
-            style={{ textAlign: 'center', background: 'transparent' }}
+            className={`category-c ${styles.textCenter}`} 
           >
-            <img src={Icon3} alt="icon3" style={{ marginBottom: '1rem', maxWidth: '100px' }} />
+            <img src={Icon3} alt="icon3" />
             <Paragraph strong>STEP 3</Paragraph>
             <Title level={3}>Download apps and start streaming</Title>
             <Paragraph>
