@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <div className='container'>
+    <div className='container1'>
       <div className={`${styles.spaceBetween}`}>
         {/* Logo */}
         <h2 className={`${styles.themeColor} logo`}>hulu</h2>

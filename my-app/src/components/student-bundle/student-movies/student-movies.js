@@ -14,7 +14,7 @@ const StudentMovies = () => {
       <div className={`${styles.textCenter} ${styles.paddingComplete} movies-portion`}>
         <div className='movies-portion-a'>
         <Row justify='center'>
-          <Col span={12}>
+          <Col xs={24} sm={16} md={10}>
           <h1>Tons of shows and movies with Hulu</h1>
           <p className={`${styles.fontWhite14px} box-content`}>
             Get access to Hulu with thousands of episodes of every kind of TV. From Shōgun to Only Murders in The Building to The Kardashians – there’s plenty of all the things you’re into.

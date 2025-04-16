@@ -5,7 +5,8 @@ import TickBtn from '../../../images/tick-btn.svg';
 import './pricing.css';
 import styles from '../../../assets/component.module.css/component.module.css';
 import { CaretDownOutlined } from '@ant-design/icons';
-import { Button,Col, Row } from "antd";
+import {Col, Row } from "antd";
+import Button from 'react-bootstrap/esm/Button';
 
 
 
@@ -58,7 +59,7 @@ const Pricing = () => {
           <div key={index} className={styles.fontWhite14px}>
             <img src={PriceLogo} alt='Disney Plus Logo' />
             <p className={styles.fontWhite12px}>{bundle.name}</p>
-            <Button color="green" variant='solid'   className={`${styles.width250px} ${styles.fontBlack} ${styles.hover} pricing-btn`}>{bundle.price}</Button>
+            <Button  variant="success"  className={`${styles.width250px} ${styles.fontBlack} ${styles.hover} pricing-btn`}>{bundle.price}</Button>
             <p className={`${styles.fontWhite12px} ${styles.width250px}`}>{bundle.footer}</p>
           </div>
         ))}

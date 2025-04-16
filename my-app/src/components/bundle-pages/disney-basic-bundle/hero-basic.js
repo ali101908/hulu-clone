@@ -4,7 +4,8 @@ import "../bundles.css";
 import DisneyIcon from '../../../images/bundle-images/disney-icon.png';
 import styles from '../../../assets/component.module.css/component.module.css';
 import { DownCircleOutlined } from '@ant-design/icons';
-import { Button,Col, Row } from "antd";
+import { Col, Row } from "antd";
+import Button from 'react-bootstrap/esm/Button';
 import {  UncontrolledPopover, PopoverBody, PopoverHeader } from 'reactstrap';
 
 
@@ -41,8 +42,8 @@ const BasicBundle = () => {
         <div className="text-center">
       <Button
         id="ScheduleUpdateButton"
-        color="success"
-        className={`${styles.bgTheme} hero-btn2`}
+         variant="success"
+        className={` hero-btn2`}
       >
         GET ALL THREE
       </Button>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Row, Col, Space } from 'antd';
+import {  Row, Col, Space } from 'antd';
+import Button from 'react-bootstrap/Button';
 import '../home.css';
 import heroImage from '../../../images/hero-img.png';
 import heroImage2 from '../../../images/hero-img2.png';
@@ -26,7 +27,7 @@ const HeroSection = () => {
       </Row>
 
       <Row justify="center">
-        <Button className={`hero-btn ${styles.fontBlack14px} ${styles.hover}`} color="green" variant='solid' >
+        <Button className={`hero-btn ${styles.fontBlack14px} ${styles.hover}`} variant="success" >
           GET THIS DEAL
         </Button>
       </Row>
@@ -79,7 +80,7 @@ const HeroSection = () => {
         <Row justify='center'>
         <Col xs={24} sm={12} md={4}>
           <Space direction="vertical" align="center">
-            <Button color="green" variant='solid' className={`hero-btn2 ${styles.hover} ${styles.blackColour} ${styles.bgTheme}`}>
+            <Button variant="success" className={`hero-btn2 ${styles.hover} ${styles.blackColour} ${styles.bgTheme}`}>
               LEARN MORE
             </Button>
             <Link to="#" className={styles.fontGray} onClick={(e) => { e.preventDefault(); setShowTerms(true); }}>

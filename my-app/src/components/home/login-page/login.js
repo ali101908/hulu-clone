@@ -4,9 +4,8 @@ import {
   Form,
   FormGroup,
   Input,
-  Button
 } from 'reactstrap';
-
+import Button from 'react-bootstrap/esm/Button';
 import LoginFooter from './login-footer';
 
 import TopLogo from "./top-logo.svg";
@@ -30,8 +29,8 @@ const LoginPage = () => {
       <div className={`${styles.directionColumn} ${styles.widthAuto} login-container`}>
 
         <Button
-          color="link"
-          className={`${styles.themeColor} ${styles.hover} go-back-btn`}
+         variant="success"
+          className={` ${styles.hover} go-back-btn`}
           onClick={() => navigate('/')}
         >
           ←
@@ -61,8 +60,7 @@ const LoginPage = () => {
               />
             </FormGroup>
             <Button
-              type="submit"
-              color="dark"
+              variant="dark"
               className={`${styles.font16px} ${styles.fontBold} ${styles.width100} ${styles.hover} ${styles.bgBlack} ${styles.whiteColour} continue-btn`}
             >
               Continue

@@ -11,6 +11,7 @@ import Max from './components/max-bundle/max';
 import StudentBundle from './components/student-bundle/student-bundle';
 import TvShows from './components/tv-shows/tv-shows'
 import './assets/component.module.css/component.module.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App = () => {

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from '../../../assets/component.module.css/component.module.css';
-import { Button ,Row ,Col } from "antd";
+import { Col } from "antd";
+import Button from "react-bootstrap/esm/Button";
 import "./trial.css";
 
 const Trial = () => {
@@ -29,7 +30,7 @@ const Trial = () => {
       </p>
       </Col>
       <div className={styles.center}>
-      <Button color="green" variant="solid" to="./login" className={`${styles.hover} ${styles.fontBlack12px} ${styles.textDecoration} ${styles.center}  trial-btn`} >
+      <Button  variant="success" to="./login" className={`${styles.hover} ${styles.fontBlack12px} ${styles.textDecoration} ${styles.center}  trial-btn`} >
         START YOUR FREE TRIAL
       </Button></div>
       <Col xs={24} sm={16} md={10}>

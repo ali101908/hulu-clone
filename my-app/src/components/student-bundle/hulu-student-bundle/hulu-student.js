@@ -17,7 +17,7 @@ const HuluStudent = () => {
  
 	   <div>
 	   <Row justify='center'>
-	   <Col span={6}>
+	   <Col xs={24} sm={16} md={10}>
 		 <h1 className='basic-title'>Students: Get Hulu For Just  $1.99/Month</h1>
 		 <p className={`${styles.fontWhite12px} ${styles.textCenter}`}>
 		 Stream tons of shows and movies with our Hulu (With Ads) 

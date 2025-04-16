@@ -1,8 +1,6 @@
-/* Default Styles (unchanged) */
-
 .help-container {
-	background-color: #f0f0f0; /* Light gray background */
-	padding: 50px 20px; /* Adjust padding as needed */
+	background-color: #f0f0f0; 
+	padding: 50px 20px;
 	text-align: center;
 }
   
@@ -27,22 +25,22 @@
   
 .help-portion {
 	display: flex;
-	justify-content: center; /* Center the two sections */
-	gap: 40px; /* Space between the two sections */
+	justify-content: center; 
+	gap: 40px; 
 }
-  
+
 .help-portion > div {
 	display: flex;
 	background-color: white;
 	border-radius: 8px;
 	padding: 30px;
-	width: 600px; /* Adjust width as needed */
+	width: 600px; 
 	text-align: left;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
   
 .help-portion img {
-	width: 50px; /* Adjust icon size as needed */
+	width: 50px; 
 	height: 50px;
 	margin-bottom: 20px;
 }
@@ -59,7 +57,7 @@
   
 .help-portion h4 a, .help-portion h3 a {
 	text-decoration: none;
-	color: inherit; /* Inherit color from the heading */
+	color: inherit; 
 }
   
 .help-portion h4 a:hover, .help-portion h3 a:hover {
@@ -72,69 +70,66 @@
 	line-height: 1.6;
 }
   
-/* Media Queries */
-  
-/* For max-width 768px (tablet and mobile screens) */
 @media screen and (max-width: 768px) {
 	.help-portion {
-	  flex-direction: column; /* Stack the help sections vertically */
-	  gap: 20px; /* Reduce space between sections */
-	  align-items: center; /* Center the divs horizontally */
+	  flex-direction: column;
+	  gap: 20px; 
+	  align-items: center; 
 	}
   
 	.help-portion > div {
-	  width: 80%; /* Make the divs take up 80% of the screen */
+	  width: 80%; 
 	  padding: 20px;
-	  text-align: center; /* Center content inside */
+	  text-align: center; 
 	  justify-content: center;
 	  align-items: center;
 	  flex-direction: column;
 	}
   
 	.help-title {
-	  font-size: 22px; /* Reduce font size for smaller screens */
+	  font-size: 22px; 
 	}
   
 	.help-text {
-	  font-size: 14px; /* Adjust font size for readability */
+	  font-size: 14px; 
 	}
   
 	.help-portion img {
-	  width: 40px; /* Adjust icon size */
+	  width: 40px; 
 	  height: 40px;
 	}
   
 	.help-portion h4, .help-portion h3 {
-	  font-size: 14px; /* Reduce font size for headings */
+	  font-size: 14px; 
 	}
   
 	.help-portion p {
-	  font-size: 0.9em; /* Adjust font size for better readability */
+	  font-size: 0.9em; 
 	}
 }
   
-/* For max-width 400px (small phone screens) */
+
 @media screen and (max-width: 400px) {
 	.help-container {
-	  padding: 30px 10px; /* Adjust padding */
+	  padding: 30px 10px; 
 	}
   
 	.help-title {
-	  font-size: 20px; /* Reduce title font size */
+	  font-size: 20px; 
 	}
-  
+
 	.help-text {
-	  font-size: 13px; /* Reduce text size */
+	  font-size: 13px; 
 	}
   
 	.help-portion {
-	  flex-direction: column; /* Stack sections vertically */
-	  gap: 15px; /* Reduce gap */
-	  align-items: center; /* Ensure sections are centered */
+	  flex-direction: column; 
+	  gap: 15px; 
+	  align-items: center; 
 	}
   
 	.help-portion > div {
-	  width: 90%; /* Make sections take full width but with some margin */
+	  width: 90%; 
 	  padding: 15px;
 	  text-align: center;
 	  justify-content: center;
@@ -143,15 +138,15 @@
 	}
   
 	.help-portion img {
-	  width: 35px; /* Adjust icon size */
+	  width: 35px; 
 	  height: 35px;
 	}
   
 	.help-portion h4, .help-portion h3 {
-	  font-size: 12px; /* Smaller heading font size */
+	  font-size: 12px; 
 	}
   
 	.help-portion p {
-	  font-size: 0.85em; /* Slightly smaller font size */
+	  font-size: 0.85em; 
 	}
 }
