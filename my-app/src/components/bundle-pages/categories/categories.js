@@ -28,7 +28,7 @@ const Categories = () => {
           </Row>
         </div>
 
-        <div className='category-b'>
+        <div className='category-a'>
         
           <img src={Icon2} alt='icon1' /> 
           <h2>The entertainment you want</h2>
@@ -39,7 +39,7 @@ const Categories = () => {
           </Row>
         </div>
 
-        <div className='category-c'>
+        <div className='category-a'>
           <img src={Icon3} alt='icon1' />
           <h2>On your terms</h2>
           <Row justify='center'>
