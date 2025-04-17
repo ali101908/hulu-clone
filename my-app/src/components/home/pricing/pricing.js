@@ -86,7 +86,7 @@ const Pricing = () => {
                 {row.values.map((value, i) => (
                   <td key={i}>
                     {row.discount && <small className="text-muted d-block">{row.discount[i]}</small>}
-                    {value === true ? <img src={TickBtn} alt="tick" /> : value === false ? '—' : value}
+                    {value === true ? <img className='text-center' src={TickBtn} alt="tick" /> : value === false ? '—' : value}
                   </td>
                 ))}
               </tr>
