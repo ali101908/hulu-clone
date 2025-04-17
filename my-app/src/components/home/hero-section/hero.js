@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {  Row, Col, Space } from 'antd';
+import { Row, Col, Space } from 'antd';
 import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 import '../home.css';
 import heroImage from '../../../images/hero-img.png';
 import heroImage2 from '../../../images/hero-img2.png';
@@ -27,7 +28,7 @@ const HeroSection = () => {
       </Row>
 
       <Row justify="center">
-        <Button className={`hero-btn ${styles.fontBlack14px} ${styles.hover}`} variant="success" >
+        <Button className={`hero-btn ${styles.fontBlack14px} ${styles.hover}`} variant="success">
           GET THIS DEAL
         </Button>
       </Row>
@@ -44,30 +45,32 @@ const HeroSection = () => {
             feature and device restrictions apply. Offer valid until 11:59 PM PT on 3/30/25.{' '}
             <Link to="#" className={styles.fontGray} onClick={(e) => { e.preventDefault(); setShowTerms(true); }}>
               Additional terms apply..
-            </Link> ©2025 Disney and its related entities.
+            </Link>
+            ©2025 Disney and its related entities.
           </p>
         </Col>
       </Row>
 
-      {showTerms && (
-        <div className={`modal ${styles.center} ${styles.heightfull} ${styles.width100}`}>
-          <div className={`modal-content ${styles.whiteColour} ${styles.textLeft}`}>
-            <span className={`close ${styles.whiteColour} ${styles.hover}`} onClick={() => setShowTerms(false)}>&times;</span>
-            <p className={styles.fontWhite18px}>
-              Cancel anytime, through your account settings or by contacting us, effective at the end of your billing period. No refunds or credits for partial months. Use of the services is subject to the{' '}
-              <Link to="#">Disney+, ESPN+, and Hulu Subscriber Agreement</Link>. Valid payment method required to redeem offer. Cannot be combined with any other offers, coupons, discounts or promotions. Not redeemable for cash or any other goods or services. Eligibility rules and offer timing may vary if you sign up through a third party billing partner.
-              Access content from each service separately. Location data may be required to watch certain content. For more information, including detailed information on billing and cancelation, please visit the Hulu Help Center.
-            </p>
-          </div>
-        </div>
-      )}
+      <Modal
+        show={showTerms}
+        onHide={() => setShowTerms(false)}
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Terms</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className={styles.deepDarkColour}>
+          Cancel anytime, through your account settings or by contacting us, effective at the end of your billing period. No refunds or credits for partial months. Use of the services is subject to the{' '}
+          <Link to="#">Disney+, ESPN+, and Hulu Subscriber Agreement</Link>. Valid payment method required to redeem offer. Cannot be combined with any other offers, coupons, discounts or promotions. Not redeemable for cash or any other goods or services. Eligibility rules and offer timing may vary if you sign up through a third party billing partner.
+          Access content from each service separately. Location data may be required to watch certain content. For more information, including detailed information on billing and cancelation, please visit the Hulu Help Center.
+        </Modal.Body>
+      </Modal>
 
       <Row justify="space-evenly" align="middle" className={`hero-footer ${styles.bgBlack} ${styles.paddingCover} ${styles.opacity}`}>
-   
         <Col xs={24} sm={12} md={4}>
           <center><img src={heroImage2} alt="Hulu Hero" width={300} height={100} /></center>
         </Col>
-        
+
         <Col xs={24} sm={16} md={9}>
           <p className={`${styles.fontGreenBold} ${styles.textCenter}`}>DISNEY+, HULU, MAX BUNDLE</p>
           <h3 className={`${styles.textCenter} ${styles.whiteColour}`}>
@@ -77,17 +80,18 @@ const HeroSection = () => {
             Savings compared to regular monthly price of each service.
           </p>
         </Col>
+
         <Row justify='center'>
-        <Col xs={24} sm={12} md={4}>
-          <Space direction="vertical" align="center">
-            <Button variant="success" className={`hero-btn2 ${styles.hover} ${styles.blackColour} ${styles.bgTheme}`}>
-              LEARN MORE
-            </Button>
-            <Link to="#" className={styles.fontGray} onClick={(e) => { e.preventDefault(); setShowTerms(true); }}>
-              Terms apply
-            </Link>
-          </Space>
-        </Col>
+          <Col xs={24} sm={12} md={4}>
+            <Space direction="vertical" align="center">
+              <Button variant="success" className={`hero-btn2 ${styles.hover} ${styles.blackColour} ${styles.bgTheme}`}>
+                LEARN MORE
+              </Button>
+              <Link to="#" className={styles.fontGray} onClick={(e) => { e.preventDefault(); setShowTerms(true); }}>
+                Terms apply
+              </Link>
+            </Space>
+          </Col>
         </Row>
       </Row>
     </div>
