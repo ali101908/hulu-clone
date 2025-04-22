@@ -26,9 +26,9 @@ const Work = () => {
         New to Hulu? Start watching in three easy steps:
       </h5>
 
-      <div className='category-container'>
-        <Row gutter={[32, 32]} justify="center" align="top" className={`${styles.textCenter} ${styles.paddingCover}`}>
-          <Col xs={20} sm={12} md={8} className="category-a">
+      <div className={styles.overflowX}>
+        <Row gutter={[12, 12]} justify="center" align="top" className={`${styles.textCenter} ${styles.paddingCover}`}>
+          <Col xs={20} sm={16} md={8} className="category-a">
             <img src={Icon1} alt='icon1' />
             <p>STEP 1</p>
             <h2>Sign up for a bundle</h2>
@@ -39,7 +39,7 @@ const Work = () => {
             </p>
           </Col>
 
-          <Col xs={20} sm={12} md={8} className="category-b">
+          <Col xs={20} sm={16} md={8} className="category-b">
             <img src={Icon2} alt='icon1' />
             <p>STEP 2</p>
             <h2>Access your Disney+ and ESPN+ accounts</h2>
@@ -50,7 +50,7 @@ const Work = () => {
             </p>
           </Col>
 
-          <Col xs={20} sm={12} md={8} className="category-c">
+          <Col xs={20} sm={16} md={8} className="category-c">
             <img src={Icon3} alt='icon1' />
             <p>STEP 3</p>
             <h2>Download apps and start <br /> streaming</h2>

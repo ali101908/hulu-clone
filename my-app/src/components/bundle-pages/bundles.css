@@ -13,7 +13,7 @@
     top: 0;
     z-index: 1000;
     height: 80px;
-    opacity: 1; /* Make sure it's not transparent */
+    opacity: 1; 
 	display: flex;
 	justify-content: space-between;
 	height: 50px;
