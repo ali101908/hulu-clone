@@ -83,7 +83,7 @@
 	  }
 
 	.login-box {
-		width: 200px; 
+		width: 300px; 
 	  }
 
 	.footer-tags {
@@ -97,7 +97,7 @@
 	  margin-top: 10px;
 	}
   }
-    @media screen and (max-width: 400px) {
+    /* @media screen and (max-width: 400px) {
 		.top-logo {
 			display: block;
 			margin-bottom: 15px;
@@ -118,5 +118,5 @@
 	  text-align: center;
 	  margin-top: 10px;
 	}
-  } 
+  }  */
    
