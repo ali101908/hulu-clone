@@ -16,22 +16,22 @@ const Header1 = () => {
   return (
     <div className='bundle-container'>
       <div className={`${styles.spaceBetween}`}>
-        {/* Logo */}
+       
        <Link to='/' > <h2 className={`${styles.themeColor} ${styles.textDecoration} logo`}>hulu</h2></Link>
 
-        {/* Desktop login button */}
+       
         <button className='log-btn' onClick={() => navigate('/login')}>
           LOG IN
         </button>
 
-        {/* Hamburger menu for mobile screens */}
+      
         {window.innerWidth <= 768 && (
           <div className={`${styles.whiteColour} ${styles.hover} ${styles.center} ${styles.textCenter} menu-icon`} onClick={toggleMenu}>
             &#9776;
           </div>
         )}
 
-        {/* Mobile version buttons */}
+       
         <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>
           <button className='log-btn-mobile' onClick={() => navigate('/login')}>
             LOG IN
