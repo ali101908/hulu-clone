@@ -6,6 +6,7 @@ import styles from '../../../assets/component.module.css/component.module.css';
 import { DownCircleOutlined } from '@ant-design/icons';
 import { Col, Row } from "antd";
 import Button from 'react-bootstrap/esm/Button';
+import Modal from 'react-bootstrap/Modal';
 import {  UncontrolledPopover, PopoverBody, PopoverHeader } from 'reactstrap';
 
 
@@ -64,22 +65,20 @@ const BasicBundle = () => {
         </div>
       </div>
 
-      {showTerms && (
-        <div className={`${styles.center} ${styles.heightfull} ${styles.width100} modal `}>
-          <div className={` ${styles.whiteColour} ${styles.textLeft} modal-content`}>
-            <span className={` ${styles.whiteColour} ${styles.hover} close`} onClick={() => setShowTerms(false)}>&times;</span>
-            <p style={{ color: "white" }}>
-              Cancel anytime, through your account settings or by contacting us, effective at the end of your billing period.
-              No refunds or credits for partial months. Use of the services is subject to the
-              <Link to='#'> Disney+, ESPN+, and Hulu Subscriber Agreement</Link>. Valid payment method required to redeem offer.
-              Cannot be combined with any other offers, coupons, discounts or promotions. Not redeemable for cash or any other goods or services.
-              Eligibility rules and offer timing may vary if you sign up through a third-party billing partner. 
-              Access content from each service separately. Location data may be required to watch certain content.
-              For more information, including detailed information on billing and cancellation, please visit the Hulu Help Center.
-            </p>
-          </div>
-        </div>
-      )}
+     <Modal
+             show={showTerms}
+             onHide={() => setShowTerms(false)}
+             centered
+           >
+             <Modal.Header closeButton>
+               <Modal.Title>Terms</Modal.Title>
+             </Modal.Header>
+             <Modal.Body className={styles.deepDarkColour}>
+               Cancel anytime, through your account settings or by contacting us, effective at the end of your billing period. No refunds or credits for partial months. Use of the services is subject to the{' '}
+               <Link to="#">Disney+, ESPN+, and Hulu Subscriber Agreement</Link>. Valid payment method required to redeem offer. Cannot be combined with any other offers, coupons, discounts or promotions. Not redeemable for cash or any other goods or services. Eligibility rules and offer timing may vary if you sign up through a third party billing partner.
+               Access content from each service separately. Location data may be required to watch certain content. For more information, including detailed information on billing and cancelation, please visit the Hulu Help Center.
+             </Modal.Body>
+           </Modal>
 
       <div className='scroll-down'>
         <p style={{ color: "white" }}>HOW IT WORKS</p>
